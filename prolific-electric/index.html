@@ -70,6 +70,10 @@ h3{font:800 1.08rem var(--cinzel);letter-spacing:.04em;text-transform:uppercase}
 @media(min-width:960px){.hero__in{grid-template-columns:1.2fr .8fr;padding-block:6rem 5.5rem}}
 .hero h1{font-size:clamp(2.5rem,1rem + 5.6vw,5.4rem);margin:.9rem 0 1.1rem}
 .hero h1 span{display:block;font:800 clamp(.95rem,.8rem + .8vw,1.25rem) var(--cinzel);letter-spacing:.28em;color:var(--silver);text-shadow:none;margin-bottom:.7rem}
+.founder{margin:1.6rem 0 .4rem;padding:.9rem 0 .9rem 1.1rem;border-left:4px solid var(--blue);display:grid;gap:.25rem;max-width:max-content}
+.founder span{font:700 .85rem var(--cinzel);letter-spacing:.24em;color:var(--silver)}
+.founder strong{font:800 clamp(1.5rem,1.1rem + 1.6vw,2.2rem)/1.05 var(--cinzel);letter-spacing:.06em;color:var(--white)}
+.founder a{font:600 1.05rem var(--sans);color:var(--blue-l);text-decoration:none;letter-spacing:.06em}
 .who{font:700 1rem var(--cinzel);letter-spacing:.12em;color:var(--white);margin-top:1.4rem}
 .who b{color:var(--silver);font-weight:700}
 .lede{font-size:1.15rem;color:#c9ccd4;max-width:40ch}
@@ -237,7 +241,7 @@ details p{color:var(--muted);padding-bottom:1.1rem}
       <div>
         <h1><span data-en="Desert Cities Electrician" data-es="Electricista del Desierto">Desert Cities Electrician</span><b style="font-weight:400" data-en="Power done right." data-es="Electricidad bien hecha.">Power done right.</b></h1>
         <p class="lede" data-en="Lighting, LED, EV chargers, new circuits, fans and commercial work, done clean and done right across the Coachella Valley. Serving homes, golf communities and businesses since 2006." data-es="Iluminación, LED, cargadores para carros eléctricos, circuitos nuevos, ventiladores y trabajo comercial, limpio y bien hecho en todo el Valle de Coachella. Sirviendo casas, comunidades de golf y negocios desde 2006.">Lighting, LED, EV chargers, new circuits, fans and commercial work, done clean and done right across the Coachella Valley. Serving homes, golf communities and businesses since 2006.</p>
-        <p class="who" data-en="CEO / FOUNDER <b>JOSEPH GUERRERO</b>" data-es="DUEÑO / FUNDADOR <b>JOSEPH GUERRERO</b>">CEO / FOUNDER <b>JOSEPH GUERRERO</b></p>
+        <div class="founder"><span data-en="CEO / FOUNDER" data-es="DUEÑO / FUNDADOR">CEO / FOUNDER</span><strong>JOSEPH GUERRERO</strong><a href="tel:+17608639192">760 863 9192</a></div>
         <div class="cta">
           <a class="btn" href="#contact" data-en="Get a free estimate" data-es="Cotización gratis">Get a free estimate</a>
           <a class="btn btn--ghost" href="tel:+17608639192" data-en="Call 760 863 9192" data-es="Llama 760 863 9192">Call 760 863 9192</a>
@@ -344,7 +348,7 @@ details p{color:var(--muted);padding-bottom:1.1rem}
       <div>
         <p class="label" data-en="About us" data-es="Sobre nosotros">About us</p>
         <h2 style="margin-top:.8rem" data-en="Local, honest &amp; prolific" data-es="Local, honesto y prolífico">Local, honest &amp; prolific</h2>
-        <p data-en="Prolific Electric is owned and run by Joseph Guerrero. Since 2006 he has been wiring homes, golf communities and businesses across the Desert Cities, from custom chandeliers in La Quinta to LED canopies and shop equipment in Coachella." data-es="Prolific Electric es de Joseph Guerrero. Desde 2006 ha hecho instalaciones eléctricas en casas, comunidades de golf y negocios en todas las ciudades del desierto, desde candelabros en La Quinta hasta techos LED y equipo de taller en Coachella.">Prolific Electric is owned and run by Joseph Guerrero. Since 2006 he has been wiring homes, golf communities and businesses across the Desert Cities, from custom chandeliers in La Quinta to LED canopies and shop equipment in Coachella.</p>
+        <p data-en="Prolific Electric is owned and run by Joseph Guerrero, CEO and founder. Since 2006 he has been wiring homes, golf communities and businesses across the Desert Cities, from custom chandeliers in La Quinta to LED canopies and shop equipment in Coachella." data-es="Prolific Electric es de Joseph Guerrero. Desde 2006 ha hecho instalaciones eléctricas en casas, comunidades de golf y negocios en todas las ciudades del desierto, desde candelabros en La Quinta hasta techos LED y equipo de taller en Coachella.">Prolific Electric is owned and run by Joseph Guerrero. Since 2006 he has been wiring homes, golf communities and businesses across the Desert Cities, from custom chandeliers in La Quinta to LED canopies and shop equipment in Coachella.</p>
         <p data-en="Every job gets the same care: show up on time, do it right, leave it clean, and make sure it works before we leave." data-es="Cada trabajo recibe el mismo cuidado: llegar a tiempo, hacerlo bien, dejarlo limpio y asegurarnos de que funcione antes de irnos.">Every job gets the same care: show up on time, do it right, leave it clean, and make sure it works before we leave.</p>
         <blockquote data-en="“All glory to God.”" data-es="“Toda la gloria a Dios.”">“All glory to God.”</blockquote>
         <div class="areas"><span>Coachella</span><span>Indio</span><span>La Quinta</span><span>Palm Desert</span><span>Rancho Mirage</span><span>Cathedral City</span><span data-en="&amp; the Desert Cities" data-es="y las ciudades del desierto">&amp; the Desert Cities</span></div>
@@ -413,7 +417,7 @@ details p{color:var(--muted);padding-bottom:1.1rem}
         <a class="brand" href="#top"><img src="img/logo-sm.jpg" alt="" width="50" height="50"><span><b>Prolific Electric</b><small>DESERT CITIES · EST. 2006</small></span></a>
         <p style="margin-top:1rem;max-width:36ch" data-en="Residential and commercial electrician serving the Coachella Valley since 2006." data-es="Electricista residencial y comercial en el Valle de Coachella desde 2006.">Residential and commercial electrician serving the Coachella Valley since 2006.</p>
       </div>
-      <div><h4 data-en="CONTACT" data-es="CONTACTO">CONTACT</h4><ul><li><a href="tel:+17608639192">(760) 863-9192</a></li><li><a href="sms:+17608639192" data-en="Text us" data-es="Mándanos texto">Text us</a></li><li><a href="https://www.instagram.com/prol1fic_electric/" target="_blank" rel="noopener">Instagram @prol1fic_electric</a></li></ul></div>
+      <div><h4 data-en="CONTACT" data-es="CONTACTO">CONTACT</h4><ul><li data-en="Joseph Guerrero, CEO / Founder" data-es="Joseph Guerrero, Dueño / Fundador">Joseph Guerrero, CEO / Founder</li><li><a href="tel:+17608639192">(760) 863-9192</a></li><li><a href="sms:+17608639192" data-en="Text us" data-es="Mándanos texto">Text us</a></li><li><a href="https://www.instagram.com/prol1fic_electric/" target="_blank" rel="noopener">Instagram @prol1fic_electric</a></li></ul></div>
       <div><h4 data-en="SERVICES" data-es="SERVICIOS">SERVICES</h4><ul><li data-en="Lighting &amp; LED" data-es="Iluminación y LED">Lighting &amp; LED</li><li data-en="EV chargers" data-es="Cargadores EV">EV chargers</li><li data-en="Circuits, outlets &amp; fans" data-es="Circuitos, contactos y ventiladores">Circuits, outlets &amp; fans</li><li data-en="Commercial work" data-es="Trabajo comercial">Commercial work</li></ul></div>
     </div>
     <div class="copy"><span>© 2026 Prolific Electric</span><span data-en="Website by <a href='https://760webstudio.github.io' target='_blank' rel='noopener'>760 Web Studio</a>" data-es="Página por <a href='https://760webstudio.github.io' target='_blank' rel='noopener'>760 Web Studio</a>">Website by <a href="https://760webstudio.github.io" target="_blank" rel="noopener">760 Web Studio</a></span></div>
