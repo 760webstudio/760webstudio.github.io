@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Aldo's Mexican Food | Open 24/7 in Coachella</title>
+<meta name="description" content="Aldo's Mexican Food, Gateway Center, 49225 Grapefruit Blvd, Coachella. Open 24/7. Tacos, combination plates, breakfast burritos, aguachiles. Order online. English y español.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;800;900&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff8ec;--surface:#fff;--red:#c8202f;--red-d:#a51826;--green:#167a4a;--orange:#f39a1f;--ink:#241612;--muted:#76625a;--line:#f0e1cb;
+  --display:'Rubik',system-ui,sans-serif;--sans:'Nunito Sans',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;padding-bottom:64px}
+@media(min-width:800px){body{padding-bottom:0}}
+a{color:inherit}
+.wrap{width:min(100% - 2.5rem,1140px);margin-inline:auto}
+h1,h2{font-family:var(--display);font-weight:900;line-height:.95;letter-spacing:-.015em}
+h2{font-size:clamp(2.2rem,1.5rem + 3vw,3.4rem)}
+h3{font:700 1.15rem var(--display)}
+.tag{font:800 .78rem var(--display);letter-spacing:.16em;text-transform:uppercase;color:var(--green)}
+.papel{height:22px;background:radial-gradient(circle at 10px 0,transparent 9px,var(--red) 10px) 0 0/20px 22px repeat-x}
+.demo-bar{background:var(--ink);color:#ffe9c9;font-size:.8rem;text-align:center;padding:.5rem 1rem}
+.demo-bar a{color:var(--orange);font-weight:700}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:var(--red);color:#fff;border:0;border-radius:999px;padding:.85rem 1.5rem;font:700 1rem var(--display);text-decoration:none;cursor:pointer;transition:background .18s}
+.btn:hover{background:var(--red-d)}
+.btn--green{background:var(--green)}.btn--green:hover{background:#105e39}
+.btn--ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+.btn--ghost:hover{background:var(--ink);color:#fff}
+.btn--sm{padding:.55rem 1rem;font-size:.9rem}
+.header{position:sticky;top:0;z-index:20;background:rgba(255,248,236,.92);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+.header.is-scrolled{border-bottom-color:var(--line)}
+.header__in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.75rem}
+.brand{display:flex;align-items:center;gap:.55rem;text-decoration:none}
+.brand__mark{width:40px;height:40px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font:900 1.2rem var(--display)}
+.brand b{font:900 1.35rem var(--display);line-height:1}
+.brand small{display:block;font:700 .68rem var(--display);letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
+.nav{display:none;gap:1.8rem;font-weight:700}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--ink)}
+@media(min-width:860px){.nav{display:flex}}
+.header__act{display:flex;gap:.6rem;align-items:center}
+.lang{background:none;border:1.5px solid var(--line);border-radius:999px;padding:.45rem .85rem;font:700 .8rem var(--sans);cursor:pointer;color:var(--ink)}
+.hide-sm{display:none}
+@media(min-width:800px){.hide-sm{display:inline-flex}}
+.hero{padding-block:3rem 4rem;overflow:hidden}
+.hero__grid{display:grid;gap:2.5rem;align-items:center}
+@media(min-width:880px){.hero__grid{grid-template-columns:1.1fr .9fr}}
+.open{display:inline-flex;align-items:center;gap:.5rem;background:var(--green);color:#fff;border-radius:999px;padding:.4rem 1rem;font:700 .95rem var(--display)}
+.open i{width:9px;height:9px;border-radius:50%;background:#7dffb6}
+.hero h1{font-size:clamp(3rem,1.4rem + 6.5vw,6.2rem);margin:.9rem 0 1.1rem}
+.hero h1 em{font-style:normal;color:var(--red)}
+.lede{font-size:1.15rem;color:var(--muted);max-width:38ch}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.8rem}
+.rate{margin-top:1.4rem;color:var(--muted);font-size:.95rem}
+.rate b{color:var(--ink)}
+.stars{color:var(--orange);letter-spacing:.1em}
+.hero__art{max-width:430px;width:100%;justify-self:center}
+.faves{padding-block:4.5rem;background:var(--surface);border-block:1px solid var(--line)}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:1rem;margin-bottom:2rem}
+.sec-head p{color:var(--muted);max-width:42ch}
+.fav{display:grid;gap:1rem}
+@media(min-width:800px){.fav{grid-template-columns:repeat(3,1fr)}}
+.fav div{border-radius:20px;padding:1.5rem;background:var(--bg);border:1px solid var(--line)}
+.fav .new{display:inline-block;background:var(--orange);color:#fff;font:800 .72rem var(--display);letter-spacing:.1em;padding:.2rem .55rem;border-radius:4px;margin-bottom:.6rem}
+.fav p{color:var(--muted);margin-top:.4rem;font-size:.97rem}
+.menu{padding-block:4.5rem}
+.tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.6rem}
+.tabs button{border:2px solid var(--ink);background:none;border-radius:999px;padding:.5rem 1rem;font:700 .95rem var(--display);cursor:pointer;color:var(--ink)}
+.tabs button[aria-selected="true"]{background:var(--ink);color:#fff}
+.list{list-style:none;display:grid;gap:0;border-top:2px dashed var(--line)}
+@media(min-width:800px){.list{grid-template-columns:1fr 1fr;column-gap:3rem}}
+.list li{display:flex;justify-content:space-between;gap:1rem;padding:.85rem 0;border-bottom:2px dashed var(--line)}
+.list b{font:800 1.05rem var(--display);color:var(--red);white-space:nowrap}
+.list small{display:block;color:var(--muted);font-size:.85rem}
+.more{margin-top:1.6rem;color:var(--muted)}
+.order{padding-block:4.5rem;background:var(--red);color:#fff}
+.order__in{display:grid;gap:1.8rem;align-items:center}
+@media(min-width:860px){.order__in{grid-template-columns:1fr auto}}
+.order p{color:#ffd9dc;margin-top:.8rem;max-width:44ch}
+.order .btn{background:#fff;color:var(--red)}
+.order .btn:hover{background:#ffe9eb}
+.order .btn--ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px #fff}
+.visit{padding-block:4.5rem}
+.visit__grid{display:grid;gap:2.5rem}
+@media(min-width:880px){.visit__grid{grid-template-columns:1fr 1fr}}
+.big247{font:900 clamp(4rem,2rem + 7vw,7rem)/.9 var(--display);color:var(--green);margin-top:1rem}
+address{font-style:normal;font-size:1.2rem;font-weight:700;margin-top:1.2rem}
+.sub{color:var(--muted);font-size:.95rem;margin-top:.35rem}
+.phone-big{font:900 1.8rem var(--display);text-decoration:none;display:inline-block;margin-top:.8rem;color:var(--red)}
+.footer{border-top:1px solid var(--line);padding-block:2rem;font-size:.9rem;color:var(--muted)}
+.footer__in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem}
+.footer a{color:var(--red)}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr;background:var(--ink)}
+.mbar a{color:#fff;text-align:center;padding:1.05rem;font:700 1rem var(--display);text-decoration:none}
+.mbar a+a{background:var(--red)}
+@media(min-width:800px){.mbar{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><span data-en="Free website preview made for Aldo's Mexican Food by <a href='https://www.instagram.com/760webstudio/' target='_blank' rel='noopener'>760 Web Studio</a>." data-es="Vista previa gratis hecha para Aldo's Mexican Food por <a href='https://www.instagram.com/760webstudio/' target='_blank' rel='noopener'>760 Web Studio</a>.">Free website preview made for Aldo's Mexican Food by <a href="https://www.instagram.com/760webstudio/" target="_blank" rel="noopener">760 Web Studio</a>.</span></div>
+<div class="papel" aria-hidden="true"></div>
+<header class="header">
+  <div class="wrap header__in">
+    <a class="brand" href="#top" aria-label="Aldo's Mexican Food, home"><span class="brand__mark" aria-hidden="true">A</span><span><b>Aldo's</b><small>Mexican Food · Coachella</small></span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#faves" data-en="Favorites" data-es="Favoritos">Favorites</a>
+      <a href="#menu" data-en="Menu" data-es="Menú">Menu</a>
+      <a href="#visit" data-en="Location" data-es="Ubicación">Location</a>
+    </nav>
+    <div class="header__act">
+      <button class="lang" id="langBtn" type="button" aria-label="Cambiar a español">Español</button>
+      <a class="btn btn--sm hide-sm" href="http://orderaldosmexicanfood.mobile-webview2.com/" target="_blank" rel="noopener" data-en="Order online" data-es="Ordena en línea">Order online</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div>
+        <p class="open"><i aria-hidden="true"></i><span data-en="Open now · 24 hours, 7 days" data-es="Abierto ahora · 24 horas, 7 días">Open now · 24 hours, 7 days</span></p>
+        <h1><span data-en="Fresh Mexican food," data-es="Comida mexicana fresca,">Fresh Mexican food,</span><br><em data-en="any time." data-es="a cualquier hora.">any time.</em></h1>
+        <p class="lede" data-en="Tacos, burritos, combination plates, aguachiles and breakfast burritos at Gateway Center in Coachella. Open 24/7." data-es="Tacos, burritos, platillos combinados, aguachiles y burritos de desayuno en Gateway Center en Coachella. Abierto 24/7.">Tacos, burritos, combination plates, aguachiles and breakfast burritos at Gateway Center in Coachella. Open 24/7.</p>
+        <div class="cta">
+          <a class="btn" href="http://orderaldosmexicanfood.mobile-webview2.com/" target="_blank" rel="noopener" data-en="Order for pickup" data-es="Ordena para llevar">Order for pickup</a>
+          <a class="btn btn--ghost" href="#menu" data-en="See the menu" data-es="Ver el menú">See the menu</a>
+        </div>
+        <p class="rate"><span class="stars" aria-hidden="true">★★★★★</span> <b>4.3</b> <span data-en="on Google · 1,300+ reviews" data-es="en Google · más de 1,300 reseñas">on Google · 1,300+ reviews</span></p>
+      </div>
+      <svg class="hero__art" viewBox="0 0 320 320" aria-hidden="true">
+        <circle cx="160" cy="160" r="150" fill="#ffe1b0"/>
+        <g transform="translate(160 185)">
+          <path d="M-120 0a120 120 0 0 1 240 0z" fill="#f3c46b"/>
+          <path d="M-108 -6a108 108 0 0 1 216 0" fill="none" stroke="#e0a53f" stroke-width="4" stroke-dasharray="2 10"/>
+          <g>
+            <circle cx="-60" cy="-38" r="16" fill="#167a4a"/><circle cx="-30" cy="-55" r="14" fill="#c8202f"/><circle cx="0" cy="-62" r="15" fill="#8a4b2a"/><circle cx="30" cy="-55" r="14" fill="#167a4a"/><circle cx="60" cy="-38" r="16" fill="#c8202f"/>
+            <circle cx="-42" cy="-20" r="8" fill="#fff"/><circle cx="-8" cy="-34" r="7" fill="#fff"/><circle cx="24" cy="-26" r="8" fill="#fff"/><circle cx="52" cy="-16" r="6" fill="#f39a1f"/>
+          </g>
+          <path d="M-120 0h240" stroke="#e0a53f" stroke-width="6" stroke-linecap="round"/>
+        </g>
+        <g transform="translate(240 92) rotate(18)"><path d="M0 0c-14 8-18 26-8 34 10-6 16-20 8-34z" fill="#c8202f"/><path d="M-4 2c6-6 12-6 16-2" stroke="#167a4a" stroke-width="4" fill="none" stroke-linecap="round"/></g>
+        <g transform="translate(72 95)"><circle r="18" fill="#9bd36a"/><circle r="12" fill="#c6ea9c"/><path d="M-12 0h24M0-12v24M-8-8l16 16M8-8l-16 16" stroke="#9bd36a" stroke-width="1.5"/></g>
+      </svg>
+    </div>
+  </section>
+
+  <section class="faves" id="faves">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="tag" data-en="Everybody's favorites" data-es="Los favoritos de todos">Everybody's favorites</p><h2 data-en="Try these" data-es="Pruébalos">Try these</h2></div>
+        <p data-en="The dishes people keep coming back for." data-es="Los platillos por los que la gente siempre regresa.">The dishes people keep coming back for.</p>
+      </div>
+      <div class="fav">
+        <div><h3>Taco Gobernador</h3><p data-en="Loaded with shrimp and melted cheese. You'll want another one." data-es="Cargado de camarón y queso derretido. Vas a querer otro.">Loaded with shrimp and melted cheese. You'll want another one.</p></div>
+        <div><span class="new" data-en="NEW" data-es="NUEVO">NEW</span><h3 data-en="Crispy Botana" data-es="Botana crujiente">Crispy Botana</h3><p data-en="Crispy fried shrimp and fish with a side of aguachile sauce." data-es="Camarón y pescado empanizados con salsa de aguachile.">Crispy fried shrimp and fish with a side of aguachile sauce.</p></div>
+        <div><h3>Aguachiles</h3><p data-en="Made fresh every day." data-es="Hechos frescos todos los días.">Made fresh every day.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <div class="sec-head"><div><p class="tag" data-en="Menu" data-es="Menú">Menu</p><h2 data-en="What's cooking" data-es="Lo que hay">What's cooking</h2></div></div>
+      <div class="tabs" role="tablist">
+        <button role="tab" aria-selected="true" data-t="combos" data-en="Combination plates" data-es="Platillos combinados">Combination plates</button>
+        <button role="tab" aria-selected="false" data-t="tacos" data-en="Tacos" data-es="Tacos">Tacos</button>
+        <button role="tab" aria-selected="false" data-t="bkf" data-en="Breakfast burritos" data-es="Burritos de desayuno">Breakfast burritos</button>
+      </div>
+      <ul class="list" data-p="combos">
+        <li><span data-en="#1 Tostada &amp; Beef Taco" data-es="#1 Tostada y taco de res">#1 Tostada &amp; Beef Taco</span><b>$15.25</b></li>
+        <li><span data-en="#2 Two Cheese Enchiladas" data-es="#2 Dos enchiladas de queso">#2 Two Cheese Enchiladas</span><b>$15.25</b></li>
+        <li><span data-en="#6 Two Beef Burritos" data-es="#6 Dos burritos de res">#6 Two Beef Burritos</span><b>$16.35</b></li>
+        <li><span data-en="#9 Two Asada Tacos" data-es="#9 Dos tacos de asada">#9 Two Asada Tacos</span><b>$15.85</b></li>
+        <li><span data-en="#10 Carne Asada, Carnitas or Adobada Plate" data-es="#10 Plato de asada, carnitas o adobada">#10 Carne Asada, Carnitas or Adobada Plate</span><b>$15.85</b></li>
+        <li><span data-en="#12 Two Fish Tacos" data-es="#12 Dos tacos de pescado">#12 Two Fish Tacos</span><b>$15.25</b></li>
+        <li><span data-en="#14 Steak Ranchero" data-es="#14 Bistec ranchero">#14 Steak Ranchero</span><b>$15.85</b></li>
+        <li><span data-en="#21 Shrimp Fajitas" data-es="#21 Fajitas de camarón">#21 Shrimp Fajitas</span><b>$16.35</b></li>
+        <li><span data-en="#23 Aldo's Burrito" data-es="#23 Burrito Aldo's">#23 Aldo's Burrito</span><b>$15.85</b></li>
+        <li><span data-en="#24 Camarones Empanizados" data-es="#24 Camarones empanizados">#24 Camarones Empanizados</span><b>$16.35</b></li>
+        <li><span data-en="#26 Chile Verde" data-es="#26 Chile verde">#26 Chile Verde</span><b>$15.85</b></li>
+        <li><span data-en="#27 Birria Plate" data-es="#27 Plato de birria">#27 Birria Plate</span><b>$16.35</b></li>
+      </ul>
+      <ul class="list" data-p="tacos" hidden>
+        <li><span data-en="Carne Asada Taco" data-es="Taco de asada">Carne Asada Taco</span><b>$3.75</b></li>
+        <li><span data-en="Adobada Taco" data-es="Taco de adobada">Adobada Taco</span><b>$3.75</b></li>
+        <li><span data-en="Carnitas Taco" data-es="Taco de carnitas">Carnitas Taco</span><b>$3.75</b></li>
+        <li><span data-en="Birria Taco" data-es="Taco de birria">Birria Taco</span><b>$3.75</b></li>
+        <li><span data-en="Cabeza Taco" data-es="Taco de cabeza">Cabeza Taco</span><b>$3.75</b></li>
+        <li><span data-en="Tripas Taco" data-es="Taco de tripas">Tripas Taco</span><b>$3.75</b></li>
+        <li><span data-en="Shrimp Taco" data-es="Taco de camarón">Shrimp Taco</span><b>$3.75</b></li>
+        <li><span data-en="Fish Taco" data-es="Taco de pescado">Fish Taco</span><b>$3.75</b></li>
+        <li><span data-en="Beef or Chicken Taco" data-es="Taco de res o pollo">Beef or Chicken Taco</span><b>$3.55</b></li>
+        <li><span data-en="3 Flautas with Cheese &amp; Guacamole" data-es="3 flautas con queso y guacamole">3 Flautas with Cheese &amp; Guacamole</span><b>$5.95</b></li>
+      </ul>
+      <ul class="list" data-p="bkf" hidden>
+        <li><span>Machaca</span><b>$9.85</b></li>
+        <li><span>Chorizo</span><b>$9.85</b></li>
+        <li><span data-en="A La Mexicana <small>2 eggs, tomato, cilantro, onion, jalapeño</small>" data-es="A la mexicana <small>2 huevos, tomate, cilantro, cebolla, jalapeño</small>">A La Mexicana <small>2 eggs, tomato, cilantro, onion, jalapeño</small></span><b>$9.85</b></li>
+        <li><span data-en="Aldo's Breakfast Burrito <small>bacon, potato, salsa, cheddar</small>" data-es="Burrito Aldo's <small>tocino, papa, salsa, queso cheddar</small>">Aldo's Breakfast Burrito <small>bacon, potato, salsa, cheddar</small></span><b>$9.85</b></li>
+        <li><span data-en="Ranchero <small>2 eggs, chorizo, potato, salsa, beans, cheese</small>" data-es="Ranchero <small>2 huevos, chorizo, papa, salsa, frijoles, queso</small>">Ranchero <small>2 eggs, chorizo, potato, salsa, beans, cheese</small></span><b>$9.85</b></li>
+        <li><span data-en="Ham &amp; Eggs" data-es="Jamón con huevo">Ham &amp; Eggs</span><b>$9.85</b></li>
+      </ul>
+      <p class="more" data-en="Plus burritos, quesadillas, tortas, seafood, menudo, caldo de pollo and more." data-es="Además burritos, quesadillas, tortas, mariscos, menudo, caldo de pollo y más.">Plus burritos, quesadillas, tortas, seafood, menudo, caldo de pollo and more.</p>
+    </div>
+  </section>
+
+  <section class="order">
+    <div class="wrap order__in">
+      <div>
+        <h2 data-en="Skip the line." data-es="No hagas fila.">Skip the line.</h2>
+        <p data-en="Order ahead and your food is ready when you pull up. Day or night." data-es="Ordena antes y tu comida está lista cuando llegues. De día o de noche.">Order ahead and your food is ready when you pull up. Day or night.</p>
+      </div>
+      <div class="cta" style="margin:0">
+        <a class="btn" href="http://orderaldosmexicanfood.mobile-webview2.com/" target="_blank" rel="noopener" data-en="Order online" data-es="Ordena en línea">Order online</a>
+        <a class="btn btn--ghost" href="tel:+17603980442">(760) 398-0442</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap visit__grid">
+      <div>
+        <p class="tag" data-en="Hours" data-es="Horario">Hours</p>
+        <p class="big247">24/7</p>
+        <p class="sub" data-en="Open every day, all day and all night." data-es="Abierto todos los días, día y noche.">Open every day, all day and all night.</p>
+      </div>
+      <div>
+        <p class="tag" data-en="Where" data-es="Dónde">Where</p>
+        <h2 data-en="Find us" data-es="Encuéntranos">Find us</h2>
+        <address>Gateway Center<br>49225 Grapefruit Blvd, Suite 1<br>Coachella, CA 92236</address>
+        <a class="phone-big" href="tel:+17603980442">(760) 398-0442</a>
+        <div class="cta"><a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&query=49225+Grapefruit+Blvd+Coachella+CA+92236" target="_blank" rel="noopener" data-en="Get directions" data-es="Cómo llegar">Get directions</a>
+        <a class="btn btn--ghost" href="https://www.instagram.com/aldosmxfood/" target="_blank" rel="noopener">Instagram</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <p>Aldo's Mexican Food · 49225 Grapefruit Blvd Suite 1, Coachella, CA</p>
+    <p data-en="Website preview by <a href='https://www.instagram.com/760webstudio/' target='_blank' rel='noopener'>760 Web Studio</a>" data-es="Vista previa por <a href='https://www.instagram.com/760webstudio/' target='_blank' rel='noopener'>760 Web Studio</a>">Website preview by <a href="https://www.instagram.com/760webstudio/" target="_blank" rel="noopener">760 Web Studio</a></p>
+  </div>
+</footer>
+<nav class="mbar" aria-label="Quick actions"><a href="tel:+17603980442" data-en="Call" data-es="Llamar">Call</a><a href="http://orderaldosmexicanfood.mobile-webview2.com/" target="_blank" rel="noopener" data-en="Order" data-es="Ordenar">Order</a></nav>
+
+<script>
+(function(){
+  var lang='en',btn=document.getElementById('langBtn');
+  function apply(){document.documentElement.lang=lang;document.querySelectorAll('[data-en]').forEach(function(el){el.innerHTML=el.getAttribute('data-'+lang);});btn.textContent=lang==='en'?'Español':'English';btn.setAttribute('aria-label',lang==='en'?'Cambiar a español':'Switch to English');}
+  btn.addEventListener('click',function(){lang=lang==='en'?'es':'en';apply();});
+  var tabs=document.querySelectorAll('.tabs button');
+  tabs.forEach(function(t){t.addEventListener('click',function(){tabs.forEach(function(x){x.setAttribute('aria-selected',x===t?'true':'false');});
+    document.querySelectorAll('.list').forEach(function(l){l.hidden=l.getAttribute('data-p')!==t.getAttribute('data-t');});});});
+  var hd=document.querySelector('.header');window.addEventListener('scroll',function(){hd.classList.toggle('is-scrolled',window.scrollY>30);},{passive:true});
+})();
+</script>
+</body>
+</html>

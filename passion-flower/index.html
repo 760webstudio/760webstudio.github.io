@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Passion Flower Shop | Florist in Indio</title>
+<meta name="description" content="Bouquets, vase arrangements, funeral and graduation flowers from Passion Flower Shop, 44100 Jefferson St C304, Indio. Hablamos español.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf7f3;--surface:#fff;--wine:#8e1f3d;--wine-d:#74172f;--rose:#f4d6d9;--sage:#5f7a62;--sage-l:#e3ebe2;--ink:#2a1d20;--muted:#76686a;--line:#ebdfd9;
+  --serif:'Cormorant Garamond',Georgia,serif;--sans:'Jost',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:64px}
+@media(min-width:800px){body{padding-bottom:0}}
+a{color:inherit}
+.wrap{width:min(100% - 2.5rem,1140px);margin-inline:auto}
+h1,h2{font-family:var(--serif);font-weight:600;line-height:1;letter-spacing:-.005em}
+h2{font-size:clamp(2.3rem,1.6rem + 2.8vw,3.6rem)}
+h3{font-family:var(--serif);font-size:1.45rem;font-weight:700;line-height:1.15}
+.eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--sage)}
+.demo-bar{background:var(--wine);color:#fbe9ec;font-size:.8rem;text-align:center;padding:.5rem 1rem}
+.demo-bar a{color:#fff;font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--wine);color:#fff;border:0;border-radius:999px;padding:.85rem 1.5rem;font:500 1rem var(--sans);letter-spacing:.02em;text-decoration:none;cursor:pointer;transition:background .18s}
+.btn:hover{background:var(--wine-d)}
+.btn--ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn--ghost:hover{background:var(--ink);color:#fff}
+.btn--sm{padding:.55rem 1rem;font-size:.9rem}
+.btn--full{width:100%}
+.header{position:sticky;top:0;z-index:20;background:rgba(251,247,243,.9);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+.header.is-scrolled{border-bottom-color:var(--line)}
+.header__in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.8rem}
+.brand{display:flex;align-items:center;gap:.55rem;text-decoration:none}
+.brand b{font-family:var(--serif);font-size:1.5rem;font-weight:700;line-height:1}
+.brand small{display:block;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.nav{display:none;gap:1.8rem;font-size:.95rem}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--ink)}
+@media(min-width:860px){.nav{display:flex}}
+.header__act{display:flex;gap:.6rem;align-items:center}
+.lang{background:none;border:1.5px solid var(--line);border-radius:999px;padding:.45rem .85rem;font:600 .8rem var(--sans);cursor:pointer;color:var(--ink)}
+.hide-sm{display:none}
+@media(min-width:800px){.hide-sm{display:inline-flex}}
+.hero{padding-block:3.5rem 4.5rem;overflow:hidden}
+.hero__grid{display:grid;gap:2.5rem;align-items:center}
+@media(min-width:880px){.hero__grid{grid-template-columns:1.05fr .95fr}}
+.hero h1{font-size:clamp(3rem,1.6rem + 5.5vw,5.8rem);margin:.8rem 0 1.2rem}
+.hero h1 em{color:var(--wine);font-style:italic}
+.lede{font-size:1.15rem;color:var(--muted);max-width:36ch}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.8rem}
+.badges{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.6rem}
+.badges span{background:var(--sage-l);color:#3f5642;border-radius:999px;padding:.35rem .85rem;font-size:.88rem;font-weight:500}
+.hero__art{max-width:440px;width:100%;justify-self:center}
+.shop{padding-block:4.5rem;background:var(--surface);border-block:1px solid var(--line)}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:1rem;margin-bottom:2.2rem}
+.sec-head p{color:var(--muted);max-width:42ch}
+.products{display:grid;gap:1.1rem;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.prod{background:var(--bg);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.prod__img{aspect-ratio:4/3;display:grid;place-items:center}
+.prod__body{padding:1.1rem 1.2rem 1.3rem;display:flex;flex-direction:column;gap:.35rem;flex:1}
+.prod .price{font-weight:600;color:var(--wine)}
+.prod p{color:var(--muted);font-size:.92rem}
+.occasions{padding-block:4.5rem}
+.occ{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));margin-top:2rem}
+.occ div{border-radius:18px;padding:1.4rem;background:var(--rose)}
+.occ div:nth-child(2n){background:var(--sage-l)}
+.occ p{color:#5e4c50;font-size:.93rem;margin-top:.3rem}
+.order{padding-block:4.5rem;background:var(--sage);color:#fff}
+.order .eyebrow{color:#dfe9dc}
+.order__grid{display:grid;gap:2.5rem}
+@media(min-width:880px){.order__grid{grid-template-columns:.85fr 1.15fr;align-items:start}}
+.order__side p{color:#e6eee4;margin-top:1rem;max-width:36ch}
+.order__side ul{list-style:none;margin-top:1.4rem;display:grid;gap:.6rem}
+.order__side li::before{content:"✿";margin-right:.6rem}
+.form{background:var(--surface);color:var(--ink);border-radius:22px;padding:1.6rem;display:grid;gap:1.3rem}
+fieldset{border:0;display:grid;gap:.6rem}
+legend{font-weight:600;margin-bottom:.6rem;display:flex;align-items:center;gap:.5rem}
+legend span{width:24px;height:24px;border-radius:50%;background:var(--wine);color:#fff;font-size:.8rem;display:grid;place-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.chips label{cursor:pointer}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips span{display:inline-block;border:1.5px solid var(--line);border-radius:999px;padding:.5rem .9rem;font-size:.92rem;transition:all .15s}
+.chips input:checked+span{background:var(--ink);border-color:var(--ink);color:#fff}
+.chips input:focus-visible+span{outline:2px solid var(--wine);outline-offset:2px}
+.row2{display:grid;gap:1rem}
+@media(min-width:560px){.row2{grid-template-columns:1fr 1fr}}
+.field{display:grid;gap:.4rem;font-size:.92rem;font-weight:500}
+.field input{font:1rem var(--sans);padding:.8rem 1rem;border:1.5px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink)}
+.field input:focus{outline:none;border-color:var(--wine)}
+.err{color:#b3261e;font-size:.9rem}
+.done{text-align:center;padding:1rem 0}
+.done__t{font:700 2rem var(--serif);margin-bottom:.4rem}
+.done p{color:var(--muted)}
+.link{background:none;border:0;color:var(--wine);font:600 .95rem var(--sans);cursor:pointer;margin-top:1rem;text-decoration:underline}
+.visit{padding-block:4.5rem}
+.visit__grid{display:grid;gap:2.5rem}
+@media(min-width:880px){.visit__grid{grid-template-columns:1fr 1fr}}
+.hours{width:100%;border-collapse:collapse;margin-top:1.2rem}
+.hours th,.hours td{padding:.8rem 0;border-bottom:1px solid var(--line);text-align:left;font-weight:500}
+.hours td{text-align:right;color:var(--muted)}
+.hours tr.today th,.hours tr.today td{color:var(--wine);font-weight:600}
+address{font-style:normal;font-size:1.2rem;margin-top:1.2rem}
+.phone-big{font:700 1.9rem var(--serif);text-decoration:none;display:inline-block;margin-top:.8rem}
+.sub{color:var(--muted);font-size:.95rem;margin-top:.35rem}
+.footer{border-top:1px solid var(--line);padding-block:2rem;font-size:.9rem;color:var(--muted)}
+.footer__in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem}
+.footer a{color:var(--wine)}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr;background:var(--ink)}
+.mbar a{color:#fff;text-align:center;padding:1.05rem;font-weight:600;text-decoration:none}
+.mbar a+a{background:var(--wine)}
+@media(min-width:800px){.mbar{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><span data-en="Free website preview made for Passion Flower Shop by <a href='https://www.instagram.com/760webstudio/' target='_blank' rel='noopener'>760 Web Studio</a>." data-es="Vista previa gratis hecha para Passion Flower Shop por <a href='https://www.instagram.com/760webstudio/' target='_blank' rel='noopener'>760 Web Studio</a>.">Free website preview made for Passion Flower Shop by <a href="https://www.instagram.com/760webstudio/" target="_blank" rel="noopener">760 Web Studio</a>.</span></div>
+
+<header class="header">
+  <div class="wrap header__in">
+    <a class="brand" href="#top" aria-label="Passion Flower Shop, home">
+      <svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><g fill="#8e1f3d"><circle cx="20" cy="11" r="7"/><circle cx="29" cy="18" r="7"/><circle cx="25" cy="28" r="7"/><circle cx="15" cy="28" r="7"/><circle cx="11" cy="18" r="7"/></g><circle cx="20" cy="20" r="5" fill="#f4d6d9"/></svg>
+      <span><b>Passion</b><small>Flower Shop</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#shop" data-en="Arrangements" data-es="Arreglos">Arrangements</a>
+      <a href="#occasions" data-en="Occasions" data-es="Ocasiones">Occasions</a>
+      <a href="#order" data-en="Order" data-es="Ordenar">Order</a>
+      <a href="#visit" data-en="Hours" data-es="Horario">Hours</a>
+    </nav>
+    <div class="header__act">
+      <button class="lang" id="langBtn" type="button" aria-label="Cambiar a español">Español</button>
+      <a class="btn btn--sm hide-sm" href="#order" data-en="Order flowers" data-es="Ordenar flores">Order flowers</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div>
+        <p class="eyebrow" data-en="Florist · Indio, CA" data-es="Florería · Indio, CA">Florist · Indio, CA</p>
+        <h1><span data-en="Flowers for" data-es="Flores para">Flowers for</span><br><em data-en="every moment." data-es="cada momento.">every moment.</em></h1>
+        <p class="lede" data-en="Bouquets, vase arrangements, graduation and funeral flowers, made by hand on Jefferson St in Indio." data-es="Ramos, arreglos en florero, flores para graduación y funerales, hechos a mano en la Jefferson St en Indio.">Bouquets, vase arrangements, graduation and funeral flowers, made by hand on Jefferson St in Indio.</p>
+        <div class="cta">
+          <a class="btn" href="#order" data-en="Order flowers" data-es="Ordenar flores">Order flowers</a>
+          <a class="btn btn--ghost" href="tel:+17605742197">(760) 574-2197</a>
+        </div>
+        <div class="badges"><span>¡Hablamos español!</span><span>★ 4.5 Google</span><span id="openB">Open today</span></div>
+      </div>
+      <svg class="hero__art" viewBox="0 0 320 320" aria-hidden="true">
+        <circle cx="160" cy="160" r="150" fill="#f4d6d9"/>
+        <path d="M160 300 L130 175 M160 300 L160 170 M160 300 L195 172 M160 300 L105 195 M160 300 L220 195" stroke="#5f7a62" stroke-width="5" stroke-linecap="round"/>
+        <path d="M118 225c-25-5-40-25-35-40 20 0 35 15 35 40ZM205 228c25-8 38-28 32-42-20 2-33 18-32 42Z" fill="#5f7a62"/>
+        <g>
+          <circle cx="130" cy="150" r="34" fill="#8e1f3d"/><path d="M130 128c-12 6-14 20-4 28 10-4 16-16 4-28Z" fill="#a8304f"/><circle cx="130" cy="150" r="10" fill="#74172f"/>
+          <circle cx="195" cy="148" r="34" fill="#c84b6a"/><circle cx="195" cy="148" r="10" fill="#a8304f"/>
+          <circle cx="160" cy="105" r="32" fill="#e88aa0"/><circle cx="160" cy="105" r="9" fill="#c84b6a"/>
+          <circle cx="100" cy="190" r="24" fill="#fff"/><circle cx="100" cy="190" r="7" fill="#f2c94c"/>
+          <circle cx="222" cy="192" r="24" fill="#fff"/><circle cx="222" cy="192" r="7" fill="#f2c94c"/>
+        </g>
+        <path d="M120 245h80l-12 50h-56z" fill="#8e1f3d"/><path d="M118 245h84" stroke="#74172f" stroke-width="6" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="shop" id="shop">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="eyebrow" data-en="Favorites" data-es="Favoritos">Favorites</p><h2 data-en="Arrangements" data-es="Arreglos">Arrangements</h2></div>
+        <p data-en="Pick a favorite or send us a picture. We'll make it in your colors." data-es="Escoge un favorito o mándanos una foto. Lo hacemos en tus colores.">Pick a favorite or send us a picture. We'll make it in your colors.</p>
+      </div>
+      <div class="products">
+        <div class="prod"><div class="prod__img" style="background:#f4d6d9"><svg width="110" height="110" viewBox="0 0 100 100"><path d="M50 95L40 55M50 95V52M50 95l10-40" stroke="#5f7a62" stroke-width="3"/><circle cx="38" cy="45" r="14" fill="#8e1f3d"/><circle cx="62" cy="45" r="14" fill="#c84b6a"/><circle cx="50" cy="30" r="14" fill="#e88aa0"/><path d="M35 70h30l-6 25H41z" fill="#fff" opacity=".9"/></svg></div><div class="prod__body"><h3 data-en="Designer's Choice" data-es="A elección del diseñador">Designer's Choice</h3><p data-en="We pick the freshest flowers of the day. 3 sizes." data-es="Escogemos las flores más frescas del día. 3 tamaños.">We pick the freshest flowers of the day. 3 sizes.</p><span class="price">$80 – $120</span></div></div>
+        <div class="prod"><div class="prod__img" style="background:#e3ebe2"><svg width="110" height="110" viewBox="0 0 100 100"><path d="M50 95V50M50 95L38 58M50 95l12-37" stroke="#5f7a62" stroke-width="3"/><path d="M50 22l7 14 15 2-11 10 3 15-14-7-14 7 3-15-11-10 15-2z" fill="#fff" stroke="#e9d6a0"/><circle cx="34" cy="50" r="12" fill="#c84b6a"/><circle cx="66" cy="50" r="12" fill="#8e1f3d"/></svg></div><div class="prod__body"><h3 data-en="Lilies x Roses Bouquet" data-es="Ramo de lirios y rosas">Lilies x Roses Bouquet</h3><p data-en="White lilies mixed with roses." data-es="Lirios blancos mezclados con rosas.">White lilies mixed with roses.</p><span class="price">$150</span></div></div>
+        <div class="prod"><div class="prod__img" style="background:#f4d6d9"><svg width="110" height="110" viewBox="0 0 100 100"><rect x="34" y="58" width="32" height="36" rx="6" fill="#fff" opacity=".85"/><circle cx="36" cy="44" r="13" fill="#e88aa0"/><circle cx="64" cy="44" r="13" fill="#8e1f3d"/><circle cx="50" cy="30" r="13" fill="#fff"/><circle cx="50" cy="50" r="12" fill="#c84b6a"/></svg></div><div class="prod__body"><h3 data-en="Premium Mix Vase" data-es="Florero mixto premium">Premium Mix Vase</h3><p data-en="A full mix arranged in a vase, ready to gift." data-es="Una mezcla completa en florero, lista para regalar.">A full mix arranged in a vase, ready to gift.</p><span class="price">$80 – $160</span></div></div>
+        <div class="prod"><div class="prod__img" style="background:#e3ebe2"><svg width="110" height="110" viewBox="0 0 100 100"><path d="M50 95L42 55M50 95V52M50 95l8-40" stroke="#5f7a62" stroke-width="3"/><circle cx="40" cy="44" r="12" fill="#e88aa0"/><circle cx="60" cy="44" r="12" fill="#fff"/><circle cx="50" cy="30" r="12" fill="#c84b6a"/><path d="M30 62l20 33 20-33z" fill="#8e1f3d" opacity=".85"/></svg></div><div class="prod__body"><h3 data-en="Adore Me Mix Bouquet" data-es="Ramo mixto Adore Me">Adore Me Mix Bouquet</h3><p data-en="A sweet mixed bouquet for any occasion." data-es="Un ramo mixto para cualquier ocasión.">A sweet mixed bouquet for any occasion.</p><span class="price">$60 – $120</span></div></div>
+        <div class="prod"><div class="prod__img" style="background:#f4d6d9"><svg width="110" height="110" viewBox="0 0 100 100"><g fill="#8e1f3d"><circle cx="30" cy="40" r="9"/><circle cx="45" cy="34" r="9"/><circle cx="60" cy="34" r="9"/><circle cx="74" cy="40" r="9"/><circle cx="38" cy="52" r="9"/><circle cx="52" cy="48" r="9"/><circle cx="66" cy="52" r="9"/></g><path d="M28 62l22 33 22-33z" fill="#2a1d20" opacity=".85"/></svg></div><div class="prod__body"><h3 data-en="50 Rose Bouquet" data-es="Ramo de 50 rosas">50 Rose Bouquet</h3><p data-en="Fifty roses, wrapped and ready." data-es="Cincuenta rosas, envueltas y listas.">Fifty roses, wrapped and ready.</p><span class="price">$190</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="occasions" id="occasions">
+    <div class="wrap">
+      <p class="eyebrow" data-en="We do it all" data-es="Hacemos de todo">We do it all</p>
+      <h2 data-en="Occasions" data-es="Ocasiones">Occasions</h2>
+      <div class="occ">
+        <div><h3 data-en="Birthdays &amp; anniversaries" data-es="Cumpleaños y aniversarios">Birthdays &amp; anniversaries</h3><p data-en="Bouquets and vases in their favorite colors." data-es="Ramos y floreros en sus colores favoritos.">Bouquets and vases in their favorite colors.</p></div>
+        <div><h3 data-en="Graduation" data-es="Graduación">Graduation</h3><p data-en="Grad bouquets in school colors. Order early, they go fast." data-es="Ramos de graduación en los colores de la escuela. Ordena con tiempo.">Grad bouquets in school colors. Order early, they go fast.</p></div>
+        <div><h3 data-en="Funerals &amp; sympathy" data-es="Funerales y condolencias">Funerals &amp; sympathy</h3><p data-en="Standing hearts, sprays and arrangements, made with care." data-es="Corazones de pie, coronas y arreglos, hechos con cariño.">Standing hearts, sprays and arrangements, made with care.</p></div>
+        <div><h3 data-en="Burn-away roses" data-es="Rosas burn-away">Burn-away roses</h3><p data-en="The viral bouquet with a hidden message. Ask us!" data-es="El ramo viral con mensaje escondido. ¡Pregúntanos!">The viral bouquet with a hidden message. Ask us!</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="order" id="order">
+    <div class="wrap order__grid">
+      <div class="order__side">
+        <p class="eyebrow" data-en="Order" data-es="Ordena">Order</p>
+        <h2 data-en="Order in a minute" data-es="Ordena en un minuto">Order in a minute</h2>
+        <p data-en="Tell us what you want and when you need it. We'll text you to confirm the design and price." data-es="Dinos qué quieres y para cuándo. Te mandamos texto para confirmar diseño y precio.">Tell us what you want and when you need it. We'll text you to confirm the design and price.</p>
+        <ul>
+          <li data-en="50% deposit to lock in your order (non-refundable)" data-es="50% de depósito para apartar tu orden (no reembolsable)">50% deposit to lock in your order (non-refundable)</li>
+          <li data-en="Order ahead for holidays and graduations" data-es="Ordena con tiempo para fiestas y graduaciones">Order ahead for holidays and graduations</li>
+          <li>¡Hablamos español!</li>
+        </ul>
+      </div>
+      <form class="form" id="f" novalidate>
+        <fieldset>
+          <legend><span>1</span> <b data-en="What would you like?" data-es="¿Qué te gustaría?">What would you like?</b></legend>
+          <div class="chips">
+            <label><input type="radio" name="item" value="Designer's Choice" checked><span data-en="Designer's Choice" data-es="Elección del diseñador">Designer's Choice</span></label>
+            <label><input type="radio" name="item" value="Lilies x Roses"><span data-en="Lilies x Roses" data-es="Lirios y rosas">Lilies x Roses</span></label>
+            <label><input type="radio" name="item" value="Vase"><span data-en="Vase arrangement" data-es="Florero">Vase arrangement</span></label>
+            <label><input type="radio" name="item" value="50 roses"><span data-en="50 roses" data-es="50 rosas">50 roses</span></label>
+            <label><input type="radio" name="item" value="Funeral"><span data-en="Funeral / sympathy" data-es="Funeral">Funeral / sympathy</span></label>
+            <label><input type="radio" name="item" value="Custom"><span data-en="Something custom" data-es="Algo personalizado">Something custom</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><span>2</span> <b data-en="Colors" data-es="Colores">Colors</b></legend>
+          <div class="chips">
+            <label><input type="radio" name="col" value="Reds" checked><span data-en="Reds" data-es="Rojos">Reds</span></label>
+            <label><input type="radio" name="col" value="Pinks"><span data-en="Pinks" data-es="Rosas">Pinks</span></label>
+            <label><input type="radio" name="col" value="Whites"><span data-en="Whites" data-es="Blancos">Whites</span></label>
+            <label><input type="radio" name="col" value="Mix"><span data-en="Surprise me" data-es="Sorpréndeme">Surprise me</span></label>
+          </div>
+        </fieldset>
+        <div class="row2">
+          <label class="field"><span data-en="Pickup date" data-es="Fecha para recoger">Pickup date</span><input type="date" id="dt"></label>
+          <label class="field"><span data-en="Your phone" data-es="Tu teléfono">Your phone</span><input type="tel" id="ph" inputmode="tel" autocomplete="tel" placeholder="(760) 555-1234"></label>
+        </div>
+        <p class="err" id="err" role="alert" hidden data-en="Add a 10-digit phone number so we can text you." data-es="Agrega un teléfono de 10 dígitos para mandarte el texto.">Add a 10-digit phone number so we can text you.</p>
+        <button class="btn btn--full" type="submit" data-en="Send my order request" data-es="Enviar mi pedido">Send my order request</button>
+        <div class="done" id="done" hidden role="status">
+          <p class="done__t" data-en="Order request sent ✿" data-es="Pedido enviado ✿">Order request sent ✿</p>
+          <p id="doneTxt"></p>
+          <p class="sub" data-en="(Preview only: on the live site, this goes straight to the shop's phone.)" data-es="(Solo vista previa: en el sitio real, esto le llega directo al teléfono de la florería.)">(Preview only: on the live site, this goes straight to the shop's phone.)</p>
+          <button type="button" class="link" id="again" data-en="Order another" data-es="Ordenar otro">Order another</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap visit__grid">
+      <div>
+        <p class="eyebrow" data-en="When" data-es="Cuándo">When</p>
+        <h2 data-en="Hours" data-es="Horario">Hours</h2>
+        <table class="hours" id="hours">
+          <tr data-d="2,3,4,5,6"><th data-en="Tuesday – Saturday" data-es="Martes – Sábado">Tuesday – Saturday</th><td>9am – 5pm</td></tr>
+          <tr data-d="0"><th data-en="Sunday" data-es="Domingo">Sunday</th><td>10am – 3pm</td></tr>
+          <tr data-d="1"><th data-en="Monday" data-es="Lunes">Monday</th><td data-en="Closed" data-es="Cerrado">Closed</td></tr>
+        </table>
+      </div>
+      <div>
+        <p class="eyebrow" data-en="Where" data-es="Dónde">Where</p>
+        <h2 data-en="Visit the shop" data-es="Visita la florería">Visit the shop</h2>
+        <address>44100 Jefferson St, Suite C304<br>Indio, CA 92201</address>
+        <a class="phone-big" href="tel:+17605742197">(760) 574-2197</a>
+        <div class="cta"><a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&query=44100+Jefferson+St+C304+Indio+CA+92201" target="_blank" rel="noopener" data-en="Get directions" data-es="Cómo llegar">Get directions</a>
+        <a class="btn btn--ghost" href="https://www.instagram.com/passion.flowershop/" target="_blank" rel="noopener">Instagram</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <p>Passion Flower Shop · 44100 Jefferson St C304, Indio, CA</p>
+    <p data-en="Website preview by <a href='https://www.instagram.com/760webstudio/' target='_blank' rel='noopener'>760 Web Studio</a>" data-es="Vista previa por <a href='https://www.instagram.com/760webstudio/' target='_blank' rel='noopener'>760 Web Studio</a>">Website preview by <a href="https://www.instagram.com/760webstudio/" target="_blank" rel="noopener">760 Web Studio</a></p>
+  </div>
+</footer>
+<nav class="mbar" aria-label="Quick actions"><a href="tel:+17605742197" data-en="Call" data-es="Llamar">Call</a><a href="#order" data-en="Order" data-es="Ordenar">Order</a></nav>
+
+<script>
+(function(){
+  var lang='en',btn=document.getElementById('langBtn');
+  var H={0:[10,15],1:null,2:[9,17],3:[9,17],4:[9,17],5:[9,17],6:[9,17]};
+  function fmt(h){return (h%12||12)+(h>=12?'pm':'am');}
+  function la(){try{return new Date(new Date().toLocaleString('en-US',{timeZone:'America/Los_Angeles'}));}catch(e){return new Date();}}
+  function status(){var d=la(),day=d.getDay(),h=d.getHours()+d.getMinutes()/60,r=H[day],b=document.getElementById('openB');
+    var open=r&&h>=r[0]&&h<r[1];
+    b.textContent=open?(lang==='en'?'Open now · until '+fmt(r[1]):'Abierto · hasta las '+fmt(r[1])):(lang==='en'?'Closed now':'Cerrado ahora');
+    document.querySelectorAll('#hours tr').forEach(function(tr){tr.classList.toggle('today',tr.getAttribute('data-d').split(',').indexOf(String(day))>-1);});}
+  function apply(){document.documentElement.lang=lang;document.querySelectorAll('[data-en]').forEach(function(el){el.innerHTML=el.getAttribute('data-'+lang);});btn.textContent=lang==='en'?'Español':'English';btn.setAttribute('aria-label',lang==='en'?'Cambiar a español':'Switch to English');status();}
+  btn.addEventListener('click',function(){lang=lang==='en'?'es':'en';apply();});
+  var dt=document.getElementById('dt'),t=la();t.setDate(t.getDate()+2);dt.value=t.toISOString().slice(0,10);dt.min=la().toISOString().slice(0,10);
+  var f=document.getElementById('f'),ph=document.getElementById('ph'),err=document.getElementById('err'),done=document.getElementById('done');
+  function lbl(n){var x=f.querySelector('input[name='+n+']:checked');return x?x.nextElementSibling.textContent:'';}
+  function toggle(s){[].forEach.call(f.querySelectorAll('fieldset,.row2,button[type=submit]'),function(x){x.hidden=!s;});done.hidden=s;}
+  f.addEventListener('submit',function(e){e.preventDefault();var d=ph.value.replace(/\D/g,'');if(d.length!==10){err.hidden=false;ph.focus();return;}err.hidden=true;
+    var num='('+d.slice(0,3)+') '+d.slice(3,6)+'-'+d.slice(6),day=dt.value?new Date(dt.value+'T12:00').toLocaleDateString(lang==='en'?'en-US':'es-MX',{weekday:'short',month:'short',day:'numeric'}):'';
+    document.getElementById('doneTxt').textContent=lbl('item')+' · '+lbl('col')+(day?' · '+day:'')+'. '+(lang==='en'?'We’ll text '+num+' to confirm.':'Te mandamos texto al '+num+' para confirmar.');toggle(false);});
+  document.getElementById('again').addEventListener('click',function(){toggle(true);});
+  var h=document.querySelector('.header');window.addEventListener('scroll',function(){h.classList.toggle('is-scrolled',window.scrollY>30);},{passive:true});
+  apply();
+})();
+</script>
+</body>
+</html>

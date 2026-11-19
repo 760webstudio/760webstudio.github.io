@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Showcase Barbershop | Cuts &amp; fades in Indio</title>
+<meta name="description" content="Showcase Barbershop, 82900 Ave 42 Suite F102, Indio. Fades, cuts, beard line-ups and kids cuts. Tue–Sat. English y español.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e0e10;--surface:#17171a;--s2:#202024;--line:#2d2d33;--text:#f3f1ec;--muted:#a19d95;--red:#d7263d;--red-d:#b81d32;--blue:#2f6fdb;
+  --display:'Oswald',Impact,sans-serif;--sans:'Inter',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:64px}
+@media(min-width:800px){body{padding-bottom:0}}
+a{color:inherit}
+.wrap{width:min(100% - 2.5rem,1140px);margin-inline:auto}
+h1,h2{font-family:var(--display);font-weight:700;text-transform:uppercase;line-height:.95;letter-spacing:.005em}
+h2{font-size:clamp(2.4rem,1.6rem + 3vw,3.8rem)}
+h3{font-size:1.05rem;font-weight:700}
+.eyebrow{font:600 .8rem var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--red)}
+.pole{height:10px;background:repeating-linear-gradient(-45deg,var(--red) 0 14px,#fff 14px 28px,var(--blue) 28px 42px,#fff 42px 56px)}
+.demo-bar{background:#fff;color:#111;font-size:.8rem;text-align:center;padding:.5rem 1rem}
+.demo-bar a{color:var(--red);font-weight:700}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--red);color:#fff;border:0;border-radius:6px;padding:.85rem 1.4rem;font:700 1rem var(--sans);text-decoration:none;cursor:pointer;transition:background .18s}
+.btn:hover{background:var(--red-d)}
+.btn--ghost{background:transparent;box-shadow:inset 0 0 0 1.5px var(--text)}
+.btn--ghost:hover{background:var(--text);color:#111}
+.btn--sm{padding:.55rem .95rem;font-size:.9rem}
+.btn--full{width:100%}
+.header{position:sticky;top:0;z-index:20;background:rgba(14,14,16,.9);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+.header.is-scrolled{border-bottom-color:var(--line)}
+.header__in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.75rem}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none}
+.brand b{font:700 1.45rem var(--display);text-transform:uppercase;letter-spacing:.04em;line-height:1}
+.brand small{display:block;font:600 .66rem var(--sans);letter-spacing:.2em;color:var(--muted)}
+.nav{display:none;gap:1.8rem;font-size:.95rem}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--text)}
+@media(min-width:860px){.nav{display:flex}}
+.header__act{display:flex;gap:.6rem;align-items:center}
+.lang{background:none;border:1.5px solid var(--line);border-radius:6px;padding:.45rem .8rem;font:700 .8rem var(--sans);cursor:pointer;color:var(--text)}
+.hide-sm{display:none}
+@media(min-width:800px){.hide-sm{display:inline-flex}}
+.hero{padding-block:4rem 4.5rem;background:radial-gradient(ellipse at 90% 0%,rgba(215,38,61,.18),transparent 55%),radial-gradient(ellipse at 0% 100%,rgba(47,111,219,.15),transparent 55%)}
+.hero__in{display:grid;gap:2.5rem;align-items:center}
+@media(min-width:900px){.hero__in{grid-template-columns:1.2fr .8fr}}
+.hero h1{font-size:clamp(3.4rem,1.4rem + 8vw,7.6rem);margin:.7rem 0 1rem}
+.hero h1 span{color:var(--red)}
+.lede{font-size:1.15rem;color:var(--muted);max-width:38ch}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.8rem}
+.status{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;font-size:.9rem}
+.status i{width:8px;height:8px;border-radius:50%;background:#3ccf7a;box-shadow:0 0 0 4px rgba(60,207,122,.18)}
+.status.closed i{background:#777;box-shadow:none}
+.hero__art{max-width:300px;width:100%;justify-self:center}
+.prices{padding-block:4.5rem;background:var(--surface);border-block:1px solid var(--line)}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:1rem;margin-bottom:2rem}
+.sec-head p{color:var(--muted);max-width:42ch}
+.menu{list-style:none;display:grid;gap:0;border-top:1px solid var(--line)}
+@media(min-width:800px){.menu{grid-template-columns:1fr 1fr;column-gap:3rem}}
+.menu li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:1.1rem 0;border-bottom:1px solid var(--line)}
+.menu li p{color:var(--muted);font-size:.9rem}
+.menu b{font:700 1.5rem var(--display);white-space:nowrap}
+.note{color:var(--muted);font-size:.9rem;margin-top:1.2rem}
+.team{padding-block:4.5rem}
+.grid{display:grid;gap:.9rem;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));margin-top:2rem}
+.barber{display:flex;gap:.9rem;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.1rem;text-decoration:none;transition:border-color .2s,transform .2s}
+.barber:hover{border-color:var(--red);transform:translateY(-2px)}
+.barber .av{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--red),var(--blue));display:grid;place-items:center;font:700 1.2rem var(--display);flex:none}
+.barber p{color:var(--muted);font-size:.82rem}
+.book{padding-block:4.5rem;background:var(--surface);border-block:1px solid var(--line)}
+.book__grid{display:grid;gap:2.5rem}
+@media(min-width:900px){.book__grid{grid-template-columns:.85fr 1.15fr;align-items:start}}
+.book__side p{color:var(--muted);margin-top:1rem;max-width:36ch}
+.call{display:inline-block;margin-top:1.4rem;font:700 2.2rem var(--display);color:var(--text);text-decoration:none}
+.form{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:1.6rem;display:grid;gap:1.3rem}
+fieldset{border:0;display:grid;gap:.6rem}
+legend{font-weight:700;margin-bottom:.6rem;display:flex;align-items:center;gap:.5rem}
+legend span{width:24px;height:24px;border-radius:5px;background:var(--red);font-size:.8rem;display:grid;place-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.chips label{cursor:pointer}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips span{display:inline-block;border:1.5px solid var(--line);border-radius:6px;padding:.5rem .85rem;font-size:.9rem;transition:all .15s}
+.chips input:checked+span{background:var(--text);border-color:var(--text);color:#111}
+.chips input:focus-visible+span{outline:2px solid var(--red);outline-offset:2px}
+.field{display:grid;gap:.4rem;font-size:.9rem;font-weight:600}
+.field input{font:1rem var(--sans);padding:.8rem 1rem;border:1.5px solid var(--line);border-radius:8px;background:var(--s2);color:var(--text)}
+.field input:focus{outline:none;border-color:var(--red)}
+.err{color:#ff7b72;font-size:.9rem}
+.done{text-align:center;padding:1rem 0}
+.done__t{font:700 2.2rem var(--display);text-transform:uppercase;margin-bottom:.4rem}
+.done p{color:var(--muted)}
+.link{background:none;border:0;color:var(--red);font:700 .95rem var(--sans);cursor:pointer;margin-top:1rem;text-decoration:underline}
+.visit{padding-block:4.5rem}
+.visit__grid{display:grid;gap:2.5rem}
+@media(min-width:900px){.visit__grid{grid-template-columns:1fr 1fr}}
+.hours{width:100%;border-collapse:collapse;margin-top:1.2rem}
+.hours th,.hours td{padding:.85rem 0;border-bottom:1px solid var(--line);text-align:left;font-weight:600}
+.hours td{text-align:right;color:var(--muted)}
+.hours tr.today th,.hours tr.today td{color:var(--red)}
+address{font-style:normal;font-size:1.25rem;font-weight:600;margin-top:1.2rem}
+.sub{color:var(--muted);font-size:.95rem;margin-top:.35rem}
+.footer{border-top:1px solid var(--line);padding-block:2rem;font-size:.9rem;color:var(--muted)}
+.footer__in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem}
+.footer a{color:var(--red)}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr;background:#000;border-top:1px solid var(--line)}
+.mbar a{color:#fff;text-align:center;padding:1.05rem;font-weight:700;text-decoration:none}
+.mbar a+a{background:var(--red)}
+@media(min-width:800px){.mbar{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><span data-en="Free website preview made for Showcase Barbershop by <a href='https://www.instagram.com/760webstudio/' target='_blank' rel='noopener'>760 Web Studio</a>." data-es="Vista previa gratis hecha para Showcase Barbershop por <a href='https://www.instagram.com/760webstudio/' target='_blank' rel='noopener'>760 Web Studio</a>.">Free website preview made for Showcase Barbershop by <a href="https://www.instagram.com/760webstudio/" target="_blank" rel="noopener">760 Web Studio</a>.</span></div>
+<div class="pole" aria-hidden="true"></div>
+<header class="header">
+  <div class="wrap header__in">
+    <a class="brand" href="#top" aria-label="Showcase Barbershop, home">
+      <svg width="30" height="30" viewBox="0 0 40 40" aria-hidden="true"><rect x="13" y="3" width="14" height="34" rx="7" fill="none" stroke="#f3f1ec" stroke-width="2.5"/><path d="M13 11l14 6M13 19l14 6M13 27l9 4" stroke="#d7263d" stroke-width="2.5"/></svg>
+      <span><b>Showcase</b><small>BARBERSHOP · INDIO</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#prices" data-en="Prices" data-es="Precios">Prices</a>
+      <a href="#team" data-en="Barbers" data-es="Barberos">Barbers</a>
+      <a href="#book" data-en="Book" data-es="Reservar">Book</a>
+      <a href="#visit" data-en="Hours" data-es="Horario">Hours</a>
+    </nav>
+    <div class="header__act">
+      <button class="lang" id="langBtn" type="button" aria-label="Cambiar a español">Español</button>
+      <a class="btn btn--sm hide-sm" href="#book" data-en="Book a cut" data-es="Reserva">Book a cut</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero__in">
+      <div>
+        <p class="status" id="st"><i aria-hidden="true"></i><span id="stT">Open today</span></p>
+        <h1><span data-en="Come sit" data-es="Siéntate">Come sit</span><br><span data-en="in our chair." data-es="en nuestra silla.">in our chair.</span></h1>
+        <p class="lede" data-en="A full crew of barbers on Avenue 42 in Indio. Fades, tapers, beard line-ups and kids cuts. Pick your barber and book in seconds." data-es="Un equipo completo de barberos en la Avenida 42 en Indio. Fades, tapers, barba y cortes para niños. Escoge tu barbero y reserva en segundos.">A full crew of barbers on Avenue 42 in Indio. Fades, tapers, beard line-ups and kids cuts. Pick your barber and book in seconds.</p>
+        <div class="cta">
+          <a class="btn" href="#book" data-en="Book a cut" data-es="Reserva tu corte">Book a cut</a>
+          <a class="btn btn--ghost" href="tel:+14422828853">(442) 282-8853</a>
+        </div>
+      </div>
+      <svg class="hero__art" viewBox="0 0 200 300" aria-hidden="true">
+        <rect x="70" y="10" width="60" height="16" rx="6" fill="#a19d95"/>
+        <rect x="70" y="274" width="60" height="16" rx="6" fill="#a19d95"/>
+        <defs><clipPath id="c"><rect x="76" y="26" width="48" height="248" rx="24"/></clipPath>
+        <pattern id="s" width="48" height="72" patternUnits="userSpaceOnUse" patternTransform="skewY(-30)"><rect width="48" height="72" fill="#fff"/><rect y="0" width="48" height="18" fill="#d7263d"/><rect y="36" width="48" height="18" fill="#2f6fdb"/></pattern></defs>
+        <g clip-path="url(#c)"><rect x="76" y="26" width="48" height="248" fill="url(#s)"/></g>
+        <rect x="76" y="26" width="48" height="248" rx="24" fill="none" stroke="#f3f1ec" stroke-width="3"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="prices" id="prices">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="eyebrow" data-en="Menu" data-es="Menú">Menu</p><h2 data-en="Prices" data-es="Precios">Prices</h2></div>
+        <p data-en="Prices can vary a little by barber. Ask yours when you book." data-es="Los precios pueden variar un poco según el barbero. Pregúntale al tuyo.">Prices can vary a little by barber. Ask yours when you book.</p>
+      </div>
+      <ul class="menu" role="list">
+        <li><div><h3 data-en="Haircut" data-es="Corte">Haircut</h3><p data-en="Fades, tapers, scissor cuts" data-es="Fades, tapers, corte con tijera">Fades, tapers, scissor cuts</p></div><b data-en="from $35" data-es="desde $35">from $35</b></li>
+        <li><div><h3 data-en="Haircut + beard line-up" data-es="Corte + línea de barba">Haircut + beard line-up</h3><p data-en="Clean edges, shaped beard" data-es="Orillas limpias, barba con forma">Clean edges, shaped beard</p></div><b data-en="from $40" data-es="desde $40">from $40</b></li>
+        <li><div><h3 data-en="Kids (10 &amp; under)" data-es="Niños (10 y menos)">Kids (10 &amp; under)</h3><p data-en="Patient barbers, quick cuts" data-es="Con paciencia y rápido">Patient barbers, quick cuts</p></div><b>$30</b></li>
+        <li><div><h3 data-en="Seniors" data-es="Personas mayores">Seniors</h3><p data-en="Ask for the senior price" data-es="Pregunta por el precio de mayores">Ask for the senior price</p></div><b data-en="from $20" data-es="desde $20">from $20</b></li>
+      </ul>
+      <p class="note" data-en="Cash preferred by some barbers." data-es="Algunos barberos prefieren efectivo.">Cash preferred by some barbers.</p>
+    </div>
+  </section>
+
+  <section class="team" id="team">
+    <div class="wrap">
+      <p class="eyebrow" data-en="The crew" data-es="El equipo">The crew</p>
+      <h2 data-en="Our barbers" data-es="Nuestros barberos">Our barbers</h2>
+      <div class="grid">
+        <a class="barber" href="https://www.instagram.com/raymond_760barber/" target="_blank" rel="noopener"><span class="av">R</span><div><h3>@raymond_760barber</h3><p data-en="See their cuts →" data-es="Ver sus cortes →">See their cuts →</p></div></a>
+        <a class="barber" href="https://www.instagram.com/chapocutz/" target="_blank" rel="noopener"><span class="av">C</span><div><h3>@chapocutz</h3><p data-en="See their cuts →" data-es="Ver sus cortes →">See their cuts →</p></div></a>
+        <a class="barber" href="https://www.instagram.com/barbered2025/" target="_blank" rel="noopener"><span class="av">E</span><div><h3>@barbered2025</h3><p data-en="See their cuts →" data-es="Ver sus cortes →">See their cuts →</p></div></a>
+        <a class="barber" href="https://www.instagram.com/clipzthecutman/" target="_blank" rel="noopener"><span class="av">C</span><div><h3>@clipzthecutman</h3><p data-en="See their cuts →" data-es="Ver sus cortes →">See their cuts →</p></div></a>
+        <a class="barber" href="https://www.instagram.com/indio06/" target="_blank" rel="noopener"><span class="av">I</span><div><h3>@indio06</h3><p data-en="See their cuts →" data-es="Ver sus cortes →">See their cuts →</p></div></a>
+        <a class="barber" href="https://www.instagram.com/statikblendz/" target="_blank" rel="noopener"><span class="av">S</span><div><h3>@statikblendz</h3><p data-en="See their cuts →" data-es="Ver sus cortes →">See their cuts →</p></div></a>
+        <a class="barber" href="https://www.instagram.com/4tb_blends/" target="_blank" rel="noopener"><span class="av">4</span><div><h3>@4tb_blends</h3><p data-en="See their cuts →" data-es="Ver sus cortes →">See their cuts →</p></div></a>
+        <a class="barber" href="https://www.instagram.com/samuellmendoza95/" target="_blank" rel="noopener"><span class="av">S</span><div><h3>@samuellmendoza95</h3><p data-en="See their cuts →" data-es="Ver sus cortes →">See their cuts →</p></div></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="book" id="book">
+    <div class="wrap book__grid">
+      <div class="book__side">
+        <p class="eyebrow" data-en="Book" data-es="Reserva">Book</p>
+        <h2 data-en="Book in 3 taps" data-es="Reserva en 3 toques">Book in 3 taps</h2>
+        <p data-en="Pick a service, a barber and a time. We'll text you to confirm." data-es="Escoge servicio, barbero y hora. Te mandamos texto para confirmar.">Pick a service, a barber and a time. We'll text you to confirm.</p>
+        <a class="call" href="tel:+14422828853">(442) 282-8853</a>
+      </div>
+      <form class="form" id="f" novalidate>
+        <fieldset>
+          <legend><span>1</span> <b data-en="Service" data-es="Servicio">Service</b></legend>
+          <div class="chips">
+            <label><input type="radio" name="svc" checked><span data-en="Haircut" data-es="Corte">Haircut</span></label>
+            <label><input type="radio" name="svc"><span data-en="Cut + beard" data-es="Corte + barba">Cut + beard</span></label>
+            <label><input type="radio" name="svc"><span data-en="Kids" data-es="Niños">Kids</span></label>
+            <label><input type="radio" name="svc"><span data-en="Senior" data-es="Mayores">Senior</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><span>2</span> <b data-en="Barber" data-es="Barbero">Barber</b></legend>
+          <div class="chips">
+            <label><input type="radio" name="brb" checked><span data-en="First available" data-es="El primero libre">First available</span></label>
+            <label><input type="radio" name="brb"><span>Raymond</span></label>
+            <label><input type="radio" name="brb"><span>Chapo</span></label>
+            <label><input type="radio" name="brb"><span>Ed</span></label>
+            <label><input type="radio" name="brb"><span>Clipz</span></label>
+            <label><input type="radio" name="brb"><span data-en="Other" data-es="Otro">Other</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><span>3</span> <b data-en="When" data-es="Cuándo">When</b></legend>
+          <div class="chips">
+            <label><input type="radio" name="when" checked><span data-en="Today" data-es="Hoy">Today</span></label>
+            <label><input type="radio" name="when"><span data-en="Tomorrow" data-es="Mañana">Tomorrow</span></label>
+            <label><input type="radio" name="when"><span data-en="Saturday" data-es="Sábado">Saturday</span></label>
+          </div>
+          <div class="chips">
+            <label><input type="radio" name="tod" checked><span data-en="Morning" data-es="Mañana">Morning</span></label>
+            <label><input type="radio" name="tod"><span data-en="Afternoon" data-es="Tarde">Afternoon</span></label>
+          </div>
+        </fieldset>
+        <label class="field"><span data-en="Your phone" data-es="Tu teléfono">Your phone</span><input type="tel" id="ph" inputmode="tel" autocomplete="tel" placeholder="(760) 555-1234"></label>
+        <p class="err" id="err" role="alert" hidden data-en="Add a 10-digit phone number so we can text you." data-es="Agrega un teléfono de 10 dígitos para mandarte el texto.">Add a 10-digit phone number so we can text you.</p>
+        <button class="btn btn--full" type="submit" data-en="Request my cut" data-es="Pedir mi corte">Request my cut</button>
+        <div class="done" id="done" hidden role="status">
+          <p class="done__t" data-en="You're on the list" data-es="Ya estás en la lista">You're on the list</p>
+          <p id="doneTxt"></p>
+          <p class="sub" data-en="(Preview only: on the live site, this goes straight to the shop's phone.)" data-es="(Solo vista previa: en el sitio real, esto le llega directo al teléfono de la barbería.)">(Preview only: on the live site, this goes straight to the shop's phone.)</p>
+          <button type="button" class="link" id="again" data-en="Book another" data-es="Reservar otro">Book another</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap visit__grid">
+      <div>
+        <p class="eyebrow" data-en="When" data-es="Cuándo">When</p>
+        <h2 data-en="Hours" data-es="Horario">Hours</h2>
+        <table class="hours" id="hours">
+          <tr data-d="2,3,4,5"><th data-en="Tuesday – Friday" data-es="Martes – Viernes">Tuesday – Friday</th><td>9am – 6pm</td></tr>
+          <tr data-d="6"><th data-en="Saturday" data-es="Sábado">Saturday</th><td>9am – 4pm</td></tr>
+          <tr data-d="0,1"><th data-en="Sunday – Monday" data-es="Domingo – Lunes">Sunday – Monday</th><td data-en="Closed" data-es="Cerrado">Closed</td></tr>
+        </table>
+      </div>
+      <div>
+        <p class="eyebrow" data-en="Where" data-es="Dónde">Where</p>
+        <h2 data-en="Find us" data-es="Encuéntranos">Find us</h2>
+        <address>82900 Avenue 42, Suite F102<br>Indio, CA 92203</address>
+        <div class="cta"><a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&query=82900+Avenue+42+Suite+F102+Indio+CA+92203" target="_blank" rel="noopener" data-en="Get directions" data-es="Cómo llegar">Get directions</a>
+        <a class="btn btn--ghost" href="https://www.instagram.com/showcase_barbershop_/" target="_blank" rel="noopener">Instagram</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <p>Showcase Barbershop · 82900 Ave 42 Suite F102, Indio, CA</p>
+    <p data-en="Website preview by <a href='https://www.instagram.com/760webstudio/' target='_blank' rel='noopener'>760 Web Studio</a>" data-es="Vista previa por <a href='https://www.instagram.com/760webstudio/' target='_blank' rel='noopener'>760 Web Studio</a>">Website preview by <a href="https://www.instagram.com/760webstudio/" target="_blank" rel="noopener">760 Web Studio</a></p>
+  </div>
+</footer>
+<nav class="mbar" aria-label="Quick actions"><a href="tel:+14422828853" data-en="Call" data-es="Llamar">Call</a><a href="#book" data-en="Book" data-es="Reservar">Book</a></nav>
+
+<script>
+(function(){
+  var lang='en',btn=document.getElementById('langBtn');
+  var H={0:null,1:null,2:[9,18],3:[9,18],4:[9,18],5:[9,18],6:[9,16]};
+  function fmt(h){return (h%12||12)+(h>=12?'pm':'am');}
+  function la(){try{return new Date(new Date().toLocaleString('en-US',{timeZone:'America/Los_Angeles'}));}catch(e){return new Date();}}
+  function status(){var d=la(),day=d.getDay(),h=d.getHours()+d.getMinutes()/60,r=H[day],open=r&&h>=r[0]&&h<r[1];
+    document.getElementById('st').classList.toggle('closed',!open);
+    document.getElementById('stT').textContent=open?(lang==='en'?'Open now · until '+fmt(r[1]):'Abierto · hasta las '+fmt(r[1])):(lang==='en'?'Closed now':'Cerrado ahora');
+    document.querySelectorAll('#hours tr').forEach(function(tr){tr.classList.toggle('today',tr.getAttribute('data-d').split(',').indexOf(String(day))>-1);});}
+  function apply(){document.documentElement.lang=lang;document.querySelectorAll('[data-en]').forEach(function(el){el.innerHTML=el.getAttribute('data-'+lang);});btn.textContent=lang==='en'?'Español':'English';btn.setAttribute('aria-label',lang==='en'?'Cambiar a español':'Switch to English');status();}
+  btn.addEventListener('click',function(){lang=lang==='en'?'es':'en';apply();});
+  var f=document.getElementById('f'),ph=document.getElementById('ph'),err=document.getElementById('err'),done=document.getElementById('done');
+  function lbl(n){var x=f.querySelector('input[name='+n+']:checked');return x?x.nextElementSibling.textContent:'';}
+  function toggle(s){[].forEach.call(f.querySelectorAll('fieldset,.field,button[type=submit]'),function(x){x.hidden=!s;});done.hidden=s;}
+  f.addEventListener('submit',function(e){e.preventDefault();var d=ph.value.replace(/\D/g,'');if(d.length!==10){err.hidden=false;ph.focus();return;}err.hidden=true;
+    var num='('+d.slice(0,3)+') '+d.slice(3,6)+'-'+d.slice(6);
+    document.getElementById('doneTxt').textContent=lbl('svc')+' · '+lbl('brb')+' · '+lbl('when')+', '+lbl('tod').toLowerCase()+'. '+(lang==='en'?'We’ll text '+num+' to confirm.':'Te mandamos texto al '+num+' para confirmar.');toggle(false);});
+  document.getElementById('again').addEventListener('click',function(){toggle(true);});
+  var hd=document.querySelector('.header');window.addEventListener('scroll',function(){hd.classList.toggle('is-scrolled',window.scrollY>30);},{passive:true});
+  apply();
+})();
+</script>
+</body>
+</html>

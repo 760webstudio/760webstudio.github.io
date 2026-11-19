@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>760 Web Studio | Websites for Coachella Valley businesses</title>
+<meta name="description" content="Bilingual (English/Spanish) websites for Coachella Valley small businesses. We build your site first, free. You only pay if you like it.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800,900&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+<style>
+:root{--sand:#f3ece0;--ink:#17140f;--orange:#e8572a;--orange-d:#cc4519;--muted:#6b6357;--line:#e0d6c5;--card:#fbf7f0;
+  --display:'Cabinet Grotesk','Arial Narrow',sans-serif;--sans:'Satoshi',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{background:var(--sand);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{width:min(100% - 2.5rem,1120px);margin-inline:auto}
+h1,h2{font-family:var(--display);font-weight:900;letter-spacing:-.02em;line-height:.95}
+h2{font-size:clamp(2.2rem,1.5rem + 3vw,3.6rem)}
+h3{font:800 1.3rem var(--display)}
+.tag{font:700 .78rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--orange)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:var(--orange);color:#fff;border-radius:999px;padding:.9rem 1.5rem;font:700 1rem var(--sans);text-decoration:none;transition:background .18s}
+.btn:hover{background:var(--orange-d)}
+.btn--ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+.btn--ghost:hover{background:var(--ink);color:var(--sand)}
+.header{padding-block:1.1rem}
+.header__in{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{display:flex;align-items:center;gap:.6rem;text-decoration:none}
+.logo span{width:44px;height:44px;border-radius:12px;background:var(--orange);color:#fff;display:grid;place-items:center;font:900 1.05rem var(--display)}
+.logo b{font:900 1.3rem var(--display)}
+.lang{background:none;border:2px solid var(--ink);border-radius:999px;padding:.4rem .85rem;font:700 .85rem var(--sans);cursor:pointer;color:var(--ink)}
+.hero{padding-block:3.5rem 5rem}
+.hero h1{font-size:clamp(3.2rem,1.4rem + 7.5vw,7.4rem);margin:1rem 0 1.4rem}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.lede{font-size:1.25rem;color:var(--muted);max-width:40ch}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.how{padding-block:4.5rem;background:var(--ink);color:var(--sand)}
+.how .tag{color:#ff8a5c}
+.steps{display:grid;gap:1.5rem;margin-top:2.4rem;counter-reset:s}
+@media(min-width:820px){.steps{grid-template-columns:repeat(3,1fr)}}
+.steps div{border-top:2px solid #3a342b;padding-top:1.2rem;counter-increment:s}
+.steps div::before{content:counter(s,decimal-leading-zero);font:900 2.4rem var(--display);color:var(--orange);display:block;margin-bottom:.4rem}
+.steps p{color:#bdb3a3;margin-top:.4rem}
+.samples{padding-block:4.5rem}
+.grid{display:grid;gap:1rem;margin-top:2rem}
+@media(min-width:820px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:1.6rem;text-decoration:none;display:flex;flex-direction:column;gap:.5rem;transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-3px);border-color:var(--orange)}
+.card p{color:var(--muted);font-size:.97rem}
+.card i{font-style:normal;color:var(--orange);font-weight:700;margin-top:auto}
+.what{padding-block:4.5rem;background:var(--card);border-block:1px solid var(--line)}
+.list{list-style:none;display:grid;gap:.8rem;margin-top:1.8rem}
+@media(min-width:820px){.list{grid-template-columns:1fr 1fr;column-gap:3rem}}
+.list li{display:flex;gap:.8rem;align-items:baseline}
+.list li::before{content:"✓";color:var(--orange);font-weight:900}
+.price{padding-block:4.5rem}
+.price__in{display:grid;gap:1rem}
+@media(min-width:820px){.price__in{grid-template-columns:1fr 1fr}}
+.pbox{border:2px solid var(--ink);border-radius:20px;padding:1.8rem}
+.pbox b{display:block;font:900 2.6rem var(--display);margin:.4rem 0}
+.pbox p{color:var(--muted)}
+.contact{padding-block:5rem;background:var(--orange);color:#fff;text-align:center}
+.contact h2{font-size:clamp(2.4rem,1.6rem + 3.5vw,4.4rem)}
+.contact p{max-width:42ch;margin:1rem auto 0;color:#ffe2d6}
+.contact .cta{justify-content:center}
+.contact .btn{background:#fff;color:var(--orange)}
+.contact .btn--ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px #fff}
+.work{padding-block:4.5rem}
+.feature{display:grid;gap:1.6rem;margin-top:2rem;background:#fff5f8;border:2px solid #f3c9d6;border-radius:24px;padding:2rem;text-decoration:none;transition:transform .2s,border-color .2s}
+.feature:hover{transform:translateY(-3px);border-color:#e86a92}
+@media(min-width:820px){.feature{grid-template-columns:auto 1fr;align-items:center;padding:2.4rem}}
+.feature .bubble{width:120px;height:120px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ff8fb0,#d93a6a);display:grid;place-items:center;font-size:3.4rem}
+.feature h3{font-size:2rem;color:#c2295a}
+.feature p{color:var(--muted);margin-top:.4rem;max-width:52ch}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1rem}
+.chips span{background:#fff;border:1px solid #f3c9d6;border-radius:999px;padding:.3rem .75rem;font-size:.85rem;font-weight:700;color:#c2295a}
+.feature i{font-style:normal;font-weight:700;color:var(--orange);display:inline-block;margin-top:1rem}
+.footer{padding-block:2rem;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="wrap header__in">
+    <a class="logo" href="#top"><span>760</span><b>Web Studio</b></a>
+    <button class="lang" id="langBtn" type="button">Español</button>
+  </div>
+</header>
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <p class="tag" data-en="Coachella Valley · English y español" data-es="Valle de Coachella · English y español">Coachella Valley · English y español</p>
+      <h1><span data-en="Your website," data-es="Tu página web,">Your website,</span><br><em data-en="built first." data-es="hecha primero.">built first.</em></h1>
+      <p class="lede" data-en="We make websites for local businesses: restaurants, barbers, auto shops, trades and more. We build yours for free first. You only pay if you like it." data-es="Hacemos páginas web para negocios locales: restaurantes, barberías, talleres, oficios y más. Hacemos la tuya gratis primero. Solo pagas si te gusta.">We make websites for local businesses: restaurants, barbers, auto shops, trades and more. We build yours for free first. You only pay if you like it.</p>
+      <div class="cta">
+        <a class="btn" href="https://www.instagram.com/760webstudio/" target="_blank" rel="noopener" data-en="DM us &quot;DEMO&quot;" data-es="Mándanos &quot;DEMO&quot;">DM us "DEMO"</a>
+        <a class="btn btn--ghost" href="#work" data-en="See our work" data-es="Ver nuestro trabajo">See our work</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="how">
+    <div class="wrap">
+      <p class="tag" data-en="How it works" data-es="Cómo funciona">How it works</p>
+      <h2 data-en="Three easy steps" data-es="Tres pasos fáciles">Three easy steps</h2>
+      <div class="steps">
+        <div><h3 data-en="Send us the basics" data-es="Mándanos lo básico">Send us the basics</h3><p data-en="A photo of your sign or logo, your menu or prices, and your hours." data-es="Una foto de tu letrero o logo, tu menú o precios, y tu horario.">A photo of your sign or logo, your menu or prices, and your hours.</p></div>
+        <div><h3 data-en="We build it free" data-es="La hacemos gratis">We build it free</h3><p data-en="You get a real, working website made for your business, in English and Spanish." data-es="Recibes una página real que funciona, hecha para tu negocio, en inglés y español.">You get a real, working website made for your business, in English and Spanish.</p></div>
+        <div><h3 data-en="Like it? Go live" data-es="¿Te gusta? En línea">Like it? Go live</h3><p data-en="If you love it, we put it online and keep it updated. If not, no worries." data-es="Si te encanta, la ponemos en línea y la mantenemos al día. Si no, no pasa nada.">If you love it, we put it online and keep it updated. If not, no worries.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="wrap">
+      <p class="tag" data-en="Our work" data-es="Nuestro trabajo">Our work</p>
+      <h2 data-en="Real clients, real orders" data-es="Clientes reales, pedidos reales">Real clients, real orders</h2>
+      <a class="feature" href="https://fresasbybel.pplx.app" target="_blank" rel="noopener">
+        <span class="bubble" aria-hidden="true">🍓</span>
+        <div>
+          <h3>Fresasbybel</h3>
+          <p data-en="Chocolate-dipped strawberries and treats in the High Desert. Customers send order requests and inspo pics right from the site, with menu, prices and deposit info all in one place." data-es="Fresas y postres cubiertos de chocolate en el High Desert. Los clientes mandan su pedido y fotos de inspiración desde la página, con menú, precios e información del depósito en un solo lugar.">Chocolate-dipped strawberries and treats in the High Desert. Customers send order requests and inspo pics right from the site, with menu, prices and deposit info all in one place.</p>
+          <div class="chips"><span data-en="Order form" data-es="Formulario de pedidos">Order form</span><span data-en="Inspo uploads" data-es="Fotos de inspo">Inspo uploads</span><span data-en="Menu &amp; prices" data-es="Menú y precios">Menu &amp; prices</span><span data-en="Orders dashboard" data-es="Panel de pedidos">Orders dashboard</span></div>
+          <i data-en="Visit the site →" data-es="Ver la página →">Visit the site →</i>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="samples" id="samples">
+    <div class="wrap">
+      <p class="tag" data-en="Sample sites" data-es="Ejemplos">Sample sites</p>
+      <h2 data-en="See what we make" data-es="Mira lo que hacemos">See what we make</h2>
+      <div class="grid">
+        <a class="card" href="sample-taqueria/"><h3>La Palma Taquería</h3><p data-en="Menu, hours, order button, English y español." data-es="Menú, horario, botón para ordenar, English y español.">Menu, hours, order button, English y español.</p><i data-en="Open sample →" data-es="Ver ejemplo →">Open sample →</i></a>
+        <a class="card" href="sample-barber/"><h3>Desert Fade Barbershop</h3><p data-en="Prices, barbers and booking in 3 taps." data-es="Precios, barberos y citas en 3 toques.">Prices, barbers and booking in 3 taps.</p><i data-en="Open sample →" data-es="Ver ejemplo →">Open sample →</i></a>
+        <a class="card" href="sample-hvac/"><h3>Oasis Air HVAC</h3><p data-en="Quote form and a big call button." data-es="Formulario de cotización y botón para llamar.">Quote form and a big call button.</p><i data-en="Open sample →" data-es="Ver ejemplo →">Open sample →</i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="what">
+    <div class="wrap">
+      <p class="tag" data-en="Every site includes" data-es="Cada página incluye">Every site includes</p>
+      <h2 data-en="Built for phones" data-es="Hecha para celulares">Built for phones</h2>
+      <ul class="list">
+        <li data-en="One-tap call and directions buttons" data-es="Botones para llamar y cómo llegar">One-tap call and directions buttons</li>
+        <li data-en="English and Spanish with one tap" data-es="Inglés y español con un toque">English and Spanish with one tap</li>
+        <li data-en="Your menu, prices, services and hours" data-es="Tu menú, precios, servicios y horario">Your menu, prices, services and hours</li>
+        <li data-en="Booking, quote or order request forms" data-es="Formularios para citas, cotizaciones u órdenes">Booking, quote or order request forms</li>
+        <li data-en="Fast and easy to read on any phone" data-es="Rápida y fácil de leer en cualquier celular">Fast and easy to read on any phone</li>
+        <li data-en="Updates whenever you need them" data-es="Cambios cuando los necesites">Updates whenever you need them</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="wrap">
+      <h2 data-en="Want a free demo?" data-es="¿Quieres una muestra gratis?">Want a free demo?</h2>
+      <p data-en="Send us a DM with the word DEMO and your business name. We'll take it from there." data-es="Mándanos un DM con la palabra DEMO y el nombre de tu negocio. Nosotros nos encargamos.">Send us a DM with the word DEMO and your business name. We'll take it from there.</p>
+      <div class="cta">
+        <a class="btn" href="https://www.instagram.com/760webstudio/" target="_blank" rel="noopener">Instagram @760webstudio</a>
+        <a class="btn btn--ghost" href="mailto:760webstudio@gmail.com">760webstudio@gmail.com</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer"><div class="wrap">© 2026 760 Web Studio · Coachella Valley, CA</div></footer>
+<script>
+(function(){var lang='en',btn=document.getElementById('langBtn');
+btn.addEventListener('click',function(){lang=lang==='en'?'es':'en';document.documentElement.lang=lang;
+document.querySelectorAll('[data-en]').forEach(function(el){el.innerHTML=el.getAttribute('data-'+lang);});btn.textContent=lang==='en'?'Español':'English';});})();
+</script>
+</body>
+</html>
