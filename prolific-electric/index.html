@@ -9,12 +9,12 @@
 <link rel="icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rye&family=Cinzel:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --black:#000;--ink:#050506;--slate:#0b0d14;--slate2:#28317c;--line:#26282f;--card:#0a0a0d;--silver:#b4b5ba;--navy:#28317c;--cobalt:#0b3e9a;
   --blue:#3e69dc;--blue-d:#2d55c2;--blue-l:#8ea9f3;--white:#f4f6fb;--muted:#9ba7ba;
-  --rye:'Rye',Georgia,serif;--cinzel:'Cinzel',Georgia,serif;--sans:'Inter',system-ui,sans-serif;
+  --rye:'Cinzel',Georgia,serif;--cinzel:'Cinzel',Georgia,serif;--sans:'Inter',system-ui,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 [hidden]{display:none!important}
@@ -25,8 +25,8 @@ img{display:block;max-width:100%}
 a{color:inherit}
 .wrap{width:min(100% - 2.5rem,1180px);margin-inline:auto}
 /* logo-style type */
-.rye{font-family:var(--rye);font-weight:400;letter-spacing:.01em;color:var(--white);text-shadow:3px 3px 0 #0b1b33,5px 5px 0 rgba(62,105,220,.55)}
-h1,h2{font-family:var(--rye);font-weight:400;line-height:1.02;letter-spacing:.005em;text-shadow:2px 2px 0 #0b1b33,4px 4px 0 rgba(62,105,220,.5)}
+.rye{font-family:var(--rye);font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--white);text-shadow:3px 3px 0 #0b1b33,5px 5px 0 rgba(62,105,220,.55)}
+h1,h2{font-family:var(--rye);font-weight:700;line-height:1.05;letter-spacing:.03em;text-transform:uppercase;text-shadow:2px 2px 0 #0b1b33,4px 4px 0 rgba(62,105,220,.5)}
 h2{font-size:clamp(2.1rem,1.3rem + 3vw,3.4rem)}
 h3{font:800 1.08rem var(--cinzel);letter-spacing:.04em;text-transform:uppercase}
 .label{display:inline-flex;align-items:center;gap:.6rem;font:800 .82rem var(--cinzel);letter-spacing:.22em;text-transform:uppercase;color:var(--silver)}
@@ -51,7 +51,7 @@ h3{font:800 1.08rem var(--cinzel);letter-spacing:.04em;text-transform:uppercase}
 .header__in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.65rem}
 .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none}
 .brand img{width:50px;height:50px;border-radius:50%;box-shadow:0 0 0 2px var(--blue)}
-.brand b{display:block;font:400 1.35rem/1 var(--rye);text-shadow:2px 2px 0 #0b1b33}
+.brand b{display:block;font:700 1.2rem/1 var(--rye);text-transform:uppercase;letter-spacing:.04em;text-shadow:2px 2px 0 #0b1b33}
 .brand small{display:block;font:800 .62rem var(--cinzel);letter-spacing:.24em;color:var(--blue-l);margin-top:.25rem}
 .nav{display:none;gap:1.6rem;font-weight:600;font-size:.95rem}
 .nav a{text-decoration:none;color:var(--muted)}
@@ -68,7 +68,7 @@ h3{font:800 1.08rem var(--cinzel);letter-spacing:.04em;text-transform:uppercase}
 @media(max-width:860px){.stripes{width:110%;right:-62%;opacity:.35}}
 .hero__in{padding-block:4.5rem 4rem;display:grid;gap:2.5rem;align-items:center}
 @media(min-width:960px){.hero__in{grid-template-columns:1.2fr .8fr;padding-block:6rem 5.5rem}}
-.hero h1{font-size:clamp(3rem,1.2rem + 7vw,6.4rem);margin:.9rem 0 1.1rem}
+.hero h1{font-size:clamp(2.5rem,1rem + 5.6vw,5.4rem);margin:.9rem 0 1.1rem}
 .hero h1 span{display:block;font:800 clamp(.95rem,.8rem + .8vw,1.25rem) var(--cinzel);letter-spacing:.28em;color:var(--silver);text-shadow:none;margin-bottom:.7rem}
 .who{font:700 1rem var(--cinzel);letter-spacing:.12em;color:var(--white);margin-top:1.4rem}
 .who b{color:var(--silver);font-weight:700}
@@ -86,7 +86,7 @@ h3{font:800 1.08rem var(--cinzel);letter-spacing:.04em;text-transform:uppercase}
 .trust li{padding:1.2rem 1rem;text-align:center;border-right:1px solid var(--line)}
 .trust li:nth-child(2n){border-right:0}
 @media(min-width:860px){.trust li:nth-child(2n){border-right:1px solid var(--line)}.trust li:last-child{border-right:0}}
-.trust b{display:block;font:400 1.55rem var(--rye);color:var(--white)}
+.trust b{display:block;font:700 1.55rem var(--rye);color:var(--white)}
 .trust span{font:700 .72rem var(--cinzel);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
 
 /* services */
@@ -131,7 +131,7 @@ section{scroll-margin-top:80px}
 .steps{list-style:none;display:grid;gap:1rem;counter-reset:s}
 @media(min-width:860px){.steps{grid-template-columns:repeat(4,1fr)}}
 .steps li{counter-increment:s;border:1px solid var(--line);border-radius:18px;padding:1.5rem;background:#08080a}
-.steps li::before{content:counter(s);display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--blue);font:400 1.4rem var(--rye);margin-bottom:.9rem;box-shadow:0 0 0 5px rgba(62,105,220,.2)}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--blue);font:700 1.4rem var(--rye);margin-bottom:.9rem;box-shadow:0 0 0 5px rgba(62,105,220,.2)}
 .steps p{color:var(--muted);font-size:.95rem;margin-top:.4rem}
 
 /* about */
@@ -143,7 +143,7 @@ section{scroll-margin-top:80px}
 .about__img img{border-radius:20px;width:100%;aspect-ratio:4/5;object-fit:cover}
 .about__img .stamp{position:absolute;right:-10px;bottom:-18px;width:120px;height:120px;border-radius:50%;box-shadow:0 0 0 4px var(--black),0 0 0 7px var(--blue)}
 .about p{color:#cfd6e3;margin-top:1rem;max-width:56ch}
-.about blockquote{margin-top:1.4rem;padding-left:1rem;border-left:3px solid var(--blue);font:400 1.35rem var(--rye);color:var(--white)}
+.about blockquote{margin-top:1.4rem;padding-left:1rem;border-left:3px solid var(--blue);font:700 1.35rem var(--rye);color:var(--white)}
 .areas{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.6rem}
 .areas span{border:1px solid var(--line);background:rgba(255,255,255,.03);border-radius:999px;padding:.35rem .85rem;font-size:.9rem;font-weight:600}
 
@@ -162,7 +162,7 @@ details p{color:var(--muted);padding-bottom:1.1rem}
 .contact__grid{display:grid;gap:2.5rem}
 @media(min-width:960px){.contact__grid{grid-template-columns:.85fr 1.15fr;align-items:start}}
 .callcard{margin-top:1.6rem;border:1px solid var(--line);border-radius:18px;padding:1.5rem;background:var(--card)}
-.callcard a.num{display:block;font:400 2.1rem var(--rye);text-decoration:none;margin:.3rem 0 1rem;text-shadow:2px 2px 0 #0b1b33}
+.callcard a.num{display:block;font:700 2.1rem var(--rye);text-decoration:none;margin:.3rem 0 1rem;text-shadow:2px 2px 0 #0b1b33}
 .callcard .cta{margin-top:0}
 .form{border:1px solid var(--line);border-radius:20px;padding:1.6rem;background:linear-gradient(160deg,var(--card),var(--black));display:grid;gap:1.1rem}
 .form h3{margin-bottom:.2rem}
