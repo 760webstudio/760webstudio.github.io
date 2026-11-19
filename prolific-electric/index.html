@@ -3,259 +3,472 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prolific Electric | Electrician in the Desert Cities since 2006</title>
+<meta name="description" content="Prolific Electric: residential and commercial electrician serving Coachella, Indio, La Quinta, Palm Desert, Rancho Mirage and the Desert Cities since 2006. Lighting, LED, EV chargers, circuits, fans and more. Call (760) 863-9192.">
 <meta name="robots" content="noindex">
-<title>Prolific Electric | Electrician in the Coachella Valley</title>
-<meta name="description" content="Prolific Electric: since 2006, residential and commercial electrical work across the Coachella Valley. Lighting, circuits, fans, surge protection, EV and shop equipment. English y español.">
+<link rel="icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Cinzel:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#060709;--surface:#0e1016;--s2:#151922;--line:#232a3b;--text:#f1f4fb;--muted:#9aa3b8;--volt:#3e69dc;--volt-d:#2f56bd;--cyan:#7f9ff5;
-  --display:'Space Grotesk',system-ui,sans-serif;--sans:'Inter',system-ui,sans-serif}
+:root{
+  --black:#050608;--ink:#0a0f15;--slate:#122634;--slate2:#1b3a4c;--line:#22344a;--card:#0d151e;
+  --blue:#3e69dc;--blue-d:#2d55c2;--blue-l:#8ea9f3;--white:#f4f6fb;--muted:#9ba7ba;
+  --rye:'Rye',Georgia,serif;--cinzel:'Cinzel',Georgia,serif;--sans:'Inter',system-ui,sans-serif;
+}
 *{box-sizing:border-box;margin:0;padding:0}
 [hidden]{display:none!important}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:64px}
-@media(min-width:800px){body{padding-bottom:0}}
+body{background:var(--black);color:var(--white);font-family:var(--sans);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:64px}
+@media(min-width:860px){body{padding-bottom:0}}
+img{display:block;max-width:100%}
 a{color:inherit}
-.wrap{width:min(100% - 2.5rem,1140px);margin-inline:auto}
-h1,h2{font-family:var(--display);font-weight:700;line-height:1;letter-spacing:-.02em}
-h2{font-size:clamp(2.1rem,1.4rem + 2.8vw,3.3rem)}
-h3{font:600 1.12rem var(--display)}
-.tag{font:600 .78rem var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--cyan)}
-.demo-bar{background:var(--volt);color:#fff;font-size:.8rem;font-weight:500;text-align:center;padding:.5rem 1rem}
-.demo-bar a{color:#fff;font-weight:700}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:var(--volt);color:#fff;border:0;border-radius:10px;padding:.85rem 1.4rem;font:700 1rem var(--sans);text-decoration:none;cursor:pointer;transition:background .18s}
-.btn:hover{background:var(--volt-d)}
-.btn--ghost{background:transparent;color:var(--text);box-shadow:inset 0 0 0 1.5px var(--line)}
-.btn--ghost:hover{box-shadow:inset 0 0 0 1.5px var(--text)}
-.btn--sm{padding:.55rem .95rem;font-size:.9rem}
-.btn--full{width:100%}
-.header{position:sticky;top:0;z-index:20;background:rgba(10,16,32,.88);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+.wrap{width:min(100% - 2.5rem,1180px);margin-inline:auto}
+/* logo-style type */
+.rye{font-family:var(--rye);font-weight:400;letter-spacing:.01em;color:var(--white);text-shadow:3px 3px 0 #0b1b33,5px 5px 0 rgba(62,105,220,.55)}
+h1,h2{font-family:var(--rye);font-weight:400;line-height:1.02;letter-spacing:.005em;text-shadow:2px 2px 0 #0b1b33,4px 4px 0 rgba(62,105,220,.5)}
+h2{font-size:clamp(2.1rem,1.3rem + 3vw,3.4rem)}
+h3{font:800 1.08rem var(--cinzel);letter-spacing:.04em;text-transform:uppercase}
+.label{display:inline-flex;align-items:center;gap:.6rem;font:800 .82rem var(--cinzel);letter-spacing:.22em;text-transform:uppercase;color:var(--blue-l)}
+.label::before,.label::after{content:"";width:22px;height:2px;background:var(--blue)}
+.center{text-align:center}
+.center .label{justify-content:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;background:var(--blue);color:#fff;border:0;border-radius:999px;padding:.9rem 1.5rem;font:700 1rem var(--sans);text-decoration:none;cursor:pointer;transition:background .18s,transform .18s;box-shadow:0 10px 30px -12px rgba(62,105,220,.8)}
+.btn:hover{background:var(--blue-d);transform:translateY(-1px)}
+.btn--ghost{background:transparent;box-shadow:inset 0 0 0 2px rgba(244,246,251,.6)}
+.btn--ghost:hover{background:rgba(255,255,255,.08)}
+.btn svg{flex:none}
+
+/* top bar + header */
+.topbar{background:var(--blue);font-size:.85rem;font-weight:600}
+.topbar .wrap{display:flex;justify-content:space-between;gap:1rem;padding-block:.45rem;flex-wrap:wrap}
+.topbar a{text-decoration:none}
+.topbar .hide-sm{display:none}
+@media(max-width:699px){.topbar .lead{display:none}.topbar .wrap{justify-content:center}}
+@media(min-width:700px){.topbar .hide-sm{display:inline}}
+.header{position:sticky;top:0;z-index:40;background:rgba(5,6,8,.9);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
 .header.is-scrolled{border-bottom-color:var(--line)}
-.header__in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.75rem}
-.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none}
-.brand b{font:700 1.3rem var(--display);letter-spacing:.06em;line-height:1}
-.brand small{display:block;font:600 .66rem var(--sans);letter-spacing:.24em;color:var(--muted)}
-.nav{display:none;gap:1.8rem;font-size:.95rem}
+.header__in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.65rem}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+.brand img{width:50px;height:50px;border-radius:50%;box-shadow:0 0 0 2px var(--blue)}
+.brand b{display:block;font:400 1.35rem/1 var(--rye);text-shadow:2px 2px 0 #0b1b33}
+.brand small{display:block;font:800 .62rem var(--cinzel);letter-spacing:.24em;color:var(--blue-l);margin-top:.25rem}
+.nav{display:none;gap:1.6rem;font-weight:600;font-size:.95rem}
 .nav a{text-decoration:none;color:var(--muted)}
-.nav a:hover{color:var(--text)}
-@media(min-width:860px){.nav{display:flex}}
+.nav a:hover{color:var(--white)}
+@media(min-width:1000px){.nav{display:flex}}
 .header__act{display:flex;gap:.6rem;align-items:center}
-.lang{background:none;border:1.5px solid var(--line);border-radius:8px;padding:.45rem .8rem;font:700 .8rem var(--sans);cursor:pointer;color:var(--text)}
-.hide-sm{display:none}
-@media(min-width:800px){.hide-sm{display:inline-flex}}
-.hero{padding-block:4rem 4.5rem;overflow:hidden;background:radial-gradient(ellipse at 85% 10%,rgba(62,105,220,.28),transparent 55%),radial-gradient(ellipse at 10% 100%,rgba(62,105,220,.12),transparent 55%)}
-.hero__in{display:grid;gap:2.5rem;align-items:center}
-@media(min-width:900px){.hero__in{grid-template-columns:1.15fr .85fr}}
-.badge{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.35rem .9rem;font-size:.9rem;font-weight:600}
-.badge b{color:var(--cyan)}
-.hero h1{font-size:clamp(3rem,1.4rem + 6.5vw,6rem);margin:.9rem 0 1.1rem}
-.hero h1 span:last-child{color:var(--volt)}
-.lede{font-size:1.15rem;color:var(--muted);max-width:38ch}
+.lang{background:none;border:1.5px solid var(--line);border-radius:999px;padding:.45rem .85rem;font:700 .8rem var(--sans);cursor:pointer;color:var(--white)}
+.header .btn{display:none;padding:.6rem 1.1rem;font-size:.92rem}
+@media(min-width:700px){.header .btn{display:inline-flex}}
+
+/* hero */
+.hero{position:relative;min-height:min(88vh,820px);display:grid;align-items:end;overflow:hidden;isolation:isolate}
+.hero__bg{position:absolute;inset:-12px;z-index:-2;background:url(img/entry-chandeliers.jpg) center 30%/cover no-repeat;filter:blur(3px) saturate(1.1)}
+@media(max-width:700px){.hero__bg{filter:none;inset:0}}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(5,6,8,.35) 0%,rgba(5,6,8,.55) 45%,rgba(5,6,8,.97) 100%),radial-gradient(ellipse at 20% 80%,rgba(62,105,220,.35),transparent 60%)}
+.hero__in{padding-block:6rem 3.5rem;display:grid;gap:2rem}
+@media(min-width:960px){.hero__in{grid-template-columns:1.25fr .75fr;align-items:end}}
+.hero h1{font-size:clamp(3rem,1.2rem + 7vw,6.6rem);margin:.9rem 0 1.1rem}
+.hero h1 span{display:block;font:800 clamp(1rem,.8rem + 1vw,1.35rem) var(--cinzel);letter-spacing:.28em;color:var(--blue-l);text-shadow:none;margin-bottom:.6rem}
+.lede{font-size:1.18rem;color:#d4dae6;max-width:40ch}
 .cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.8rem}
-.hero__art{max-width:360px;width:100%;justify-self:center;border-radius:50%;box-shadow:0 0 0 6px rgba(62,105,220,.25),0 30px 80px -20px rgba(62,105,220,.55)}
-.brand img{width:40px;height:40px;border-radius:50%;display:block}
-.callbig{display:inline-block;margin-top:1.4rem;font:700 2rem var(--display);color:var(--text);text-decoration:none}
-.services{padding-block:4.5rem;background:var(--surface);border-block:1px solid var(--line)}
-.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:1rem;margin-bottom:2rem}
-.sec-head p{color:var(--muted);max-width:42ch}
+.seal{justify-self:center;width:min(300px,70vw);aspect-ratio:1;border-radius:50%;overflow:hidden;box-shadow:0 0 0 6px rgba(62,105,220,.35),0 40px 90px -30px rgba(62,105,220,.9);display:none}
+@media(min-width:960px){.seal{display:block}}
+.trust{border-block:1px solid var(--line);background:var(--ink)}
+.trust ul{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:0}
+@media(min-width:860px){.trust ul{grid-template-columns:repeat(4,1fr)}}
+.trust li{padding:1.2rem 1rem;text-align:center;border-right:1px solid var(--line)}
+.trust li:nth-child(2n){border-right:0}
+@media(min-width:860px){.trust li:nth-child(2n){border-right:1px solid var(--line)}.trust li:last-child{border-right:0}}
+.trust b{display:block;font:400 1.55rem var(--rye);color:var(--white)}
+.trust span{font:700 .72rem var(--cinzel);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+
+/* services */
+section{scroll-margin-top:80px}
+.services{padding-block:5.5rem;background:radial-gradient(ellipse at 50% 0%,rgba(27,58,76,.6),transparent 60%)}
+.sec-head{max-width:720px;margin:0 auto 3rem}
+.sec-head p{color:var(--muted);margin-top:1rem}
 .svc{list-style:none;display:grid;gap:1rem}
 @media(min-width:700px){.svc{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1000px){.svc{grid-template-columns:repeat(3,1fr)}}
-.svc li{background:var(--s2);border:1px solid var(--line);border-radius:14px;padding:1.4rem}
-.svc .ico{width:44px;height:44px;border-radius:10px;background:rgba(62,105,220,.16);color:var(--cyan);display:grid;place-items:center;margin-bottom:.8rem}
-.svc p{color:var(--muted);font-size:.95rem;margin-top:.3rem}
-.jobs{padding-block:4.5rem}
-.jobs__grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));margin-top:2rem}
-.job{border:1px solid var(--line);border-radius:14px;padding:1.3rem;background:linear-gradient(160deg,var(--surface),var(--bg))}
-.job span{display:inline-block;font:600 .72rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);margin-bottom:.5rem}
-.job p{color:var(--muted);font-size:.93rem;margin-top:.3rem}
-.jobs .more{margin-top:1.6rem}
-.est{padding-block:4.5rem;background:var(--surface);border-block:1px solid var(--line)}
-.est__grid{display:grid;gap:2.5rem}
-@media(min-width:900px){.est__grid{grid-template-columns:.85fr 1.15fr;align-items:start}}
-.est__side p{color:var(--muted);margin-top:1rem;max-width:36ch}
-.est__side ul{list-style:none;margin-top:1.4rem;display:grid;gap:.6rem}
-.est__side li::before{content:"⚡";margin-right:.6rem}
-.form{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:1.6rem;display:grid;gap:1.3rem}
-fieldset{border:0;display:grid;gap:.6rem}
-legend{font-weight:700;margin-bottom:.6rem;display:flex;align-items:center;gap:.5rem}
-legend span{width:24px;height:24px;border-radius:6px;background:var(--volt);color:#fff;font-size:.8rem;display:grid;place-items:center}
-.chips{display:flex;flex-wrap:wrap;gap:.5rem}
+@media(min-width:1040px){.svc{grid-template-columns:repeat(3,1fr)}}
+.svc li{position:relative;background:linear-gradient(160deg,var(--card),var(--black));border:1px solid var(--line);border-radius:18px;padding:1.6rem 1.5rem 1.5rem;overflow:hidden;transition:border-color .2s,transform .2s}
+.svc li:hover{border-color:var(--blue);transform:translateY(-3px)}
+.svc .ico{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;border:2px solid var(--blue);color:var(--blue-l);margin-bottom:1rem;background:rgba(62,105,220,.08)}
+.svc p{color:var(--muted);font-size:.96rem;margin-top:.45rem}
+.svc .ex{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.9rem}
+.svc .ex span{font-size:.76rem;font-weight:600;color:var(--blue-l);border:1px solid var(--line);border-radius:999px;padding:.15rem .6rem}
+
+/* work gallery */
+.work{padding-block:5.5rem;background:var(--ink);border-block:1px solid var(--line)}
+.filters{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;margin-bottom:2rem}
+.filters button{background:none;border:1.5px solid var(--line);color:var(--white);border-radius:999px;padding:.5rem 1rem;font:600 .92rem var(--sans);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--blue);border-color:var(--blue)}
+.gallery{display:grid;gap:.8rem;grid-template-columns:repeat(2,1fr)}
+@media(min-width:760px){.gallery{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1100px){.gallery{grid-template-columns:repeat(4,1fr)}}
+.shot{position:relative;border:0;padding:0;background:#111;border-radius:14px;overflow:hidden;cursor:zoom-in;aspect-ratio:4/5;color:var(--white);text-align:left}
+.shot img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.shot:hover img{transform:scale(1.05)}
+.shot figcaption{position:absolute;inset:auto 0 0 0;padding:2.2rem .85rem .75rem;background:linear-gradient(180deg,transparent,rgba(5,6,8,.92));font-size:.85rem;font-weight:600;line-height:1.3}
+.shot figcaption small{display:block;font:700 .66rem var(--cinzel);letter-spacing:.14em;text-transform:uppercase;color:var(--blue-l);margin-bottom:.2rem}
+.more{margin-top:2rem;display:flex;justify-content:center}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(3,4,6,.94);display:grid;place-items:center;padding:1rem}
+.lb figure{max-width:min(92vw,720px);max-height:88vh;display:grid;gap:.7rem}
+.lb img{max-height:78vh;width:auto;margin-inline:auto;border-radius:12px}
+.lb figcaption{text-align:center;color:#d4dae6}
+.lb button{position:absolute;background:rgba(255,255,255,.08);border:1px solid var(--line);color:#fff;width:46px;height:46px;border-radius:50%;font-size:1.4rem;cursor:pointer}
+.lb .x{top:1rem;right:1rem}.lb .pv{left:1rem;top:50%}.lb .nx{right:1rem;top:50%}
+
+/* process */
+.process{padding-block:5.5rem}
+.steps{list-style:none;display:grid;gap:1rem;counter-reset:s}
+@media(min-width:860px){.steps{grid-template-columns:repeat(4,1fr)}}
+.steps li{counter-increment:s;border:1px solid var(--line);border-radius:18px;padding:1.5rem;background:var(--card)}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--blue);font:400 1.4rem var(--rye);margin-bottom:.9rem;box-shadow:0 0 0 5px rgba(62,105,220,.2)}
+.steps p{color:var(--muted);font-size:.95rem;margin-top:.4rem}
+
+/* about */
+.about{padding-block:5.5rem;background:linear-gradient(180deg,var(--black),var(--slate) 140%)}
+.about__grid{display:grid;gap:2.5rem;align-items:center}
+@media(min-width:900px){.about__grid{grid-template-columns:.9fr 1.1fr}}
+.about__img{position:relative}
+.about__img img{border-radius:20px;width:100%;aspect-ratio:4/5;object-fit:cover}
+.about__img .stamp{position:absolute;right:-10px;bottom:-18px;width:120px;height:120px;border-radius:50%;box-shadow:0 0 0 4px var(--black),0 0 0 7px var(--blue)}
+.about p{color:#cfd6e3;margin-top:1rem;max-width:56ch}
+.about blockquote{margin-top:1.4rem;padding-left:1rem;border-left:3px solid var(--blue);font:400 1.35rem var(--rye);color:var(--white)}
+.areas{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.6rem}
+.areas span{border:1px solid var(--line);background:rgba(255,255,255,.03);border-radius:999px;padding:.35rem .85rem;font-size:.9rem;font-weight:600}
+
+/* faq */
+.faq{padding-block:5.5rem;background:var(--ink);border-block:1px solid var(--line)}
+.faq__list{max-width:780px;margin:0 auto;display:grid;gap:.7rem}
+details{border:1px solid var(--line);border-radius:14px;background:var(--card);padding:0 1.2rem}
+summary{list-style:none;cursor:pointer;padding:1.1rem 0;font-weight:700;display:flex;justify-content:space-between;gap:1rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--blue-l);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);padding-bottom:1.1rem}
+
+/* contact */
+.contact{padding-block:5.5rem}
+.contact__grid{display:grid;gap:2.5rem}
+@media(min-width:960px){.contact__grid{grid-template-columns:.85fr 1.15fr;align-items:start}}
+.callcard{margin-top:1.6rem;border:1px solid var(--line);border-radius:18px;padding:1.5rem;background:var(--card)}
+.callcard a.num{display:block;font:400 2.1rem var(--rye);text-decoration:none;margin:.3rem 0 1rem;text-shadow:2px 2px 0 #0b1b33}
+.callcard .cta{margin-top:0}
+.form{border:1px solid var(--line);border-radius:20px;padding:1.6rem;background:linear-gradient(160deg,var(--card),var(--black));display:grid;gap:1.1rem}
+.form h3{margin-bottom:.2rem}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem}
 .chips label{cursor:pointer}
 .chips input{position:absolute;opacity:0;pointer-events:none}
-.chips span{display:inline-block;border:1.5px solid var(--line);border-radius:8px;padding:.5rem .85rem;font-size:.9rem;transition:all .15s}
-.chips input:checked+span{background:var(--volt);border-color:var(--volt);color:#fff}
-.chips input:focus-visible+span{outline:2px solid var(--volt);outline-offset:2px}
-.field{display:grid;gap:.4rem;font-size:.9rem;font-weight:600}
-.field input,.field textarea{font:1rem var(--sans);padding:.8rem 1rem;border:1.5px solid var(--line);border-radius:10px;background:var(--s2);color:var(--text);resize:vertical}
-.field input:focus,.field textarea:focus{outline:none;border-color:var(--volt)}
-.err{color:#ff7b72;font-size:.9rem}
-.done{text-align:center;padding:1rem 0}
-.done__t{font:700 2rem var(--display);color:var(--cyan);margin-bottom:.4rem}
-.done p{color:var(--muted)}
-.sub{color:var(--muted);font-size:.95rem;margin-top:.35rem}
-.link{background:none;border:0;color:var(--cyan);font:700 .95rem var(--sans);cursor:pointer;margin-top:1rem;text-decoration:underline}
-.area{padding-block:4.5rem}
-.area__in{display:grid;gap:2rem}
-@media(min-width:900px){.area__in{grid-template-columns:1fr 1fr;align-items:center}}
-.chipsrow{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}
-.chipsrow span{border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;font-size:.9rem;color:var(--muted)}
-.footer{border-top:1px solid var(--line);padding-block:2rem;font-size:.9rem;color:var(--muted)}
-.footer__in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem}
-.footer a{color:var(--cyan)}
-.mbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr;background:#060a15;border-top:1px solid var(--line)}
-.mbar a{color:#fff;text-align:center;padding:1.05rem;font-weight:700;text-decoration:none}
-.mbar a+a{background:var(--volt);color:#fff}
-@media(min-width:800px){.mbar{display:none}}
+.chips span{display:inline-block;border:1.5px solid var(--line);border-radius:999px;padding:.45rem .85rem;font-size:.9rem;transition:all .15s}
+.chips input:checked+span{background:var(--blue);border-color:var(--blue)}
+.chips input:focus-visible+span{outline:2px solid var(--blue-l);outline-offset:2px}
+.row2{display:grid;gap:1rem}
+@media(min-width:560px){.row2{grid-template-columns:1fr 1fr}}
+.field{display:grid;gap:.35rem;font-size:.9rem;font-weight:600}
+.field input,.field textarea,.field select{font:1rem var(--sans);padding:.8rem 1rem;border:1.5px solid var(--line);border-radius:12px;background:#0a1018;color:var(--white);resize:vertical}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--blue)}
+.fine{font-size:.85rem;color:var(--muted)}
+.err{color:#ff8a80;font-size:.9rem}
+.sent{border:1px solid var(--blue);border-radius:14px;padding:1rem;background:rgba(62,105,220,.1)}
+
+/* footer */
+.footer{border-top:1px solid var(--line);padding-block:3rem 2rem;background:var(--ink)}
+.footer__grid{display:grid;gap:2rem}
+@media(min-width:860px){.footer__grid{grid-template-columns:1.2fr 1fr 1fr}}
+.footer h4{font:800 .8rem var(--cinzel);letter-spacing:.2em;color:var(--blue-l);margin-bottom:.8rem}
+.footer p,.footer li{color:var(--muted);font-size:.95rem}
+.footer ul{list-style:none;display:grid;gap:.35rem}
+.footer a{text-decoration:none}
+.footer a:hover{color:var(--white)}
+.copy{margin-top:2.5rem;padding-top:1.4rem;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:.6rem;font-size:.85rem;color:var(--muted)}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:grid;grid-template-columns:1fr 1fr 1fr;background:#030405;border-top:1px solid var(--line)}
+.mbar a{display:flex;align-items:center;justify-content:center;gap:.4rem;padding:1rem .5rem;font-weight:700;font-size:.95rem;text-decoration:none}
+.mbar a:first-child{background:var(--blue)}
+@media(min-width:860px){.mbar{display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
-<div class="demo-bar" role="note"><span data-en="Free website preview made for Prolific Electric by <a href='https://www.instagram.com/760webstudio/' target='_blank' rel='noopener'>760 Web Studio</a>." data-es="Vista previa gratis hecha para Prolific Electric por <a href='https://www.instagram.com/760webstudio/' target='_blank' rel='noopener'>760 Web Studio</a>.">Free website preview made for Prolific Electric by <a href="https://www.instagram.com/760webstudio/" target="_blank" rel="noopener">760 Web Studio</a>.</span></div>
+
+<div class="topbar"><div class="wrap">
+  <span class="lead" data-en="⚡ Free estimates · Residential &amp; commercial" data-es="⚡ Cotizaciones gratis · Residencial y comercial">⚡ Free estimates · Residential &amp; commercial</span>
+  <span><span class="hide-sm" data-en="Serving the Desert Cities since 2006 · " data-es="Sirviendo las ciudades del desierto desde 2006 · ">Serving the Desert Cities since 2006 · </span><a href="tel:+17608639192">(760) 863-9192</a></span>
+</div></div>
+
 <header class="header">
   <div class="wrap header__in">
-    <a class="brand" href="#top" aria-label="Prolific Electric, home">
-      <img src="logo.jpg" alt="" width="40" height="40">
-      <span><b>PROLIFIC</b><small>ELECTRIC</small></span>
-    </a>
+    <a class="brand" href="#top" aria-label="Prolific Electric, home"><img src="img/logo-sm.jpg" alt="" width="50" height="50"><span><b>Prolific Electric</b><small>DESERT CITIES · EST. 2006</small></span></a>
     <nav class="nav" aria-label="Main">
       <a href="#services" data-en="Services" data-es="Servicios">Services</a>
-      <a href="#jobs" data-en="Recent jobs" data-es="Trabajos">Recent jobs</a>
-      <a href="#estimate" data-en="Free estimate" data-es="Cotización">Free estimate</a>
+      <a href="#work" data-en="Our Work" data-es="Trabajos">Our Work</a>
+      <a href="#about" data-en="About" data-es="Nosotros">About</a>
+      <a href="#faq" data-en="FAQ" data-es="Preguntas">FAQ</a>
+      <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
     </nav>
     <div class="header__act">
       <button class="lang" id="langBtn" type="button" aria-label="Cambiar a español">Español</button>
-      <a class="btn btn--sm hide-sm" href="tel:+17608639192" data-en="Call (760) 863-9192" data-es="Llama (760) 863-9192">Call (760) 863-9192</a>
+      <a class="btn" href="tel:+17608639192"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.6a1 1 0 0 1-.25 1z"/></svg>(760) 863-9192</a>
     </div>
   </div>
 </header>
 
 <main id="top">
   <section class="hero">
+    <div class="hero__bg" role="img" aria-label="Entryway chandeliers installed by Prolific Electric"></div>
     <div class="wrap hero__in">
       <div>
-        <p class="badge">⚡ <span data-en="Serving the desert cities <b>since 2006</b>" data-es="Sirviendo a las ciudades del desierto <b>desde 2006</b>">Serving the desert cities <b>since 2006</b></span></p>
-        <h1><span data-en="Power done" data-es="Electricidad">Power done</span><br><span data-en="right." data-es="bien hecha.">right.</span></h1>
-        <p class="lede" data-en="Residential and commercial electrical work across the Coachella Valley, from new lighting and dedicated circuits to shop equipment and business signs." data-es="Trabajo eléctrico residencial y comercial en todo el Valle de Coachella, desde iluminación nueva y circuitos dedicados hasta equipo de taller y letreros de negocios.">Residential and commercial electrical work across the Coachella Valley, from new lighting and dedicated circuits to shop equipment and business signs.</p>
+        <h1><span data-en="Desert Cities Electrician" data-es="Electricista del Desierto">Desert Cities Electrician</span><b style="font-weight:400" data-en="Power done right." data-es="Electricidad bien hecha.">Power done right.</b></h1>
+        <p class="lede" data-en="Lighting, LED, EV chargers, new circuits, fans and commercial work, done clean and done right across the Coachella Valley. Serving homes, golf communities and businesses since 2006." data-es="Iluminación, LED, cargadores para carros eléctricos, circuitos nuevos, ventiladores y trabajo comercial, limpio y bien hecho en todo el Valle de Coachella. Sirviendo casas, comunidades de golf y negocios desde 2006.">Lighting, LED, EV chargers, new circuits, fans and commercial work, done clean and done right across the Coachella Valley. Serving homes, golf communities and businesses since 2006.</p>
         <div class="cta">
-          <a class="btn" href="#estimate" data-en="Get a free estimate" data-es="Cotización gratis">Get a free estimate</a>
-          <a class="btn btn--ghost" href="tel:+17608639192">(760) 863-9192</a>
+          <a class="btn" href="#contact" data-en="Get a free estimate" data-es="Cotización gratis">Get a free estimate</a>
+          <a class="btn btn--ghost" href="tel:+17608639192" data-en="Call (760) 863-9192" data-es="Llama (760) 863-9192">Call (760) 863-9192</a>
         </div>
       </div>
-      <img class="hero__art" src="logo.jpg" alt="Prolific Electric logo: Desert Cities, Est. 2006" width="360" height="360">
+      <img class="seal" src="img/logo.jpg" alt="Prolific Electric logo: Desert Cities, Est. 2006, 760-863-9192" width="300" height="300">
     </div>
   </section>
 
+  <div class="trust"><div class="wrap"><ul>
+    <li><b>2006</b><span data-en="In business since" data-es="En el negocio desde">In business since</span></li>
+    <li><b data-en="Homes" data-es="Casas">Homes</b><span data-en="&amp; golf communities" data-es="y comunidades de golf">&amp; golf communities</span></li>
+    <li><b data-en="Business" data-es="Negocios">Business</b><span data-en="&amp; commercial" data-es="y comercial">&amp; commercial</span></li>
+    <li><b data-en="Free" data-es="Gratis">Free</b><span data-en="Estimates" data-es="Cotizaciones">Estimates</span></li>
+  </ul></div></div>
+
   <section class="services" id="services">
     <div class="wrap">
-      <div class="sec-head">
-        <div><p class="tag" data-en="What we do" data-es="Lo que hacemos">What we do</p><h2 data-en="Services" data-es="Servicios">Services</h2></div>
-        <p data-en="Homes, golf communities and businesses. Big job or small, we do it right." data-es="Casas, comunidades de golf y negocios. Trabajo grande o chico, lo hacemos bien.">Homes, golf communities and businesses. Big job or small, we do it right.</p>
+      <div class="sec-head center">
+        <p class="label" data-en="What we do" data-es="Lo que hacemos">What we do</p>
+        <h2 style="margin-top:.8rem" data-en="Electrical Services" data-es="Servicios Eléctricos">Electrical Services</h2>
+        <p data-en="From one light fixture to a full remodel or a commercial job, one call gets it done." data-es="Desde una lámpara hasta una remodelación completa o un trabajo comercial, una llamada y listo.">From one light fixture to a full remodel or a commercial job, one call gets it done.</p>
       </div>
       <ul class="svc" role="list">
-        <li><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v5M7 7h10l-1 6H8z"/><path d="M10 17h4M11 20h2"/></svg></span><h3 data-en="Lighting installs &amp; upgrades" data-es="Instalación de iluminación">Lighting installs &amp; upgrades</h3><p data-en="Pendants, chandeliers, LED conversions, LED strip and RGB mirror lighting." data-es="Lámparas colgantes, candelabros, conversiones a LED, tiras LED y espejos RGB.">Pendants, chandeliers, LED conversions, LED strip and RGB mirror lighting.</p></li>
-        <li><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="2"/><path d="M12 10c0-6 6-7 7-4M14 12c6 0 7 6 4 7M12 14c0 6-6 7-7 4M10 12c-6 0-7-6-4-7"/></svg></span><h3 data-en="Ceiling fans" data-es="Ventiladores de techo">Ceiling fans</h3><p data-en="New fans with LED lighting, including big 80-inch installs." data-es="Ventiladores nuevos con luz LED, incluso de 80 pulgadas.">New fans with LED lighting, including big 80-inch installs.</p></li>
-        <li><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h3M8 12h3M8 16h3M14 8h2M14 12h2M14 16h2"/></svg></span><h3 data-en="Dedicated circuits" data-es="Circuitos dedicados">Dedicated circuits</h3><p data-en="New circuits for fireplaces, TV walls, appliances and remodels." data-es="Circuitos nuevos para chimeneas, paredes de TV, aparatos y remodelaciones.">New circuits for fireplaces, TV walls, appliances and remodels.</p></li>
-        <li><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="M13 8l-3 5h4l-3 5"/></svg></span><h3 data-en="Whole-home surge protection" data-es="Protección contra picos de voltaje">Whole-home surge protection</h3><p data-en="Protect your appliances and electronics from power surges." data-es="Protege tus aparatos y electrónicos de los picos de voltaje.">Protect your appliances and electronics from power surges.</p></li>
-        <li><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 21V4M20 21V4M4 9h16"/><path d="M8 14h8"/></svg></span><h3 data-en="240V shop equipment" data-es="Equipo de 240V">240V shop equipment</h3><p data-en="Car lifts and other heavy equipment wired safely." data-es="Elevadores de carros y equipo pesado conectados con seguridad.">Car lifts and other heavy equipment wired safely.</p></li>
-        <li><span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="8" rx="1"/><path d="M7 12v8M17 12v8"/></svg></span><h3 data-en="Commercial lighting &amp; signs" data-es="Iluminación comercial y letreros">Commercial lighting &amp; signs</h3><p data-en="LED canopy lighting, sign power-ups and security gates." data-es="Iluminación LED de techos, letreros y portones de seguridad.">LED canopy lighting, sign power-ups and security gates.</p></li>
+        <li><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v4"/><path d="M8 6h8l-1.5 5h-5z"/><path d="M6 14c0 3 2.7 6 6 6s6-3 6-6"/></svg></span>
+          <h3 data-en="Lighting &amp; Fixtures" data-es="Iluminación y Lámparas">Lighting &amp; Fixtures</h3>
+          <p data-en="Chandeliers, pendants, recessed lights and track lighting, hung right and wired safe, even on high ceilings." data-es="Candelabros, colgantes, luces empotradas y de riel, bien instaladas y seguras, incluso en techos altos.">Chandeliers, pendants, recessed lights and track lighting, hung right and wired safe, even on high ceilings.</p>
+          <div class="ex"><span data-en="Chandeliers" data-es="Candelabros">Chandeliers</span><span data-en="Pendants" data-es="Colgantes">Pendants</span><span data-en="Recessed" data-es="Empotradas">Recessed</span><span data-en="Track" data-es="De riel">Track</span></div></li>
+        <li><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M4 8h16M4 14h16"/></svg></span>
+          <h3 data-en="Custom LED Lighting" data-es="Iluminación LED">Custom LED Lighting</h3>
+          <p data-en="LED strip lighting for shelves and cabinets, lighted mirrors with RGB, medicine cabinets and full LED conversions." data-es="Tiras LED para repisas y gabinetes, espejos iluminados con RGB, botiquines y conversiones completas a LED.">LED strip lighting for shelves and cabinets, lighted mirrors with RGB, medicine cabinets and full LED conversions.</p>
+          <div class="ex"><span>LED strips</span><span data-en="RGB mirrors" data-es="Espejos RGB">RGB mirrors</span><span data-en="LED conversions" data-es="Conversiones LED">LED conversions</span></div></li>
+        <li><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 18V8l7-4 7 4v10"/><path d="M9 18v-4h6v4"/><path d="M12 9l-1.5 2.5h3L12 14"/></svg></span>
+          <h3 data-en="EV Chargers" data-es="Cargadores EV">EV Chargers</h3>
+          <p data-en="Level 2 home chargers on a dedicated 50-amp circuit, so your car is full every morning." data-es="Cargadores nivel 2 en circuito dedicado de 50 amperes, para tener tu carro cargado cada mañana.">Level 2 home chargers on a dedicated 50-amp circuit, so your car is full every morning.</p>
+          <div class="ex"><span data-en="Level 2" data-es="Nivel 2">Level 2</span><span data-en="50-amp circuits" data-es="Circuitos de 50 A">50-amp circuits</span></div></li>
+        <li><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h2M9 12h2M9 16h2M13 8h2M13 12h2M13 16h2"/></svg></span>
+          <h3 data-en="Circuits &amp; Outlets" data-es="Circuitos y Contactos">Circuits &amp; Outlets</h3>
+          <p data-en="Dedicated circuits for TV walls, fireplaces, appliances and ice machines. New outlets and switches where you need them." data-es="Circuitos dedicados para paredes de TV, chimeneas, aparatos y máquinas de hielo. Contactos y apagadores nuevos donde los necesites.">Dedicated circuits for TV walls, fireplaces, appliances and ice machines. New outlets and switches where you need them.</p>
+          <div class="ex"><span data-en="TV walls" data-es="Paredes de TV">TV walls</span><span data-en="Fireplaces" data-es="Chimeneas">Fireplaces</span><span data-en="Appliances" data-es="Aparatos">Appliances</span></div></li>
+        <li><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="2"/><path d="M12 10c0-5 5-6 6-3M14 12c5 0 6 5 3 6M12 14c0 5-5 6-6 3M10 12c-5 0-6-5-3-6"/></svg></span>
+          <h3 data-en="Ceiling Fans" data-es="Ventiladores de Techo">Ceiling Fans</h3>
+          <p data-en="New fans and fan swaps with LED lights, including big 80-inch fans on vaulted ceilings." data-es="Ventiladores nuevos y cambios con luz LED, incluso de 80 pulgadas en techos altos.">New fans and fan swaps with LED lights, including big 80-inch fans on vaulted ceilings.</p>
+          <div class="ex"><span data-en="Vaulted ceilings" data-es="Techos altos">Vaulted ceilings</span><span data-en="Fan + light" data-es="Ventilador + luz">Fan + light</span></div></li>
+        <li><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="M13 8l-3 5h4l-3 5"/></svg></span>
+          <h3 data-en="Surge Protection" data-es="Protección contra Picos">Surge Protection</h3>
+          <p data-en="Whole-home surge protection to guard your appliances, AC and smart electronics from power spikes." data-es="Protección para toda la casa que cuida tus aparatos, aire acondicionado y electrónicos de los picos de voltaje.">Whole-home surge protection to guard your appliances, AC and smart electronics from power spikes.</p>
+          <div class="ex"><span data-en="Whole-home" data-es="Toda la casa">Whole-home</span><span data-en="Appliances" data-es="Aparatos">Appliances</span></div></li>
+        <li><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 21V4M20 21V4M4 9h16"/><path d="M8 15h8"/></svg></span>
+          <h3 data-en="Shop &amp; 240V Equipment" data-es="Taller y Equipo de 240V">Shop &amp; 240V Equipment</h3>
+          <p data-en="240-volt wiring for car lifts and heavy equipment in garages and shops." data-es="Cableado de 240 voltios para elevadores de carros y equipo pesado en garajes y talleres.">240-volt wiring for car lifts and heavy equipment in garages and shops.</p>
+          <div class="ex"><span data-en="Car lifts" data-es="Elevadores">Car lifts</span><span data-en="Garages" data-es="Garajes">Garages</span></div></li>
+        <li><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="7" rx="1"/><path d="M7 11v9M17 11v9M5 20h14"/></svg></span>
+          <h3 data-en="Commercial Work" data-es="Trabajo Comercial">Commercial Work</h3>
+          <p data-en="LED canopy and sign lighting, shop and salon lighting repairs, and equipment circuits for businesses." data-es="Iluminación LED de techos y letreros, reparación de luces en negocios y circuitos para equipo comercial.">LED canopy and sign lighting, shop and salon lighting repairs, and equipment circuits for businesses.</p>
+          <div class="ex"><span data-en="Signs" data-es="Letreros">Signs</span><span data-en="Canopies" data-es="Techos">Canopies</span><span data-en="Repairs" data-es="Reparaciones">Repairs</span></div></li>
+        <li><span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 21h18M5 21V10l7-6 7 6v11"/><path d="M10 21v-5h4v5"/></svg></span>
+          <h3 data-en="Remodels &amp; Outdoor" data-es="Remodelaciones y Exteriores">Remodels &amp; Outdoor</h3>
+          <p data-en="Electrical for bathroom remodels, outdoor fireplaces, pool-area sound systems, gates and keypads." data-es="Electricidad para remodelaciones de baño, chimeneas exteriores, sonido en el área de la alberca, portones y teclados.">Electrical for bathroom remodels, outdoor fireplaces, pool-area sound systems, gates and keypads.</p>
+          <div class="ex"><span data-en="Bathrooms" data-es="Baños">Bathrooms</span><span data-en="Outdoor" data-es="Exteriores">Outdoor</span><span data-en="Gates" data-es="Portones">Gates</span></div></li>
       </ul>
     </div>
   </section>
 
-  <section class="jobs" id="jobs">
+  <section class="work" id="work">
     <div class="wrap">
-      <p class="tag" data-en="Recent work" data-es="Trabajos recientes">Recent work</p>
-      <h2 data-en="Jobs we've finished" data-es="Trabajos terminados">Jobs we've finished</h2>
-      <div class="jobs__grid">
-        <div class="job"><span data-en="Commercial" data-es="Comercial">Commercial</span><h3 data-en="Gas station LED upgrade" data-es="LED en gasolinera">Gas station LED upgrade</h3><p data-en="Upgraded the canopy to LED and powered up the new sign lighting in Coachella." data-es="Cambiamos el techo a LED y conectamos los letreros nuevos en Coachella.">Upgraded the canopy to LED and powered up the new sign lighting in Coachella.</p></div>
-        <div class="job"><span data-en="Residential" data-es="Residencial">Residential</span><h3 data-en="Hanging pendants" data-es="Lámparas colgantes">Hanging pendants</h3><p data-en="Removed an old ceiling fixture and installed two new pendants." data-es="Quitamos una lámpara vieja e instalamos dos colgantes nuevas.">Removed an old ceiling fixture and installed two new pendants.</p></div>
-        <div class="job"><span data-en="Residential" data-es="Residencial">Residential</span><h3 data-en="Fireplace &amp; TV wall circuit" data-es="Circuito para chimenea y TV">Fireplace &amp; TV wall circuit</h3><p data-en="A dedicated circuit so everything runs without tripping." data-es="Un circuito dedicado para que todo funcione sin botar el breaker.">A dedicated circuit so everything runs without tripping.</p></div>
-        <div class="job"><span data-en="Residential" data-es="Residencial">Residential</span><h3 data-en="LED mirrors with RGB" data-es="Espejos LED con RGB">LED mirrors with RGB</h3><p data-en="Lighted bathroom mirrors with color-changing RGB." data-es="Espejos de baño iluminados con RGB de colores.">Lighted bathroom mirrors with color-changing RGB.</p></div>
-        <div class="job"><span data-en="Golf community" data-es="Comunidad de golf">Golf community</span><h3 data-en="80-inch fan + LED" data-es="Ventilador de 80 pulgadas + LED">80-inch fan + LED</h3><p data-en="Big fan, new LED lighting, at Monterey Country Club." data-es="Ventilador grande con luz LED nueva, en Monterey Country Club.">Big fan, new LED lighting, at Monterey Country Club.</p></div>
-        <div class="job"><span data-en="Shop" data-es="Taller">Shop</span><h3 data-en="2-post car lift" data-es="Elevador de 2 postes">2-post car lift</h3><p data-en="240-volt install for a 2-post car lift." data-es="Instalación de 240 voltios para elevador de 2 postes.">240-volt install for a 2-post car lift.</p></div>
+      <div class="sec-head center">
+        <p class="label" data-en="Real jobs" data-es="Trabajos reales">Real jobs</p>
+        <h2 style="margin-top:.8rem" data-en="Our Work" data-es="Nuestro Trabajo">Our Work</h2>
+        <p data-en="Every photo is a real Prolific Electric job here in the desert. Tap one to see it bigger." data-es="Cada foto es un trabajo real de Prolific Electric aquí en el desierto. Toca una para verla más grande.">Every photo is a real Prolific Electric job here in the desert. Tap one to see it bigger.</p>
       </div>
-      <div class="cta more"><a class="btn btn--ghost" href="https://www.instagram.com/prol1fic_electric/" target="_blank" rel="noopener" data-en="See more on Instagram" data-es="Ver más en Instagram">See more on Instagram</a></div>
+      <div class="filters" role="group" aria-label="Filter photos">
+        <button type="button" aria-pressed="true" data-f="all" data-en="All" data-es="Todos">All</button>
+        <button type="button" aria-pressed="false" data-f="lighting" data-en="Lighting" data-es="Iluminación">Lighting</button>
+        <button type="button" aria-pressed="false" data-f="home" data-en="Home" data-es="Casa">Home</button>
+        <button type="button" aria-pressed="false" data-f="commercial" data-en="Commercial &amp; shop" data-es="Comercial y taller">Commercial &amp; shop</button>
+      </div>
+      <div class="gallery" id="gallery"></div>
+      <div class="more"><a class="btn btn--ghost" href="https://www.instagram.com/prol1fic_electric/" target="_blank" rel="noopener" data-en="More jobs on Instagram" data-es="Más trabajos en Instagram">More jobs on Instagram</a></div>
     </div>
   </section>
 
-  <section class="est" id="estimate">
-    <div class="wrap est__grid">
-      <div class="est__side">
-        <p class="tag" data-en="Free estimate" data-es="Cotización gratis">Free estimate</p>
-        <h2 data-en="Tell us about the job" data-es="Cuéntanos del trabajo">Tell us about the job</h2>
-        <p data-en="Pick what you need and add a few details. We'll get back to you with a free estimate." data-es="Escoge qué necesitas y agrega unos detalles. Te respondemos con una cotización gratis.">Pick what you need and add a few details. We'll get back to you with a free estimate.</p>
-        <ul>
-          <li data-en="Serving the desert cities since 2006" data-es="En las ciudades del desierto desde 2006">Serving the desert cities since 2006</li>
-          <li data-en="Residential &amp; commercial" data-es="Residencial y comercial">Residential &amp; commercial</li>
-          <li data-en="Clean, careful work" data-es="Trabajo limpio y cuidadoso">Clean, careful work</li>
-        </ul>
-        <a class="callbig" href="tel:+17608639192">(760) 863-9192</a>
+  <section class="process">
+    <div class="wrap">
+      <div class="sec-head center">
+        <p class="label" data-en="How it works" data-es="Cómo funciona">How it works</p>
+        <h2 style="margin-top:.8rem" data-en="Simple from start to finish" data-es="Fácil de principio a fin">Simple from start to finish</h2>
+      </div>
+      <ol class="steps">
+        <li><h3 data-en="Call or text" data-es="Llama o manda texto">Call or text</h3><p data-en="Tell us what you need. Photos help us quote faster." data-es="Dinos qué necesitas. Las fotos nos ayudan a cotizar más rápido.">Tell us what you need. Photos help us quote faster.</p></li>
+        <li><h3 data-en="Free estimate" data-es="Cotización gratis">Free estimate</h3><p data-en="We look at the job and give you a clear price before any work starts." data-es="Revisamos el trabajo y te damos un precio claro antes de empezar.">We look at the job and give you a clear price before any work starts.</p></li>
+        <li><h3 data-en="Clean install" data-es="Instalación limpia">Clean install</h3><p data-en="We show up, do it right and keep your home or business clean." data-es="Llegamos, lo hacemos bien y dejamos tu casa o negocio limpio.">We show up, do it right and keep your home or business clean.</p></li>
+        <li><h3 data-en="Walkthrough" data-es="Revisión final">Walkthrough</h3><p data-en="We test everything with you so you know it all works." data-es="Probamos todo contigo para que sepas que todo funciona.">We test everything with you so you know it all works.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap about__grid">
+      <div class="about__img"><img src="img/hallway-chandeliers.jpg" alt="Hallway chandeliers installed by Prolific Electric" loading="lazy" width="704" height="879"><img class="stamp" src="img/logo-sm.jpg" alt="" width="120" height="120"></div>
+      <div>
+        <p class="label" data-en="About us" data-es="Sobre nosotros">About us</p>
+        <h2 style="margin-top:.8rem" data-en="Local, honest &amp; prolific" data-es="Local, honesto y prolífico">Local, honest &amp; prolific</h2>
+        <p data-en="Prolific Electric is owned and run by Joseph Guerrero. Since 2006 he has been wiring homes, golf communities and businesses across the Desert Cities, from custom chandeliers in La Quinta to LED canopies and shop equipment in Coachella." data-es="Prolific Electric es de Joseph Guerrero. Desde 2006 ha hecho instalaciones eléctricas en casas, comunidades de golf y negocios en todas las ciudades del desierto, desde candelabros en La Quinta hasta techos LED y equipo de taller en Coachella.">Prolific Electric is owned and run by Joseph Guerrero. Since 2006 he has been wiring homes, golf communities and businesses across the Desert Cities, from custom chandeliers in La Quinta to LED canopies and shop equipment in Coachella.</p>
+        <p data-en="Every job gets the same care: show up on time, do it right, leave it clean, and make sure it works before we leave." data-es="Cada trabajo recibe el mismo cuidado: llegar a tiempo, hacerlo bien, dejarlo limpio y asegurarnos de que funcione antes de irnos.">Every job gets the same care: show up on time, do it right, leave it clean, and make sure it works before we leave.</p>
+        <blockquote data-en="“All glory to God.”" data-es="“Toda la gloria a Dios.”">“All glory to God.”</blockquote>
+        <div class="areas"><span>Coachella</span><span>Indio</span><span>La Quinta</span><span>Palm Desert</span><span>Rancho Mirage</span><span>Cathedral City</span><span data-en="&amp; the Desert Cities" data-es="y las ciudades del desierto">&amp; the Desert Cities</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="sec-head center">
+        <p class="label" data-en="Questions" data-es="Preguntas">Questions</p>
+        <h2 style="margin-top:.8rem" data-en="Good to Know" data-es="Bueno Saber">Good to Know</h2>
+      </div>
+      <div class="faq__list">
+        <details><summary data-en="Do you give free estimates?" data-es="¿Dan cotizaciones gratis?">Do you give free estimates?</summary><p data-en="Yes. Call, text or send the form with a few details and photos, and we'll get back to you with a price." data-es="Sí. Llama, manda texto o envía el formulario con unos detalles y fotos, y te mandamos el precio.">Yes. Call, text or send the form with a few details and photos, and we'll get back to you with a price.</p></details>
+        <details><summary data-en="Do you do homes and businesses?" data-es="¿Trabajan en casas y negocios?">Do you do homes and businesses?</summary><p data-en="Both. We work in homes and golf communities, plus businesses like gas stations, shops and salons." data-es="Los dos. Trabajamos en casas y comunidades de golf, y en negocios como gasolineras, talleres y salones.">Both. We work in homes and golf communities, plus businesses like gas stations, shops and salons.</p></details>
+        <details><summary data-en="Can you install my EV charger?" data-es="¿Pueden instalar mi cargador de carro eléctrico?">Can you install my EV charger?</summary><p data-en="Yes. We install Level 2 home chargers on their own dedicated circuit, like the 50-amp charger we put in for a BMW i4." data-es="Sí. Instalamos cargadores nivel 2 en su propio circuito dedicado, como el de 50 amperes que pusimos para un BMW i4.">Yes. We install Level 2 home chargers on their own dedicated circuit, like the 50-amp charger we put in for a BMW i4.</p></details>
+        <details><summary data-en="What areas do you cover?" data-es="¿Qué áreas cubren?">What areas do you cover?</summary><p data-en="The Desert Cities: Coachella, Indio, La Quinta, Palm Desert, Rancho Mirage, Cathedral City and nearby. Not sure? Just call." data-es="Las ciudades del desierto: Coachella, Indio, La Quinta, Palm Desert, Rancho Mirage, Cathedral City y cerca. ¿No sabes? Llama.">The Desert Cities: Coachella, Indio, La Quinta, Palm Desert, Rancho Mirage, Cathedral City and nearby. Not sure? Just call.</p></details>
+        <details><summary data-en="I bought my own light fixture. Can you install it?" data-es="Compré mi propia lámpara. ¿La pueden instalar?">I bought my own light fixture. Can you install it?</summary><p data-en="Usually, yes. Send us a photo or link of the fixture and where it's going, and we'll let you know." data-es="Normalmente sí. Mándanos una foto o link de la lámpara y dónde va, y te decimos.">Usually, yes. Send us a photo or link of the fixture and where it's going, and we'll let you know.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact__grid">
+      <div>
+        <p class="label" data-en="Get in touch" data-es="Contáctanos">Get in touch</p>
+        <h2 style="margin-top:.8rem" data-en="Get Your Free Estimate" data-es="Pide Tu Cotización Gratis">Get Your Free Estimate</h2>
+        <p style="color:var(--muted);margin-top:1rem;max-width:40ch" data-en="Fill this out and it opens a text to us with everything filled in. Just hit send. Or call us directly." data-es="Llénalo y se abre un texto para nosotros con todo listo. Solo dale enviar. O llámanos directo.">Fill this out and it opens a text to us with everything filled in. Just hit send. Or call us directly.</p>
+        <div class="callcard">
+          <span class="label" data-en="Call or text" data-es="Llama o manda texto">Call or text</span>
+          <a class="num" href="tel:+17608639192">(760) 863-9192</a>
+          <div class="cta"><a class="btn" href="tel:+17608639192" data-en="Call now" data-es="Llamar">Call now</a><a class="btn btn--ghost" href="sms:+17608639192" data-en="Send a text" data-es="Mandar texto">Send a text</a></div>
+        </div>
       </div>
       <form class="form" id="f" novalidate>
-        <fieldset>
-          <legend><span>1</span> <b data-en="What do you need?" data-es="¿Qué necesitas?">What do you need?</b></legend>
-          <div class="chips">
-            <label><input type="radio" name="svc" checked><span data-en="Lighting" data-es="Iluminación">Lighting</span></label>
-            <label><input type="radio" name="svc"><span data-en="Ceiling fan" data-es="Ventilador">Ceiling fan</span></label>
-            <label><input type="radio" name="svc"><span data-en="New circuit" data-es="Circuito nuevo">New circuit</span></label>
-            <label><input type="radio" name="svc"><span data-en="Surge protection" data-es="Protección de picos">Surge protection</span></label>
-            <label><input type="radio" name="svc"><span data-en="Commercial" data-es="Comercial">Commercial</span></label>
-            <label><input type="radio" name="svc"><span data-en="Something else" data-es="Otra cosa">Something else</span></label>
-          </div>
-        </fieldset>
-        <label class="field"><span data-en="A few details" data-es="Unos detalles">A few details</span><textarea id="det" rows="3" placeholder="Replace 3 old fixtures in the kitchen with pendants"></textarea></label>
-        <label class="field"><span data-en="Your phone" data-es="Tu teléfono">Your phone</span><input type="tel" id="ph" inputmode="tel" autocomplete="tel" placeholder="(760) 555-1234"></label>
-        <p class="err" id="err" role="alert" hidden data-en="Add a 10-digit phone number so we can reach you." data-es="Agrega un teléfono de 10 dígitos para contactarte.">Add a 10-digit phone number so we can reach you.</p>
-        <button class="btn btn--full" type="submit" data-en="Request my free estimate" data-es="Pedir cotización gratis">Request my free estimate</button>
-        <div class="done" id="done" hidden role="status">
-          <p class="done__t" data-en="Request sent ⚡" data-es="Solicitud enviada ⚡">Request sent ⚡</p>
-          <p id="doneTxt"></p>
-          <p class="sub" data-en="(Preview only: on the live site, this goes straight to your phone.)" data-es="(Solo vista previa: en el sitio real, esto te llega directo al teléfono.)">(Preview only: on the live site, this goes straight to your phone.)</p>
-          <button type="button" class="link" id="again" data-en="Send another" data-es="Enviar otra">Send another</button>
+        <h3 data-en="What do you need?" data-es="¿Qué necesitas?">What do you need?</h3>
+        <div class="chips" id="svcChips">
+          <label><input type="radio" name="svc" value="Lighting" checked><span data-en="Lighting" data-es="Iluminación">Lighting</span></label>
+          <label><input type="radio" name="svc" value="LED"><span>LED</span></label>
+          <label><input type="radio" name="svc" value="EV charger"><span data-en="EV charger" data-es="Cargador EV">EV charger</span></label>
+          <label><input type="radio" name="svc" value="New circuit / outlet"><span data-en="Circuit / outlet" data-es="Circuito / contacto">Circuit / outlet</span></label>
+          <label><input type="radio" name="svc" value="Ceiling fan"><span data-en="Ceiling fan" data-es="Ventilador">Ceiling fan</span></label>
+          <label><input type="radio" name="svc" value="Surge protection"><span data-en="Surge protection" data-es="Protección de picos">Surge protection</span></label>
+          <label><input type="radio" name="svc" value="Commercial"><span data-en="Commercial" data-es="Comercial">Commercial</span></label>
+          <label><input type="radio" name="svc" value="Repair / something else"><span data-en="Repair / other" data-es="Reparación / otro">Repair / other</span></label>
         </div>
+        <label class="field"><span data-en="Tell us about the job" data-es="Cuéntanos del trabajo">Tell us about the job</span><textarea id="det" rows="3"></textarea></label>
+        <div class="row2">
+          <label class="field"><span data-en="Your name" data-es="Tu nombre">Your name</span><input type="text" id="nm" autocomplete="name"></label>
+          <label class="field"><span data-en="City" data-es="Ciudad">City</span><select id="city"><option>Coachella</option><option>Indio</option><option>La Quinta</option><option>Palm Desert</option><option>Rancho Mirage</option><option>Cathedral City</option><option>Palm Springs</option><option data-en="Other" data-es="Otra">Other</option></select></label>
+        </div>
+        <p class="err" id="err" role="alert" hidden data-en="Add a few words about the job so we can give you a price." data-es="Agrega unas palabras sobre el trabajo para darte un precio.">Add a few words about the job so we can give you a price.</p>
+        <button class="btn" type="submit" data-en="Text my request" data-es="Mandar por texto">Text my request</button>
+        <p class="fine" data-en="Opens your messages app with your request ready to send. Photos? Add them in the text." data-es="Abre tus mensajes con tu solicitud lista para enviar. ¿Fotos? Agrégalas en el texto.">Opens your messages app with your request ready to send. Photos? Add them in the text.</p>
+        <div class="sent" id="sent" hidden role="status"><p data-en="Your text is ready. If your messages app didn't open, call or text (760) 863-9192." data-es="Tu texto está listo. Si no se abrió tu app de mensajes, llama o manda texto al (760) 863-9192.">Your text is ready. If your messages app didn't open, call or text (760) 863-9192.</p></div>
       </form>
-    </div>
-  </section>
-
-  <section class="area">
-    <div class="wrap area__in">
-      <div>
-        <p class="tag" data-en="Where we work" data-es="Dónde trabajamos">Where we work</p>
-        <h2 data-en="The Desert Cities" data-es="Las ciudades del desierto">The Desert Cities</h2>
-        <div class="chipsrow"><span>Coachella</span><span>La Quinta</span><span>Palm Desert</span><span data-en="and nearby" data-es="y cerca">and nearby</span></div>
-      </div>
-      <div>
-        <p class="sub" data-en="Questions? Call or send us a DM." data-es="¿Preguntas? Llama o mándanos DM.">Questions? Call or send us a DM.</p>
-        <div class="cta"><a class="btn" href="tel:+17608639192">(760) 863-9192</a><a class="btn btn--ghost" href="https://www.instagram.com/prol1fic_electric/" target="_blank" rel="noopener">@prol1fic_electric</a></div>
-      </div>
     </div>
   </section>
 </main>
 
 <footer class="footer">
-  <div class="wrap footer__in">
-    <p>Prolific Electric · Desert Cities · (760) 863-9192</p>
-    <p data-en="Website preview by <a href='https://www.instagram.com/760webstudio/' target='_blank' rel='noopener'>760 Web Studio</a>" data-es="Vista previa por <a href='https://www.instagram.com/760webstudio/' target='_blank' rel='noopener'>760 Web Studio</a>">Website preview by <a href="https://www.instagram.com/760webstudio/" target="_blank" rel="noopener">760 Web Studio</a></p>
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="#top"><img src="img/logo-sm.jpg" alt="" width="50" height="50"><span><b>Prolific Electric</b><small>DESERT CITIES · EST. 2006</small></span></a>
+        <p style="margin-top:1rem;max-width:36ch" data-en="Residential and commercial electrician serving the Coachella Valley since 2006." data-es="Electricista residencial y comercial en el Valle de Coachella desde 2006.">Residential and commercial electrician serving the Coachella Valley since 2006.</p>
+      </div>
+      <div><h4 data-en="CONTACT" data-es="CONTACTO">CONTACT</h4><ul><li><a href="tel:+17608639192">(760) 863-9192</a></li><li><a href="sms:+17608639192" data-en="Text us" data-es="Mándanos texto">Text us</a></li><li><a href="https://www.instagram.com/prol1fic_electric/" target="_blank" rel="noopener">Instagram @prol1fic_electric</a></li></ul></div>
+      <div><h4 data-en="SERVICES" data-es="SERVICIOS">SERVICES</h4><ul><li data-en="Lighting &amp; LED" data-es="Iluminación y LED">Lighting &amp; LED</li><li data-en="EV chargers" data-es="Cargadores EV">EV chargers</li><li data-en="Circuits, outlets &amp; fans" data-es="Circuitos, contactos y ventiladores">Circuits, outlets &amp; fans</li><li data-en="Commercial work" data-es="Trabajo comercial">Commercial work</li></ul></div>
+    </div>
+    <div class="copy"><span>© 2026 Prolific Electric</span><span data-en="Website by <a href='https://760webstudio.github.io' target='_blank' rel='noopener'>760 Web Studio</a>" data-es="Página por <a href='https://760webstudio.github.io' target='_blank' rel='noopener'>760 Web Studio</a>">Website by <a href="https://760webstudio.github.io" target="_blank" rel="noopener">760 Web Studio</a></span></div>
   </div>
 </footer>
-<nav class="mbar" aria-label="Quick actions"><a href="tel:+17608639192" data-en="Call" data-es="Llamar">Call</a><a href="#estimate" data-en="Free estimate" data-es="Cotización">Free estimate</a></nav>
+
+<nav class="mbar" aria-label="Quick actions">
+  <a href="tel:+17608639192" data-en="📞 Call" data-es="📞 Llamar">📞 Call</a>
+  <a href="sms:+17608639192" data-en="💬 Text" data-es="💬 Texto">💬 Text</a>
+  <a href="#contact" data-en="Estimate" data-es="Cotizar">Estimate</a>
+</nav>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="x" type="button" aria-label="Close">×</button>
+  <button class="pv" type="button" aria-label="Previous">‹</button>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="nx" type="button" aria-label="Next">›</button>
+</div>
 
 <script>
 (function(){
-  var lang='en',btn=document.getElementById('langBtn');
-  function apply(){document.documentElement.lang=lang;document.querySelectorAll('[data-en]').forEach(function(el){el.innerHTML=el.getAttribute('data-'+lang);});btn.textContent=lang==='en'?'Español':'English';btn.setAttribute('aria-label',lang==='en'?'Cambiar a español':'Switch to English');
-    document.getElementById('det').placeholder=lang==='en'?'Replace 3 old fixtures in the kitchen with pendants':'Cambiar 3 lámparas viejas de la cocina por colgantes';}
+  var PHOTOS=[
+    {f:'gas-station-canopy.jpg',c:'commercial lighting',en:['Commercial · Coachella','LED canopy upgrade + new sign lighting at a gas station'],es:['Comercial · Coachella','Techo LED y letreros nuevos en una gasolinera']},
+    {f:'entry-chandeliers.jpg',c:'home lighting',en:['Lighting','Entryway chandeliers and LED conversion'],es:['Iluminación','Candelabros de entrada y conversión a LED']},
+    {f:'led-mirrors.jpg',c:'home lighting',en:['LED','Lighted bathroom mirrors with RGB'],es:['LED','Espejos de baño iluminados con RGB']},
+    {f:'fan-80in.jpg',c:'home',en:['Monterey Country Club','80-inch ceiling fan with new LED lighting'],es:['Monterey Country Club','Ventilador de 80 pulgadas con luz LED nueva']},
+    {f:'pendants.jpg',c:'home lighting',en:['Lighting','Old fixture out, two hanging pendants in'],es:['Iluminación','Lámpara vieja fuera, dos colgantes nuevas']},
+    {f:'fireplace-tv-wall.jpg',c:'home',en:['Circuits','Dedicated circuit for a fireplace and TV wall'],es:['Circuitos','Circuito dedicado para chimenea y pared de TV']},
+    {f:'hallway-chandeliers.jpg',c:'home lighting',en:['Lighting','Front entrance chandeliers'],es:['Iluminación','Candelabros de la entrada principal']},
+    {f:'ev-charger.jpg',c:'home',en:['EV charger','50-amp charger for a BMW i4'],es:['Cargador EV','Cargador de 50 amperes para un BMW i4']},
+    {f:'led-shelving.jpg',c:'home lighting',en:['LED','Bar area turned into shelving with LED strip lighting'],es:['LED','Bar convertido en repisas con tiras LED']},
+    {f:'car-lift-240v.jpg',c:'commercial',en:['Shop','240-volt install for a 2-post car lift'],es:['Taller','Instalación de 240 voltios para elevador de 2 postes']},
+    {f:'living-room-led.jpg',c:'home lighting',en:['LED','Living room brought to life with LED lighting'],es:['LED','Sala con nueva vida gracias a la luz LED']},
+    {f:'in-wall-fish-tank.jpg',c:'home',en:['Custom','In-wall fish tank, start to finish'],es:['Personalizado','Pecera empotrada, de principio a fin']},
+    {f:'outdoor-fireplace-rough-in.jpg',c:'home',en:['Outdoor','Outdoor fireplace and LED lighting rough-in'],es:['Exterior','Instalación de chimenea exterior y luz LED']},
+    {f:'gate-keypad.jpg',c:'home commercial',en:['Gates','Security gate keypad install'],es:['Portones','Instalación de teclado para portón']},
+    {f:'bathroom-remodel.jpg',c:'home',en:['Remodel','Bathroom remodel electrical'],es:['Remodelación','Electricidad para remodelación de baño']}
+  ];
+  var lang='en',filter='all',shown=[],cur=0,btn=document.getElementById('langBtn'),g=document.getElementById('gallery');
+  function render(){
+    shown=PHOTOS.filter(function(p){return filter==='all'||p.c.split(' ').indexOf(filter)>-1;});
+    g.innerHTML='';
+    shown.forEach(function(p,i){var t=p[lang];var b=document.createElement('button');b.type='button';b.className='shot';
+      b.innerHTML='<img src="img/'+p.f+'" alt="'+t[1].replace(/"/g,'')+'" loading="lazy"><figcaption><small>'+t[0]+'</small>'+t[1]+'</figcaption>';
+      b.addEventListener('click',function(){open(i);});g.appendChild(b);});
+  }
+  var lb=document.getElementById('lb'),li=document.getElementById('lbImg'),lc=document.getElementById('lbCap'),last;
+  function show(){var p=shown[cur],t=p[lang];li.src='img/'+p.f;li.alt=t[1];lc.textContent=t[0]+' · '+t[1];}
+  function open(i){last=document.activeElement;cur=i;show();lb.hidden=false;lb.querySelector('.x').focus();document.body.style.overflow='hidden';}
+  function close(){lb.hidden=true;document.body.style.overflow='';if(last)last.focus();}
+  lb.querySelector('.x').addEventListener('click',close);
+  lb.querySelector('.pv').addEventListener('click',function(){cur=(cur-1+shown.length)%shown.length;show();});
+  lb.querySelector('.nx').addEventListener('click',function(){cur=(cur+1)%shown.length;show();});
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowRight')lb.querySelector('.nx').click();if(e.key==='ArrowLeft')lb.querySelector('.pv').click();});
+  document.querySelectorAll('.filters button').forEach(function(b){b.addEventListener('click',function(){filter=b.getAttribute('data-f');
+    document.querySelectorAll('.filters button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});render();});});
+  function apply(){document.documentElement.lang=lang;
+    document.querySelectorAll('[data-en]').forEach(function(el){el.innerHTML=el.getAttribute('data-'+lang);});
+    btn.textContent=lang==='en'?'Español':'English';btn.setAttribute('aria-label',lang==='en'?'Cambiar a español':'Switch to English');
+    document.getElementById('det').placeholder=lang==='en'?'Example: hang 2 pendants over the kitchen island, 10 ft ceiling':'Ejemplo: colgar 2 lámparas sobre la isla de la cocina, techo de 10 pies';
+    render();}
   btn.addEventListener('click',function(){lang=lang==='en'?'es':'en';apply();});
-  var f=document.getElementById('f'),ph=document.getElementById('ph'),err=document.getElementById('err'),done=document.getElementById('done');
-  function lbl(n){var x=f.querySelector('input[name='+n+']:checked');return x?x.nextElementSibling.textContent:'';}
-  function toggle(s){[].forEach.call(f.querySelectorAll('fieldset,.field,button[type=submit]'),function(x){x.hidden=!s;});done.hidden=s;}
-  f.addEventListener('submit',function(e){e.preventDefault();var d=ph.value.replace(/\D/g,'');if(d.length!==10){err.hidden=false;ph.focus();return;}err.hidden=true;
-    var num='('+d.slice(0,3)+') '+d.slice(3,6)+'-'+d.slice(6);
-    document.getElementById('doneTxt').textContent=lbl('svc')+'. '+(lang==='en'?'We’ll reach you at '+num+' with a free estimate.':'Te contactamos al '+num+' con una cotización gratis.');toggle(false);});
-  document.getElementById('again').addEventListener('click',function(){toggle(true);});
+  // form -> prefilled text message
+  var f=document.getElementById('f'),err=document.getElementById('err');
+  f.addEventListener('submit',function(e){e.preventDefault();
+    var det=document.getElementById('det').value.trim(),nm=document.getElementById('nm').value.trim(),city=document.getElementById('city').value,svc=(f.querySelector('input[name=svc]:checked')||{}).value||'';
+    if(det.length<3){err.hidden=false;document.getElementById('det').focus();return;}err.hidden=true;
+    var msg=(lang==='en'?'Hi Prolific Electric! Estimate request':'¡Hola Prolific Electric! Solicitud de cotización')+'\n'+(lang==='en'?'Job: ':'Trabajo: ')+svc+'\n'+det+'\n'+(lang==='en'?'City: ':'Ciudad: ')+city+(nm?'\n'+(lang==='en'?'Name: ':'Nombre: ')+nm:'');
+    document.getElementById('sent').hidden=false;
+    window.location.href='sms:+17608639192'+(/iPhone|iPad|Mac/.test(navigator.userAgent)?'&':'?')+'body='+encodeURIComponent(msg);
+  });
   var hd=document.querySelector('.header');window.addEventListener('scroll',function(){hd.classList.toggle('is-scrolled',window.scrollY>30);},{passive:true});
+  apply();
 })();
 </script>
 </body>
