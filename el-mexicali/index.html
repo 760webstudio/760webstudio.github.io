@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>El Mexicali Cafe | Indio's family Mexican restaurant since 1981</title>
+<meta name="description" content="El Mexicali Cafe, 82720 Indio Blvd, Indio. Family recipes, seafood specialties and a full bar since 1981. Chiles gueritos, carne asada, caldos. Call (760) 347-1280. English y español.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="El Mexicali Cafe | Indio since 1981">
+<meta property="og:description" content="45 years of family recipes, seafood and a full bar on Indio Blvd. Menu, hours and both locations.">
+<meta property="og:url" content="https://760webstudio.github.io/el-mexicali/">
+<meta property="og:image" content="https://760webstudio.github.io/el-mexicali/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Big+Shoulders+Display:wght@700;800&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--red:#8c1414;--red-d:#6e0f0f;--gold:#f2b632;--green:#1f6b3a;--cream:#fbf4e6;--paper:#fffaf0;--ink:#2a1610;--muted:#7a6155;--line:#ecdcc0;
+  --serif:'Rozha One',Georgia,serif;--cond:'Big Shoulders Display',Impact,sans-serif;--sans:'Lato',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:64px}
+@media(min-width:800px){body{padding-bottom:0}}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{width:min(100% - 2.5rem,1140px);margin-inline:auto}
+h1,h2{font-family:var(--serif);font-weight:400;line-height:1.02}
+h2{font-size:clamp(2.2rem,1.5rem + 2.8vw,3.4rem)}
+h3{font:800 1.35rem var(--cond);text-transform:uppercase;letter-spacing:.04em}
+.tag{font:800 .95rem var(--cond);letter-spacing:.2em;text-transform:uppercase;color:var(--green)}
+.tile{height:14px;background:repeating-linear-gradient(90deg,var(--red) 0 22px,var(--gold) 22px 30px,var(--green) 30px 52px,var(--gold) 52px 60px)}
+.demo-bar{background:var(--ink);color:#f3dfc0;font-size:.8rem;text-align:center;padding:.5rem 1rem}
+.demo-bar a{color:var(--gold);font-weight:700}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:var(--red);color:#fff;border:0;border-radius:999px;padding:.85rem 1.5rem;font:900 .98rem var(--sans);text-decoration:none;cursor:pointer;transition:background .18s}
+.btn:hover{background:var(--red-d)}
+.btn--gold{background:var(--gold);color:var(--ink)}.btn--gold:hover{background:#f7c75a}
+.btn--ghost{background:transparent;color:inherit;box-shadow:inset 0 0 0 2px currentColor}
+.btn--sm{padding:.55rem 1rem;font-size:.88rem}
+.header{position:sticky;top:0;z-index:20;background:rgba(251,244,230,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.header__in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.55rem}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none}
+.brand img{width:58px;height:auto}
+.brand b{display:block;font:400 1.4rem/1 var(--serif);color:var(--red)}
+.brand small{font:800 .72rem var(--cond);letter-spacing:.2em;color:var(--muted);text-transform:uppercase}
+.nav{display:none;gap:1.8rem;font-weight:700}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--red)}
+@media(min-width:900px){.nav{display:flex}}
+.header__act{display:flex;gap:.6rem;align-items:center}
+.lang{background:none;border:1.5px solid var(--line);border-radius:999px;padding:.45rem .85rem;font:700 .8rem var(--sans);cursor:pointer;color:var(--ink)}
+.hide-sm{display:none}
+@media(min-width:800px){.hide-sm{display:inline-flex}}
+
+.hero{background:var(--red);color:#fff;overflow:hidden}
+.hero__grid{display:grid;gap:2.2rem;align-items:center;padding-block:3rem 3.5rem}
+@media(min-width:940px){.hero__grid{grid-template-columns:1.05fr .95fr;padding-block:4.5rem}}
+.hero .tag{color:var(--gold)}
+.hero h1{font-size:clamp(2.8rem,1.4rem + 5.4vw,5.6rem);margin:.6rem 0 1rem}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.lede{font-size:1.15rem;color:#f5dcd4;max-width:40ch}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.8rem}
+.since{display:flex;align-items:center;gap:1rem;margin-top:1.8rem}
+.since img{width:76px;border-radius:50%;background:#fff}
+.since p{font-weight:700;color:#f5dcd4;max-width:30ch}
+.hero__pic{justify-self:center;width:min(430px,100%);position:relative}
+.hero__pic img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:24px;border:6px solid var(--gold);box-shadow:0 30px 70px -25px rgba(0,0,0,.6)}
+
+.story{padding-block:4.5rem}
+.story__grid{display:grid;gap:2rem}
+@media(min-width:860px){.story__grid{grid-template-columns:repeat(3,1fr)}}
+.story__grid div{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:1.6rem}
+.story__grid b{display:block;font:800 2.6rem/1 var(--cond);color:var(--red)}
+.story__grid p{color:var(--muted);margin-top:.5rem}
+
+.menu{padding-block:4.5rem;background:var(--paper);border-block:1px solid var(--line)}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:1rem;margin-bottom:2rem}
+.sec-head p{color:var(--muted);max-width:44ch}
+.mgrid{display:grid;gap:1.2rem}
+@media(min-width:760px){.mgrid{grid-template-columns:repeat(2,1fr)}}
+.mcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:1.5rem}
+.mcard h3{color:var(--red)}
+.mcard ul{list-style:none;margin-top:.7rem}
+.mcard li{padding:.5rem 0;border-bottom:1px dashed var(--line)}
+.mcard li:last-child{border:0}
+.mcard li small{display:block;color:var(--muted)}
+.star{background:var(--gold);color:var(--ink);font:800 .7rem var(--cond);letter-spacing:.12em;padding:.15rem .45rem;border-radius:4px;margin-left:.35rem;vertical-align:middle}
+.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-top:1.6rem}
+.photos img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px}
+.note{margin-top:1.4rem;color:var(--muted)}
+
+.order{padding-block:4rem;background:var(--green);color:#fff}
+.order__in{display:grid;gap:1.6rem;align-items:center}
+@media(min-width:860px){.order__in{grid-template-columns:1fr auto}}
+.order p{color:#d6ecdc;margin-top:.6rem;max-width:46ch}
+
+.events{padding-block:4.5rem}
+.events__grid{display:grid;gap:2.5rem}
+@media(min-width:900px){.events__grid{grid-template-columns:1fr 1fr;align-items:start}}
+form{display:grid;gap:.9rem;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:1.5rem}
+label{display:grid;gap:.35rem;font-weight:700;font-size:.92rem}
+input,select,textarea{font:inherit;background:#fff;color:var(--ink);border:1.5px solid var(--line);border-radius:10px;padding:.75rem .85rem}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--red);border-color:transparent}
+.row2{display:grid;gap:.9rem;grid-template-columns:1fr 1fr}
+.small{color:var(--muted);font-size:.85rem}
+.checks{list-style:none;margin-top:1.2rem;display:grid;gap:.5rem}
+.checks li::before{content:"✦ ";color:var(--red)}
+
+.visit{padding-block:4.5rem;background:var(--paper);border-top:1px solid var(--line)}
+.locs{display:grid;gap:1.2rem}
+@media(min-width:860px){.locs{grid-template-columns:repeat(3,1fr)}}
+.loc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:1.5rem}
+.loc.main{border:2px solid var(--red)}
+.loc h3{color:var(--red)}
+address{font-style:normal;font-weight:700;margin-top:.5rem}
+.loc p{color:var(--muted);margin-top:.4rem}
+.loc a.ph{display:inline-block;margin-top:.6rem;font:800 1.5rem var(--cond);color:var(--ink);text-decoration:none}
+
+.footer{background:var(--ink);color:#c9b39a;padding-block:2rem;font-size:.9rem}
+.footer__in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem}
+.footer a{color:var(--gold)}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr 1fr;background:var(--ink)}
+.mbar a{color:#fff;text-align:center;padding:1.05rem .5rem;font:900 .95rem var(--sans);text-decoration:none}
+.mbar a:last-child{background:var(--red)}
+@media(min-width:800px){.mbar{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><span data-en="Free website preview made for El Mexicali Cafe by <a href='https://760webstudio.github.io/' target='_blank' rel='noopener'>760 Web Studio</a>." data-es="Vista previa gratis hecha para El Mexicali Cafe por <a href='https://760webstudio.github.io/' target='_blank' rel='noopener'>760 Web Studio</a>.">Free website preview made for El Mexicali Cafe by <a href="https://760webstudio.github.io/" target="_blank" rel="noopener">760 Web Studio</a>.</span></div>
+<header class="header">
+  <div class="wrap header__in">
+    <a class="brand" href="#top" aria-label="El Mexicali Cafe, home"><img src="img/logo.jpg" alt="El Mexicali Cafe 45th anniversary seal" width="58" height="45"><span><b>El Mexicali Cafe</b><small>Indio · Est. 1981</small></span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#menu" data-en="Menu" data-es="Menú">Menu</a>
+      <a href="#events" data-en="Parties" data-es="Fiestas">Parties</a>
+      <a href="#visit" data-en="Locations" data-es="Ubicaciones">Locations</a>
+    </nav>
+    <div class="header__act">
+      <button class="lang" id="langBtn" type="button" aria-label="Cambiar a español">Español</button>
+      <a class="btn btn--sm hide-sm" href="tel:+17603471280">(760) 347-1280</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div>
+        <p class="tag" data-en="Indio Blvd · since 1981" data-es="Indio Blvd · desde 1981">Indio Blvd · since 1981</p>
+        <h1><span data-en="45 years of" data-es="45 años de">45 years of</span> <em data-en="family recipes" data-es="recetas de familia">family recipes</em></h1>
+        <p class="lede" data-en="Authentic Mexican food from secret family recipes, seafood specialties and a full bar, with the trains rolling by out back. A Coachella Valley classic." data-es="Comida mexicana auténtica de recetas secretas de familia, mariscos y bar completo, con el tren pasando atrás. Un clásico del Valle de Coachella.">Authentic Mexican food from secret family recipes, seafood specialties and a full bar, with the trains rolling by out back. A Coachella Valley classic.</p>
+        <div class="cta">
+          <a class="btn btn--gold" href="tel:+17603471280" data-en="Call (760) 347-1280" data-es="Llama (760) 347-1280">Call (760) 347-1280</a>
+          <a class="btn btn--ghost" href="#menu" data-en="See the menu" data-es="Ver el menú">See the menu</a>
+        </div>
+        <div class="since"><img src="img/logo.jpg" alt="" width="76" height="59"><p data-en="One of the longest-running woman-owned restaurants in the valley." data-es="Uno de los restaurantes con dueña mujer más antiguos del valle.">One of the longest-running woman-owned restaurants in the valley.</p></div>
+      </div>
+      <div class="hero__pic"><img src="img/carne-asada.jpg" alt="Carne asada plate with beans, rajas, green onion and a güero chile, with a mimosa at the bar" width="430" height="538"></div>
+    </div>
+  </section>
+  <div class="tile" aria-hidden="true"></div>
+
+  <section class="story">
+    <div class="wrap story__grid">
+      <div><b>1981</b><p data-en="Open on Indio Blvd since 1981. Indio even named March 19 El Mexicali Cafe Day." data-es="En Indio Blvd desde 1981. Indio hasta nombró el 19 de marzo como el Día de El Mexicali Cafe.">Open on Indio Blvd since 1981. Indio even named March 19 El Mexicali Cafe Day.</p></div>
+      <div><b data-en="Mariscos" data-es="Mariscos">Mariscos</b><p data-en="Seafood specialties, from shrimp cocktails to the famous shrimp-stuffed chiles gueritos." data-es="Especialidades de mariscos, desde cócteles de camarón hasta los famosos chiles gueritos rellenos de camarón.">Seafood specialties, from shrimp cocktails to the famous shrimp-stuffed chiles gueritos.</p></div>
+      <div><b data-en="Full bar" data-es="Bar completo">Full bar</b><p data-en="Cocktails, cold beer and beer towers. Come for happy hour." data-es="Cocteles, cerveza fría y torres de cerveza. Ven al happy hour.">Cocktails, cold beer and beer towers. Come for happy hour.</p></div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="tag" data-en="Menu" data-es="Menú">Menu</p><h2 data-en="What to order" data-es="Qué pedir">What to order</h2></div>
+        <p data-en="A taste of the menu. Call or come in for today's full menu and prices." data-es="Una probadita del menú. Llama o ven para el menú completo y precios de hoy.">A taste of the menu. Call or come in for today's full menu and prices.</p>
+      </div>
+      <div class="mgrid">
+        <div class="mcard"><h3 data-en="Botanas" data-es="Botanas">Botanas</h3><ul>
+          <li><b data-en="Chiles gueritos rellenos de camarón" data-es="Chiles gueritos rellenos de camarón">Chiles gueritos rellenos de camarón</b><span class="star" data-en="FAMOUS" data-es="FAMOSOS">FAMOUS</span><small data-en="Yellow chiles stuffed with shrimp" data-es="Chiles güeros rellenos de camarón">Yellow chiles stuffed with shrimp</small></li>
+          <li><b data-en="Cóctel de camarón" data-es="Cóctel de camarón">Cóctel de camarón</b></li>
+          <li><b>Tostada marinera</b></li>
+          <li><b>Flautas</b> · <b>Empanadas</b></li>
+        </ul></div>
+        <div class="mcard"><h3 data-en="Mariscos" data-es="Mariscos">Mariscos</h3><ul>
+          <li><b data-en="Carne asada with garlic or ranchero shrimp" data-es="Carne asada con camarones al mojo de ajo o rancheros">Carne asada with garlic or ranchero shrimp</b></li>
+          <li><b data-en="Combinación de mariscos" data-es="Combinación de mariscos">Combinación de mariscos</b></li>
+          <li><b data-en="Fish fillet with ranchero shrimp" data-es="Filete de pescado con camarones rancheros">Fish fillet with ranchero shrimp</b></li>
+          <li><b>Pescado frito</b> · <b>Fuente de mariscos</b></li>
+        </ul></div>
+        <div class="mcard"><h3 data-en="Caldos" data-es="Caldos">Caldos</h3><ul>
+          <li><b>Caldo de res</b> · <b>Caldo de pollo</b></li>
+          <li><b>Menudo</b></li>
+          <li><b>Caldo de pescado</b> · <b>Caldo de camarón</b></li>
+        </ul></div>
+        <div class="mcard"><h3 data-en="Family favorites" data-es="Favoritos de la casa">Family favorites</h3><ul>
+          <li><b data-en="Chicken sopes" data-es="Sopes de pollo">Chicken sopes</b></li>
+          <li><b data-en="Tacos dorados, beef or chicken" data-es="Tacos dorados de res o pollo">Tacos dorados, beef or chicken</b></li>
+          <li><b>Burritos de colorado</b> · <b data-en="Cheese enchiladas" data-es="Enchiladas de queso">Cheese enchiladas</b></li>
+          <li><b>Tostada Mexicali</b> · <b data-en="Super quesadilla" data-es="Súper quesadilla">Super quesadilla</b></li>
+        </ul></div>
+      </div>
+      <div class="photos">
+        <img src="img/chiles-gueritos.jpg" alt="Shrimp-stuffed chiles gueritos with lemon" loading="lazy">
+        <img src="img/tacos-dorados.jpg" alt="Tacos dorados with lettuce and queso" loading="lazy">
+        <img src="img/sopes.jpg" alt="Chicken sopes with rice and beans" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="order">
+    <div class="wrap order__in">
+      <div><h2 data-en="Order to go" data-es="Para llevar">Order to go</h2><p data-en="Call ahead for pickup, or order delivery on DoorDash and Grubhub." data-es="Llama para recoger, u ordena a domicilio en DoorDash y Grubhub.">Call ahead for pickup, or order delivery on DoorDash and Grubhub.</p></div>
+      <div class="cta" style="margin:0"><a class="btn btn--gold" href="tel:+17603471280" data-en="Call for pickup" data-es="Llama para recoger">Call for pickup</a><a class="btn btn--ghost" href="https://www.doordash.com/search/store/el%20mexicali%20cafe/" target="_blank" rel="noopener">DoorDash</a></div>
+    </div>
+  </section>
+
+  <section class="events" id="events">
+    <div class="wrap events__grid">
+      <div>
+        <p class="tag" data-en="Private events &amp; catering" data-es="Eventos privados y banquetes">Private events &amp; catering</p>
+        <h2 data-en="Celebrate with us" data-es="Celebra con nosotros">Celebrate with us</h2>
+        <p class="note" data-en="Birthdays, baby showers, work parties and family get-togethers. Give us a call with the date and how many people." data-es="Cumpleaños, baby showers, fiestas del trabajo y reuniones familiares. Llámanos con la fecha y cuántas personas.">Birthdays, baby showers, work parties and family get-togethers. Give us a call with the date and how many people.</p>
+        <ul class="checks">
+          <li data-en="Groups of any size" data-es="Grupos de cualquier tamaño">Groups of any size</li>
+          <li data-en="Full bar and beer towers" data-es="Bar completo y torres de cerveza">Full bar and beer towers</li>
+          <li data-en="Catering for your event" data-es="Banquetes para tu evento">Catering for your event</li>
+        </ul>
+      </div>
+      <div class="loc main" style="align-self:center"><h3 data-en="Book your party" data-es="Aparta tu fiesta">Book your party</h3><p data-en="Call the restaurant with your date and number of people." data-es="Llama al restaurante con la fecha y el número de personas.">Call the restaurant with your date and number of people.</p><a class="ph" href="tel:+17603471280">(760) 347-1280</a><div class="cta" style="margin-top:.8rem"><a class="btn" href="tel:+17603471280" data-en="Call to book" data-es="Llama para apartar">Call to book</a></div></div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <div class="sec-head"><div><p class="tag" data-en="Come eat" data-es="Ven a comer">Come eat</p><h2 data-en="Our locations" data-es="Nuestras ubicaciones">Our locations</h2></div><p data-en="Open daily, 7 am to 9 pm." data-es="Abierto todos los días, de 7 am a 9 pm.">Open daily, 7 am to 9 pm.</p></div>
+      <div class="locs">
+        <div class="loc main"><h3>El Mexicali Cafe</h3><address>82720 Indio Blvd<br>Indio, CA 92201</address><p data-en="The original, by the train tracks." data-es="El original, junto a las vías del tren.">The original, by the train tracks.</p><a class="ph" href="tel:+17603471280">(760) 347-1280</a><div class="cta" style="margin-top:.8rem"><a class="btn btn--sm" href="https://www.google.com/maps/search/?api=1&query=El+Mexicali+Cafe+82720+Indio+Blvd+Indio+CA" target="_blank" rel="noopener" data-en="Directions" data-es="Cómo llegar">Directions</a></div></div>
+        <div class="loc"><h3>El Mexicali Cafe II</h3><address>43430 Monroe St, Suite A<br>Indio, CA 92201</address><p><a href="https://www.instagram.com/elmexicalicafe2_/" target="_blank" rel="noopener">@elmexicalicafe2_</a></p><div class="cta" style="margin-top:.8rem"><a class="btn btn--sm btn--ghost" href="https://www.google.com/maps/search/?api=1&query=El+Mexicali+Cafe+II+43430+Monroe+St+Indio+CA" target="_blank" rel="noopener" data-en="Directions" data-es="Cómo llegar">Directions</a></div></div>
+        <div class="loc"><h3>Carmen's</h3><address>78010 Country Club Dr, Suite 400<br>Palm Desert, CA 92211</address><p data-en="Our sister restaurant, con sabor mexicano." data-es="Nuestro restaurante hermano, con sabor mexicano.">Our sister restaurant, con sabor mexicano.</p><div class="cta" style="margin-top:.8rem"><a class="btn btn--sm btn--ghost" href="https://www.instagram.com/eatatcarmens/" target="_blank" rel="noopener">@eatatcarmens</a></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <p>El Mexicali Cafe · 82720 Indio Blvd, Indio, CA 92201</p>
+    <p data-en="Website preview by <a href='https://760webstudio.github.io/' target='_blank' rel='noopener'>760 Web Studio</a>" data-es="Vista previa por <a href='https://760webstudio.github.io/' target='_blank' rel='noopener'>760 Web Studio</a>">Website preview by <a href="https://760webstudio.github.io/" target="_blank" rel="noopener">760 Web Studio</a></p>
+  </div>
+</footer>
+<nav class="mbar" aria-label="Quick actions"><a href="tel:+17603471280" data-en="Call" data-es="Llamar">Call</a><a href="#visit" data-en="Map" data-es="Mapa">Map</a><a href="#menu" data-en="Menu" data-es="Menú">Menu</a></nav>
+
+<script>
+(function(){
+  var lang='en',btn=document.getElementById('langBtn');
+  function apply(){document.documentElement.lang=lang;
+    document.querySelectorAll('[data-en]').forEach(function(el){el.innerHTML=el.getAttribute('data-'+lang);});
+    btn.textContent=lang==='en'?'Español':'English';btn.setAttribute('aria-label',lang==='en'?'Cambiar a español':'Switch to English');}
+  btn.addEventListener('click',function(){lang=lang==='en'?'es':'en';apply();});
+})();
+</script>
+</body>
+</html>
