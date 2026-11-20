@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://760webstudio.github.io/sitemap.xml
