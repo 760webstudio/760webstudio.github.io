@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Leo's Tacos | Real al carbón street tacos in Indio</title>
+<meta name="description" content="Leo's Tacos, 82451 Hwy 111 #A101, Indio. Real al carbón street tacos, quesabirria, breakfast burritos and taquizas. Restaurant open 8 am to 11 pm, plus the food truck on Monroe St. English y español.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Leo's Tacos | Real al carbón street tacos in Indio">
+<meta property="og:description" content="Taco Tuesday $2 tacos, lunch special, quesabirria, breakfast burritos and taquizas. 82451 Hwy 111, Indio.">
+<meta property="og:url" content="https://760webstudio.github.io/leos-tacos/">
+<meta property="og:image" content="https://760webstudio.github.io/leos-tacos/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0b0b;--panel:#151313;--red:#e8321e;--red-d:#c22412;--flame:#ff8a1c;--ink:#fff;--muted:#bdb4ae;--line:#2a2523;
+  --display:'Anton',Impact,sans-serif;--brush:'Permanent Marker',cursive;--sans:'Barlow',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;padding-bottom:64px}
+@media(min-width:800px){body{padding-bottom:0}}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{width:min(100% - 2.5rem,1140px);margin-inline:auto}
+h1,h2{font-family:var(--display);font-weight:400;line-height:.95;text-transform:uppercase;letter-spacing:.01em}
+h2{font-size:clamp(2.4rem,1.6rem + 3.2vw,3.8rem)}
+h3{font:800 1.2rem var(--sans);text-transform:uppercase;letter-spacing:.02em}
+.brush{font-family:var(--brush),cursive;color:var(--red);text-transform:none;font-size:1.35rem;letter-spacing:0;display:block;transform:rotate(-2deg);margin-bottom:.3rem}
+.demo-bar{background:var(--red);color:#fff;font-size:.8rem;text-align:center;padding:.5rem 1rem}
+.demo-bar a{color:#fff;font-weight:800}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:var(--red);color:#fff;border:0;border-radius:6px;padding:.9rem 1.5rem;font:800 1rem var(--sans);text-transform:uppercase;letter-spacing:.04em;text-decoration:none;cursor:pointer;transition:background .18s,transform .18s}
+.btn:hover{background:var(--red-d);transform:translateY(-1px)}
+.btn--ghost{background:transparent;box-shadow:inset 0 0 0 2px #fff}
+.btn--ghost:hover{background:#fff;color:#000}
+.btn--sm{padding:.55rem 1rem;font-size:.85rem}
+.header{position:sticky;top:0;z-index:20;background:rgba(11,11,11,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.header__in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.6rem}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none}
+.brand img{width:64px;height:auto}
+.brand small{font:700 .7rem var(--sans);letter-spacing:.18em;color:var(--muted);text-transform:uppercase}
+.nav{display:none;gap:1.8rem;font-weight:700;text-transform:uppercase;font-size:.9rem;letter-spacing:.06em}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:#fff}
+@media(min-width:880px){.nav{display:flex}}
+.header__act{display:flex;gap:.6rem;align-items:center}
+.lang{background:none;border:1.5px solid var(--line);border-radius:999px;padding:.45rem .85rem;font:700 .8rem var(--sans);cursor:pointer;color:#fff}
+.hide-sm{display:none}
+@media(min-width:800px){.hide-sm{display:inline-flex}}
+
+.hero{position:relative;overflow:hidden}
+.hero__grid{display:grid;gap:2rem;align-items:center;padding-block:3rem 3.5rem}
+@media(min-width:900px){.hero__grid{grid-template-columns:1.05fr .95fr;padding-block:4.5rem 5rem}}
+.open{display:inline-flex;align-items:center;gap:.5rem;border:1.5px solid var(--line);border-radius:999px;padding:.35rem .9rem;font-weight:700;font-size:.92rem;color:var(--muted)}
+.open i{width:9px;height:9px;border-radius:50%;background:#4ade80;box-shadow:0 0 10px #4ade80}
+.hero h1{font-size:clamp(3.4rem,1.6rem + 7.4vw,7rem);margin:1rem 0 1rem}
+.hero h1 em{font-style:normal;color:var(--red);display:block}
+.lede{font-size:1.15rem;color:var(--muted);max-width:40ch}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.8rem}
+.hero__pic{position:relative;justify-self:center;width:min(460px,100%)}
+.hero__pic img{border-radius:14px;aspect-ratio:4/5;object-fit:cover;width:100%;box-shadow:0 30px 80px -30px rgba(232,50,30,.6)}
+.hero__pic .sticker{position:absolute;left:-14px;bottom:22px;background:var(--red);color:#fff;font:400 1.5rem/1 var(--display);text-transform:uppercase;padding:.7rem 1rem;transform:rotate(-4deg);border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.hero__pic .sticker small{display:block;font:700 .75rem var(--sans);letter-spacing:.12em}
+.flames{height:28px;background:linear-gradient(0deg,var(--red) 0 30%,transparent 30%),radial-gradient(14px 26px at 50% 100%,var(--flame) 60%,transparent 62%) 0 0/34px 28px repeat-x,radial-gradient(10px 18px at 50% 100%,var(--red) 60%,transparent 62%) 17px 6px/34px 22px repeat-x}
+
+.deals{background:var(--red);padding-block:4rem}
+.deals__grid{display:grid;gap:1.2rem}
+@media(min-width:860px){.deals__grid{grid-template-columns:1fr 1fr}}
+.deal{background:#000;border-radius:14px;padding:1.6rem;display:grid;gap:1rem;grid-template-columns:auto 1fr;align-items:center}
+.deal .big{font:400 clamp(3rem,2rem + 3vw,4.4rem)/.85 var(--display);color:var(--red)}
+.deal .big small{display:block;font:700 .8rem var(--sans);color:var(--muted);letter-spacing:.12em;margin-top:.4rem}
+.deal p{color:var(--muted);font-size:.98rem;margin-top:.3rem}
+.deals h2{margin-bottom:1.6rem}
+.deals .brush{color:#000}
+
+.menu{padding-block:4.5rem}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:1rem;margin-bottom:2rem}
+.sec-head p{color:var(--muted);max-width:42ch}
+.menu__grid{display:grid;gap:1.2rem}
+@media(min-width:760px){.menu__grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.menu__grid{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1.5rem}
+.card h3{color:#fff;display:flex;align-items:center;gap:.5rem}
+.card h3::before{content:"";width:10px;height:10px;background:var(--red);transform:rotate(45deg)}
+.card ul{list-style:none;margin-top:.9rem;display:grid;gap:.55rem}
+.card li{color:var(--muted);padding-bottom:.55rem;border-bottom:1px dashed var(--line)}
+.card li:last-child{border:0;padding:0}
+.card li b{color:#fff;font-weight:700}
+.note{margin-top:1.6rem;color:var(--muted);font-size:.95rem}
+.photos{display:grid;grid-template-columns:repeat(2,1fr);gap:4px}
+.photos img{width:100%;aspect-ratio:1;object-fit:cover}
+
+.taquiza{padding-block:4.5rem;background:var(--panel);border-block:1px solid var(--line)}
+.taquiza__grid{display:grid;gap:2.5rem}
+@media(min-width:900px){.taquiza__grid{grid-template-columns:1fr 1fr;align-items:start}}
+.taquiza p.lede{margin-top:1rem}
+.checks{list-style:none;margin-top:1.4rem;display:grid;gap:.6rem}
+.checks li{display:flex;gap:.6rem;color:var(--muted)}
+.checks li::before{content:"🔥"}
+form{display:grid;gap:.9rem;background:#000;border:1px solid var(--line);border-radius:14px;padding:1.5rem}
+label{display:grid;gap:.35rem;font-weight:700;font-size:.92rem}
+input,select,textarea{font:inherit;background:#141212;color:#fff;border:1.5px solid var(--line);border-radius:8px;padding:.75rem .85rem}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--red);border-color:transparent}
+.row2{display:grid;gap:.9rem;grid-template-columns:1fr 1fr}
+.small{color:var(--muted);font-size:.85rem}
+
+.visit{padding-block:4.5rem}
+.visit__grid{display:grid;gap:1.2rem}
+@media(min-width:860px){.visit__grid{grid-template-columns:1fr 1fr}}
+.spot{border:1px solid var(--line);border-radius:14px;padding:1.7rem;background:var(--panel)}
+.spot .tag{font:800 .78rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.spot h3{font:400 2rem var(--display);margin:.3rem 0 .6rem}
+address{font-style:normal;font-size:1.1rem;font-weight:600}
+.hours{margin-top:.8rem;color:var(--muted)}
+.hours b{color:#fff}
+.phone-big{font:400 clamp(2.4rem,1.6rem + 3vw,3.6rem) var(--display);text-decoration:none;color:#fff;display:inline-block;margin-top:.4rem}
+.phone-big:hover{color:var(--red)}
+.callrow{margin-top:2.5rem;text-align:center}
+.callrow p{color:var(--muted)}
+
+.footer{border-top:1px solid var(--line);padding-block:2rem;font-size:.9rem;color:var(--muted)}
+.footer__in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem}
+.footer a{color:#fff}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr 1fr;background:#000;border-top:1px solid var(--line)}
+.mbar a{color:#fff;text-align:center;padding:1.05rem .5rem;font:800 .95rem var(--sans);text-transform:uppercase;text-decoration:none}
+.mbar a:last-child{background:var(--red)}
+@media(min-width:800px){.mbar{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><span data-en="Free website preview made for Leo's Tacos by <a href='https://760webstudio.github.io/' target='_blank' rel='noopener'>760 Web Studio</a>." data-es="Vista previa gratis hecha para Leo's Tacos por <a href='https://760webstudio.github.io/' target='_blank' rel='noopener'>760 Web Studio</a>.">Free website preview made for Leo's Tacos by <a href="https://760webstudio.github.io/" target="_blank" rel="noopener">760 Web Studio</a>.</span></div>
+<header class="header">
+  <div class="wrap header__in">
+    <a class="brand" href="#top" aria-label="Leo's Tacos, home"><img src="img/logo.jpg" alt="Leo's Tacos" width="64" height="56"><small>Indio, CA</small></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#deals" data-en="Deals" data-es="Especiales">Deals</a>
+      <a href="#menu" data-en="Menu" data-es="Menú">Menu</a>
+      <a href="#taquizas" data-en="Taquizas" data-es="Taquizas">Taquizas</a>
+      <a href="#visit" data-en="Locations" data-es="Ubicaciones">Locations</a>
+    </nav>
+    <div class="header__act">
+      <button class="lang" id="langBtn" type="button" aria-label="Cambiar a español">Español</button>
+      <a class="btn btn--sm hide-sm" href="https://www.leostacoscorp.com" target="_blank" rel="noopener" data-en="Order online" data-es="Ordena en línea">Order online</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div>
+        <p class="open"><i aria-hidden="true"></i><span data-en="Restaurant open 8 am to 11 pm" data-es="Restaurante abierto de 8 am a 11 pm">Restaurant open 8 am to 11 pm</span></p>
+        <h1><span data-en="Real al carbón" data-es="Tacos al carbón">Real al carbón</span><em data-en="street tacos" data-es="de verdad">street tacos</em></h1>
+        <p class="lede" data-en="Asada, pastor, carnitas and quesabirria off the grill, plus breakfast burritos and chilaquiles from 8 am. Find us on Hwy 111 in Indio, or at the truck on Monroe." data-es="Asada, pastor, carnitas y quesabirria a la parrilla, más burritos de desayuno y chilaquiles desde las 8 am. Estamos en la Hwy 111 en Indio, o en la troca en la Monroe.">Asada, pastor, carnitas and quesabirria off the grill, plus breakfast burritos and chilaquiles from 8 am. Find us on Hwy 111 in Indio, or at the truck on Monroe.</p>
+        <div class="cta">
+          <a class="btn" href="https://www.leostacoscorp.com" target="_blank" rel="noopener" data-en="Order for pickup" data-es="Ordena para llevar">Order for pickup</a>
+          <a class="btn btn--ghost" href="tel:+19514220200" data-en="Call 951-422-0200" data-es="Llama 951-422-0200">Call 951-422-0200</a>
+        </div>
+      </div>
+      <div class="hero__pic">
+        <img src="img/chilaquiles.jpg" alt="Chilaquiles verdes with fried eggs, beans and queso fresco" width="460" height="575">
+        <p class="sticker"><span data-en="Taco Tuesday" data-es="Martes de tacos">Taco Tuesday</span><small data-en="$2 TACOS" data-es="TACOS A $2">$2 TACOS</small></p>
+      </div>
+    </div>
+    <div class="flames" aria-hidden="true"></div>
+  </section>
+
+  <section class="deals" id="deals">
+    <div class="wrap">
+      <span class="brush" data-en="Cáele por unos tacos" data-es="Cáele por unos tacos">Cáele por unos tacos</span>
+      <h2 data-en="Deals" data-es="Especiales">Deals</h2>
+      <div class="deals__grid">
+        <div class="deal"><p class="big">$2<small data-en="EACH" data-es="CADA UNO">EACH</small></p><div><h3 data-en="Taco Tuesday" data-es="Martes de tacos">Taco Tuesday</h3><p data-en="Tacos only $2 each, every Tuesday at the restaurant on Hwy 111. Bring your friends." data-es="Tacos a solo $2 cada uno, todos los martes en el restaurante de la Hwy 111. Trae a tus amigos.">Tacos only $2 each, every Tuesday at the restaurant on Hwy 111. Bring your friends.</p></div></div>
+        <div class="deal"><p class="big">$10.99<small data-en="+ TAX" data-es="+ IMPUESTO">+ TAX</small></p><div><h3 data-en="Lunch special · 10 am to 2 pm" data-es="Especial de lunch · 10 am a 2 pm">Lunch special · 10 am to 2 pm</h3><p data-en="5 tacos: pastor, carnitas or chicken. Asada +$2." data-es="5 tacos: pastor, carnitas o pollo. Asada +$2.">5 tacos: pastor, carnitas or chicken. Asada +$2.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="brush" data-en="From the grill" data-es="De la parrilla">From the grill</span><h2 data-en="The menu" data-es="El menú">The menu</h2></div>
+        <p data-en="Full menu and prices on our online ordering page." data-es="Menú completo y precios en nuestra página para ordenar.">Full menu and prices on our online ordering page.</p>
+      </div>
+      <div class="menu__grid">
+        <div class="card"><h3 data-en="Street tacos" data-es="Tacos">Street tacos</h3><ul>
+          <li><b>Asada</b> <span data-en="· al carbón" data-es="· al carbón">· al carbón</span></li>
+          <li><b>Al pastor</b> <span data-en="· with pineapple" data-es="· con piña">· with pineapple</span></li>
+          <li><b>Carnitas</b></li>
+          <li><b data-en="Chicken" data-es="Pollo">Chicken</b></li>
+        </ul></div>
+        <div class="card"><h3 data-en="House favorites" data-es="Los favoritos">House favorites</h3><ul>
+          <li><b>Quesabirria</b></li>
+          <li><b data-en="Surf &amp; turf burrito" data-es="Burrito mar y tierra">Surf &amp; turf burrito</b></li>
+          <li><b data-en="Our green salsa" data-es="Nuestra salsa verde">Our green salsa</b> <span data-en="· a customer favorite" data-es="· la favorita de los clientes">· a customer favorite</span></li>
+        </ul></div>
+        <div class="card"><h3 data-en="Breakfast from 8 am" data-es="Desayuno desde las 8 am">Breakfast from 8 am</h3><ul>
+          <li><b data-en="Breakfast burritos" data-es="Burritos de desayuno">Breakfast burritos</b></li>
+          <li><b>Chilaquiles</b> <span data-en="· with eggs and beans" data-es="· con huevos y frijoles">· with eggs and beans</span></li>
+          <li><b>Horchata</b></li>
+        </ul></div>
+      </div>
+      <p class="note"><a class="btn btn--ghost btn--sm" href="https://www.leostacoscorp.com" target="_blank" rel="noopener" data-en="See full menu &amp; prices" data-es="Ver menú completo y precios">See full menu &amp; prices</a></p>
+    </div>
+  </section>
+
+  <div class="photos" aria-label="Food photos">
+    <img src="img/tacos.jpg" alt="Street tacos" loading="lazy">
+    <img src="img/lunch-special.jpg" alt="Leo's Tacos lunch special: 5 tacos for $10.99" loading="lazy">
+  </div>
+
+  <section class="taquiza" id="taquizas">
+    <div class="wrap taquiza__grid">
+      <div>
+        <span class="brush" data-en="Parties, work, family" data-es="Fiestas, trabajo, familia">Parties, work, family</span>
+        <h2 data-en="Taquizas" data-es="Taquizas">Taquizas</h2>
+        <p class="lede" data-en="Have Leo's grill tacos at your next party, quinceañera, birthday or work lunch. Tell us the date and how many people, and we'll text you back with a quote." data-es="Que Leo's te haga los tacos para tu fiesta, quinceañera, cumpleaños o comida del trabajo. Dinos la fecha y cuántas personas, y te mandamos la cotización por texto.">Have Leo's grill tacos at your next party, quinceañera, birthday or work lunch. Tell us the date and how many people, and we'll text you back with a quote.</p>
+        <ul class="checks">
+          <li data-en="Tacos made fresh at your event" data-es="Tacos hechos al momento en tu evento">Tacos made fresh at your event</li>
+          <li data-en="Asada, pastor, carnitas, chicken and more" data-es="Asada, pastor, carnitas, pollo y más">Asada, pastor, carnitas, chicken and more</li>
+          <li data-en="All over the Coachella Valley" data-es="En todo el Valle de Coachella">All over the Coachella Valley</li>
+        </ul>
+      </div>
+      <form id="tqForm">
+        <label><span data-en="Your name" data-es="Tu nombre">Your name</span><input name="name" required autocomplete="name"></label>
+        <div class="row2">
+          <label><span data-en="Date" data-es="Fecha">Date</span><input name="date" type="date" required></label>
+          <label><span data-en="People" data-es="Personas">People</span><input name="people" type="number" min="10" inputmode="numeric" placeholder="50" required></label>
+        </div>
+        <label><span data-en="City" data-es="Ciudad">City</span><select name="city"><option>Indio</option><option>Coachella</option><option>La Quinta</option><option>Thermal</option><option>Cathedral City</option><option>Palm Desert</option><option data-en="Other" data-es="Otra">Other</option></select></label>
+        <label><span data-en="Anything else?" data-es="¿Algo más?">Anything else?</span><textarea name="msg" rows="3" data-en-ph="Meats you want, time, etc." data-es-ph="Carnes que quieres, hora, etc." placeholder="Meats you want, time, etc."></textarea></label>
+        <button class="btn" type="submit" data-en="Text my request" data-es="Mandar por texto">Text my request</button>
+        <p class="small" data-en="Opens your text app with everything filled in. Just hit send." data-es="Abre tus mensajes con todo listo. Solo dale enviar.">Opens your text app with everything filled in. Just hit send.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <div class="sec-head"><div><span class="brush" data-en="Two spots" data-es="Dos lugares">Two spots</span><h2 data-en="Find us" data-es="Encuéntranos">Find us</h2></div></div>
+      <div class="visit__grid">
+        <div class="spot">
+          <p class="tag" data-en="Restaurant" data-es="Restaurante">Restaurant</p>
+          <h3>Hwy 111</h3>
+          <address>82451 Hwy 111 #A101<br>Indio, CA 92201</address>
+          <p class="hours"><b data-en="Open 8 am to 11 pm" data-es="Abierto de 8 am a 11 pm">Open 8 am to 11 pm</b></p>
+          <div class="cta"><a class="btn btn--ghost btn--sm" href="https://www.google.com/maps/search/?api=1&query=82451+Hwy+111+%23A101+Indio+CA+92201" target="_blank" rel="noopener" data-en="Directions" data-es="Cómo llegar">Directions</a></div>
+        </div>
+        <div class="spot">
+          <p class="tag" data-en="Food truck" data-es="Troca">Food truck</p>
+          <h3>Monroe St</h3>
+          <address>45891 Monroe St<br>Indio, CA 92201</address>
+          <p class="hours" data-en="Check our Instagram for truck days." data-es="Revisa nuestro Instagram para los días de la troca.">Check our Instagram for truck days.</p>
+          <div class="cta"><a class="btn btn--ghost btn--sm" href="https://www.google.com/maps/search/?api=1&query=45891+Monroe+St+Indio+CA+92201" target="_blank" rel="noopener" data-en="Directions" data-es="Cómo llegar">Directions</a><a class="btn btn--ghost btn--sm" href="https://www.instagram.com/leos_tacos_760/" target="_blank" rel="noopener">Instagram</a></div>
+        </div>
+      </div>
+      <div class="callrow">
+        <p data-en="Call or text" data-es="Llama o manda texto">Call or text</p>
+        <a class="phone-big" href="tel:+19514220200">951-422-0200</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <p>Leo's Tacos · 82451 Hwy 111 #A101, Indio, CA</p>
+    <p data-en="Website preview by <a href='https://760webstudio.github.io/' target='_blank' rel='noopener'>760 Web Studio</a>" data-es="Vista previa por <a href='https://760webstudio.github.io/' target='_blank' rel='noopener'>760 Web Studio</a>">Website preview by <a href="https://760webstudio.github.io/" target="_blank" rel="noopener">760 Web Studio</a></p>
+  </div>
+</footer>
+<nav class="mbar" aria-label="Quick actions"><a href="tel:+19514220200" data-en="Call" data-es="Llamar">Call</a><a href="#visit" data-en="Map" data-es="Mapa">Map</a><a href="https://www.leostacoscorp.com" target="_blank" rel="noopener" data-en="Order" data-es="Ordenar">Order</a></nav>
+
+<script>
+(function(){
+  var lang='en',btn=document.getElementById('langBtn');
+  function apply(){document.documentElement.lang=lang;
+    document.querySelectorAll('[data-en]').forEach(function(el){el.innerHTML=el.getAttribute('data-'+lang);});
+    document.querySelectorAll('[data-en-ph]').forEach(function(el){el.placeholder=el.getAttribute('data-'+lang+'-ph');});
+    btn.textContent=lang==='en'?'Español':'English';btn.setAttribute('aria-label',lang==='en'?'Cambiar a español':'Switch to English');}
+  btn.addEventListener('click',function(){lang=lang==='en'?'es':'en';apply();});
+  document.getElementById('tqForm').addEventListener('submit',function(e){e.preventDefault();var f=e.target;
+    var body=(lang==='es'?'Hola Leo\'s, quiero una taquiza. ':'Hi Leo\'s, I want a taquiza. ')+(lang==='es'?'Nombre: ':'Name: ')+f.name.value+'. '+(lang==='es'?'Fecha: ':'Date: ')+f.date.value+'. '+(lang==='es'?'Personas: ':'People: ')+f.people.value+'. '+(lang==='es'?'Ciudad: ':'City: ')+f.city.value+'. '+f.msg.value;
+    location.href='sms:+19514220200?&body='+encodeURIComponent(body);});
+})();
+</script>
+</body>
+</html>
