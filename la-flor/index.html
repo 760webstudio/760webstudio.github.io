@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>La Flor del Desierto | Florería en Indio</title>
+<meta name="description" content="La Flor del Desierto, 83636 Indio Blvd, Indio. Arreglos florales para toda ocasión: quinceañeras, bodas, bautizos, funerales, lunas y estrellas de flores. Entrega disponible. (760) 698-1014.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="La Flor del Desierto | Florería en Indio">
+<meta property="og:description" content="Arreglos florales para toda ocasión, con entrega. Lunas, estrellas, ramos y más. Pide por texto.">
+<meta property="og:url" content="https://760webstudio.github.io/la-flor/">
+<meta property="og:image" content="https://760webstudio.github.io/la-flor/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Cormorant+Garamond:wght@600;700&family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff6f8;--white:#fff;--pink:#e0457b;--pink-d:#c13066;--blush:#fde2ea;--rose:#f4b6c8;--green:#3f7a4e;--ink:#3b2430;--muted:#82646f;--line:#f4d6df;
+  --script:'Parisienne',cursive;--serif:'Cormorant Garamond',Georgia,serif;--sans:'Mulish',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:64px}
+@media(min-width:800px){body{padding-bottom:0}}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{width:min(100% - 2.5rem,1120px);margin-inline:auto}
+h1,h2{font-family:var(--serif);font-weight:700;line-height:1.02}
+h2{font-size:clamp(2.3rem,1.6rem + 2.8vw,3.5rem)}
+h3{font:700 1.4rem var(--serif)}
+.script{font-family:var(--script);color:var(--pink);font-size:clamp(1.8rem,1.4rem + 1.4vw,2.5rem);line-height:1;display:block;margin-bottom:.2rem}
+.stripes{height:12px;background:repeating-linear-gradient(90deg,var(--rose) 0 18px,#fff 18px 36px)}
+.demo-bar{background:var(--ink);color:#f9dbe5;font-size:.8rem;text-align:center;padding:.5rem 1rem}
+.demo-bar a{color:#fff;font-weight:800}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:var(--pink);color:#fff;border:0;border-radius:999px;padding:.85rem 1.5rem;font:800 1rem var(--sans);text-decoration:none;cursor:pointer;transition:background .18s}
+.btn:hover{background:var(--pink-d)}
+.btn--ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+.btn--ghost:hover{background:var(--ink);color:#fff}
+.btn--sm{padding:.55rem 1rem;font-size:.9rem}
+.header{position:sticky;top:0;z-index:20;background:rgba(255,246,248,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.header__in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.6rem}
+.brand{text-decoration:none;line-height:1}
+.brand b{display:block;font:400 2.1rem var(--script);color:var(--pink)}
+.brand small{font:800 .66rem var(--sans);letter-spacing:.24em;color:var(--muted);text-transform:uppercase}
+.nav{display:none;gap:1.8rem;font-weight:700}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--pink)}
+@media(min-width:900px){.nav{display:flex}}
+.header__act{display:flex;gap:.6rem;align-items:center}
+.lang{background:none;border:1.5px solid var(--line);border-radius:999px;padding:.45rem .85rem;font:800 .8rem var(--sans);cursor:pointer;color:var(--ink)}
+.hide-sm{display:none}
+@media(min-width:800px){.hide-sm{display:inline-flex}}
+
+.hero{overflow:hidden;background:radial-gradient(circle at 80% 30%,var(--blush),transparent 55%)}
+.hero__grid{display:grid;gap:2.2rem;align-items:center;padding-block:2.8rem 3.5rem}
+@media(min-width:920px){.hero__grid{grid-template-columns:1.05fr .95fr;padding-block:4rem 4.5rem}}
+.hero h1{font-size:clamp(2.8rem,1.4rem + 5.2vw,5.2rem);margin:.3rem 0 1rem}
+.hero h1 em{color:var(--pink);font-style:italic}
+.lede{font-size:1.15rem;color:var(--muted);max-width:40ch}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.8rem}
+.meta{display:flex;flex-wrap:wrap;gap:.5rem 1.4rem;margin-top:1.6rem;color:var(--muted);font-weight:700;font-size:.95rem}
+.meta span::before{content:"✿ ";color:var(--pink)}
+.hero__pic{justify-self:center;width:min(440px,100%);position:relative}
+.hero__pic img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:50% 50% 24px 24px;border:8px solid #fff;box-shadow:0 30px 70px -30px rgba(193,48,102,.5)}
+.hero__pic .tag{position:absolute;left:-8px;bottom:26px;background:#fff;border-radius:16px;padding:.7rem 1rem;box-shadow:0 12px 30px rgba(59,36,48,.15);font-weight:800;font-size:.9rem;transform:rotate(-3deg)}
+.hero__pic .tag b{display:block;font:400 1.7rem/1 var(--script);color:var(--pink)}
+
+.occ{padding-block:4.5rem}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:1rem;margin-bottom:2rem}
+.sec-head p{color:var(--muted);max-width:44ch}
+.ogrid{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem}
+@media(min-width:760px){.ogrid{grid-template-columns:repeat(4,1fr)}}
+.ogrid div{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:1.3rem;text-align:center}
+.ogrid p.i{font-size:1.8rem}
+.ogrid b{display:block;font:700 1.25rem var(--serif);margin-top:.3rem}
+.ogrid span{color:var(--muted);font-size:.9rem}
+
+.gal{padding-block:4.5rem;background:var(--white);border-block:1px solid var(--line)}
+.ggrid{display:grid;gap:1rem}
+@media(min-width:760px){.ggrid{grid-template-columns:repeat(3,1fr)}}
+.ggrid figure{background:var(--bg);border-radius:20px;overflow:hidden;border:1px solid var(--line)}
+.ggrid img{width:100%;aspect-ratio:1;object-fit:cover}
+.ggrid figcaption{padding:1rem 1.2rem}
+.ggrid figcaption b{font:700 1.3rem var(--serif)}
+.ggrid figcaption span{display:block;color:var(--muted);font-size:.93rem}
+
+.order{padding-block:4.5rem}
+.order__grid{display:grid;gap:2.5rem}
+@media(min-width:900px){.order__grid{grid-template-columns:1fr 1fr;align-items:start}}
+.checks{list-style:none;margin-top:1.3rem;display:grid;gap:.6rem}
+.checks li{display:flex;gap:.6rem;color:var(--muted)}
+.checks li::before{content:"🌸"}
+form{display:grid;gap:.9rem;background:var(--white);border:1px solid var(--line);border-radius:22px;padding:1.5rem;box-shadow:0 20px 50px -30px rgba(193,48,102,.35)}
+label{display:grid;gap:.35rem;font-weight:800;font-size:.92rem}
+input,select,textarea{font:inherit;background:var(--bg);color:var(--ink);border:1.5px solid var(--line);border-radius:12px;padding:.75rem .85rem}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--pink);border-color:transparent}
+.row2{display:grid;gap:.9rem;grid-template-columns:1fr 1fr}
+.small{color:var(--muted);font-size:.85rem}
+
+.visit{padding-block:4.5rem;background:var(--white);border-top:1px solid var(--line)}
+.visit__grid{display:grid;gap:2.5rem}
+@media(min-width:860px){.visit__grid{grid-template-columns:1fr 1fr}}
+.hours{list-style:none;margin-top:1rem;max-width:340px}
+.hours li{display:flex;justify-content:space-between;padding:.5rem 0;border-bottom:1px dotted var(--rose)}
+address{font-style:normal;font-size:1.15rem;font-weight:800;margin-top:1rem}
+.phone-big{font:700 clamp(2rem,1.5rem + 2vw,2.8rem) var(--serif);text-decoration:none;display:inline-block;margin-top:.8rem;color:var(--pink)}
+
+.footer{border-top:1px solid var(--line);padding-block:2rem;font-size:.9rem;color:var(--muted)}
+.footer__in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem}
+.footer a{color:var(--pink)}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr 1fr;background:var(--ink)}
+.mbar a{color:#fff;text-align:center;padding:1.05rem .5rem;font:800 .98rem var(--sans);text-decoration:none}
+.mbar a:last-child{background:var(--pink)}
+@media(min-width:800px){.mbar{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><span data-es="Vista previa gratis hecha para La Flor del Desierto por <a href='https://760webstudio.github.io/' target='_blank' rel='noopener'>760 Web Studio</a>." data-en="Free website preview made for La Flor del Desierto by <a href='https://760webstudio.github.io/' target='_blank' rel='noopener'>760 Web Studio</a>.">Vista previa gratis hecha para La Flor del Desierto por <a href="https://760webstudio.github.io/" target="_blank" rel="noopener">760 Web Studio</a>.</span></div>
+<header class="header">
+  <div class="wrap header__in">
+    <a class="brand" href="#top" aria-label="La Flor del Desierto, inicio"><b>La Flor del Desierto</b><small data-es="Florería · Indio" data-en="Flower shop · Indio">Florería · Indio</small></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#ocasiones" data-es="Ocasiones" data-en="Occasions">Ocasiones</a>
+      <a href="#arreglos" data-es="Arreglos" data-en="Arrangements">Arreglos</a>
+      <a href="#pedido" data-es="Pedidos" data-en="Order">Pedidos</a>
+      <a href="#visita" data-es="Horario" data-en="Hours">Horario</a>
+    </nav>
+    <div class="header__act">
+      <button class="lang" id="langBtn" type="button" aria-label="Switch to English">English</button>
+      <a class="btn btn--sm hide-sm" href="tel:+17606981014">(760) 698-1014</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div>
+        <span class="script" data-es="Hecho con cariño" data-en="Made with love">Hecho con cariño</span>
+        <h1><span data-es="Arreglos florales" data-en="Flower arrangements">Arreglos florales</span> <em data-es="para toda ocasión" data-en="for every occasion">para toda ocasión</em></h1>
+        <p class="lede" data-es="Quinceañeras, bodas, bautizos, cumpleaños y despedidas. Lunas y estrellas de flores personalizadas, ramos y más, con entrega disponible." data-en="Quinceañeras, weddings, baptisms, birthdays and funerals. Custom flower moons and stars, bouquets and more, with delivery available.">Quinceañeras, bodas, bautizos, cumpleaños y despedidas. Lunas y estrellas de flores personalizadas, ramos y más, con entrega disponible.</p>
+        <div class="cta">
+          <a class="btn" href="#pedido" data-es="Haz tu pedido" data-en="Place an order">Haz tu pedido</a>
+          <a class="btn btn--ghost" href="tel:+17606981014" data-es="Llama (760) 698-1014" data-en="Call (760) 698-1014">Llama (760) 698-1014</a>
+        </div>
+        <p class="meta"><span data-es="Entrega disponible" data-en="Delivery available">Entrega disponible</span><span data-es="Abierto los 7 días" data-en="Open 7 days">Abierto los 7 días</span><span data-es="Diseños personalizados" data-en="Custom designs">Diseños personalizados</span></p>
+      </div>
+      <div class="hero__pic">
+        <img src="img/luna-tarde.jpg" alt="Luna de flores en rosas, gerberas y claveles frente a La Flor del Desierto" width="440" height="440">
+        <p class="tag"><b data-es="Personaliza tu luna" data-en="Customize your moon">Personaliza tu luna</b><span data-es="tus colores, tus flores" data-en="your colors, your flowers">tus colores, tus flores</span></p>
+      </div>
+    </div>
+  </section>
+  <div class="stripes" aria-hidden="true"></div>
+
+  <section class="occ" id="ocasiones">
+    <div class="wrap">
+      <div class="sec-head"><div><span class="script" data-es="Para cada momento" data-en="For every moment">Para cada momento</span><h2 data-es="Ocasiones" data-en="Occasions">Ocasiones</h2></div><p data-es="Dinos la fecha y los colores, y nosotros hacemos el resto." data-en="Tell us the date and the colors, and we'll do the rest.">Dinos la fecha y los colores, y nosotros hacemos el resto.</p></div>
+      <div class="ogrid">
+        <div><p class="i" aria-hidden="true">👑</p><b data-es="Quinceañeras" data-en="Quinceañeras">Quinceañeras</b><span data-es="Ramos y arreglos" data-en="Bouquets and arrangements">Ramos y arreglos</span></div>
+        <div><p class="i" aria-hidden="true">💍</p><b data-es="Bodas" data-en="Weddings">Bodas</b><span data-es="Arreglos para tu boda" data-en="Flowers for your wedding">Arreglos para tu boda</span></div>
+        <div><p class="i" aria-hidden="true">🕊️</p><b data-es="Bautizos" data-en="Baptisms">Bautizos</b><span data-es="Arreglos para la iglesia y la fiesta" data-en="For the church and the party">Arreglos para la iglesia y la fiesta</span></div>
+        <div><p class="i" aria-hidden="true">🤍</p><b data-es="Funerales" data-en="Funerals">Funerales</b><span data-es="Arreglos de despedida" data-en="Sympathy arrangements">Arreglos de despedida</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gal" id="arreglos">
+    <div class="wrap">
+      <div class="sec-head"><div><span class="script" data-es="Nuestro trabajo" data-en="Our work">Nuestro trabajo</span><h2 data-es="Arreglos recientes" data-en="Recent arrangements">Arreglos recientes</h2></div><p data-es="Cada arreglo se hace a tu gusto. Más fotos en Instagram." data-en="Every arrangement is made your way. More photos on Instagram.">Cada arreglo se hace a tu gusto. Más fotos en Instagram.</p></div>
+      <div class="ggrid">
+        <figure><img src="img/luna.jpg" alt="Luna de flores multicolor con rosas, claveles y crisantemos" loading="lazy"><figcaption><b data-es="Luna de colores" data-en="Rainbow moon">Luna de colores</b><span data-es="Rosas, claveles y crisantemos en los colores que quieras." data-en="Roses, carnations and mums in any colors you want.">Rosas, claveles y crisantemos en los colores que quieras.</span></figcaption></figure>
+        <figure><img src="img/estrella.jpg" alt="Estrella de flores rosas y blancas con moño y mariposa" loading="lazy"><figcaption><b data-es="Estrella" data-en="Star">Estrella</b><span data-es="Rosas, gerberas y claveles en tonos rosa, con moño." data-en="Roses, gerberas and carnations in pinks, with a bow.">Rosas, gerberas y claveles en tonos rosa, con moño.</span></figcaption></figure>
+        <figure><img src="img/luna-tarde.jpg" alt="Luna de flores en tonos durazno y lila" loading="lazy"><figcaption><b data-es="Luna durazno" data-en="Peach moon">Luna durazno</b><span data-es="Tonos durazno, coral y lila." data-en="Peach, coral and lilac tones.">Tonos durazno, coral y lila.</span></figcaption></figure>
+      </div>
+      <p style="margin-top:1.4rem"><a class="btn btn--ghost btn--sm" href="https://www.instagram.com/la_flor_del_desierto_ca/" target="_blank" rel="noopener" data-es="Ver más en Instagram" data-en="See more on Instagram">Ver más en Instagram</a></p>
+    </div>
+  </section>
+
+  <section class="order" id="pedido">
+    <div class="wrap order__grid">
+      <div>
+        <span class="script" data-es="Pedidos" data-en="Orders">Pedidos</span>
+        <h2 data-es="Pide tu arreglo" data-en="Order your arrangement">Pide tu arreglo</h2>
+        <p class="lede" style="margin-top:1rem" data-es="Llena esto y se abre un texto para nosotros con todo listo. Puedes agregar una foto de lo que te gusta." data-en="Fill this out and it opens a text to us with everything ready. You can add a photo of what you like.">Llena esto y se abre un texto para nosotros con todo listo. Puedes agregar una foto de lo que te gusta.</p>
+        <ul class="checks">
+          <li data-es="Entrega disponible en el valle" data-en="Delivery available in the valley">Entrega disponible en el valle</li>
+          <li data-es="Lunas, estrellas, ramos y más" data-en="Moons, stars, bouquets and more">Lunas, estrellas, ramos y más</li>
+          <li data-es="Tus colores y tus flores" data-en="Your colors and your flowers">Tus colores y tus flores</li>
+        </ul>
+      </div>
+      <form id="orForm">
+        <label><span data-es="Tu nombre" data-en="Your name">Tu nombre</span><input name="name" required autocomplete="name"></label>
+        <div class="row2">
+          <label><span data-es="Fecha" data-en="Date">Fecha</span><input name="date" type="date" required></label>
+          <label><span data-es="Entrega o recoger" data-en="Delivery or pickup">Entrega o recoger</span><select name="how"><option data-es="Recoger" data-en="Pickup">Recoger</option><option data-es="Entrega" data-en="Delivery">Entrega</option></select></label>
+        </div>
+        <label><span data-es="Ocasión" data-en="Occasion">Ocasión</span><select name="occ"><option data-es="Cumpleaños" data-en="Birthday">Cumpleaños</option><option data-es="Quinceañera" data-en="Quinceañera">Quinceañera</option><option data-es="Boda" data-en="Wedding">Boda</option><option data-es="Bautizo" data-en="Baptism">Bautizo</option><option data-es="Funeral" data-en="Funeral">Funeral</option><option data-es="Otra" data-en="Other">Otra</option></select></label>
+        <label><span data-es="¿Qué te gustaría?" data-en="What would you like?">¿Qué te gustaría?</span><textarea name="msg" rows="3" data-es-ph="Luna, estrella, ramo… colores, presupuesto" data-en-ph="Moon, star, bouquet… colors, budget" placeholder="Luna, estrella, ramo… colores, presupuesto"></textarea></label>
+        <button class="btn" type="submit" data-es="Mandar por texto" data-en="Text my order">Mandar por texto</button>
+        <p class="small" data-es="Abre tus mensajes con todo listo. Solo dale enviar." data-en="Opens your text app with everything filled in. Just hit send.">Abre tus mensajes con todo listo. Solo dale enviar.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="visit" id="visita">
+    <div class="wrap visit__grid">
+      <div>
+        <span class="script" data-es="Horario" data-en="Hours">Horario</span>
+        <h2 data-es="Abierto los 7 días" data-en="Open 7 days">Abierto los 7 días</h2>
+        <ul class="hours">
+          <li><span data-es="Lunes – sábado" data-en="Monday – Saturday">Lunes – sábado</span><b>9 am – 6 pm</b></li>
+          <li><span data-es="Domingo" data-en="Sunday">Domingo</span><b>9 am – 3 pm</b></li>
+        </ul>
+      </div>
+      <div>
+        <span class="script" data-es="Visítanos" data-en="Visit us">Visítanos</span>
+        <h2 data-es="En Indio Blvd" data-en="On Indio Blvd">En Indio Blvd</h2>
+        <address>83636 Indio Blvd<br>Indio, CA 92201</address>
+        <a class="phone-big" href="tel:+17606981014">(760) 698-1014</a>
+        <div class="cta"><a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&query=La+Flor+del+Desierto+83636+Indio+Blvd+Indio+CA" target="_blank" rel="noopener" data-es="Cómo llegar" data-en="Get directions">Cómo llegar</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <p>La Flor del Desierto · 83636 Indio Blvd, Indio, CA 92201</p>
+    <p data-es="Vista previa por <a href='https://760webstudio.github.io/' target='_blank' rel='noopener'>760 Web Studio</a>" data-en="Website preview by <a href='https://760webstudio.github.io/' target='_blank' rel='noopener'>760 Web Studio</a>">Vista previa por <a href="https://760webstudio.github.io/" target="_blank" rel="noopener">760 Web Studio</a></p>
+  </div>
+</footer>
+<nav class="mbar" aria-label="Acciones"><a href="tel:+17606981014" data-es="Llamar" data-en="Call">Llamar</a><a href="#arreglos" data-es="Arreglos" data-en="Flowers">Arreglos</a><a href="#pedido" data-es="Pedir" data-en="Order">Pedir</a></nav>
+
+<script>
+(function(){
+  var lang='es',btn=document.getElementById('langBtn');
+  function apply(){document.documentElement.lang=lang;
+    document.querySelectorAll('[data-es]').forEach(function(el){el.innerHTML=el.getAttribute('data-'+lang);});
+    document.querySelectorAll('[data-es-ph]').forEach(function(el){el.placeholder=el.getAttribute('data-'+lang+'-ph');});
+    btn.textContent=lang==='es'?'English':'Español';btn.setAttribute('aria-label',lang==='es'?'Switch to English':'Cambiar a español');}
+  btn.addEventListener('click',function(){lang=lang==='es'?'en':'es';apply();});
+  document.getElementById('orForm').addEventListener('submit',function(e){e.preventDefault();var f=e.target,es=lang==='es';
+    var body=(es?'Hola La Flor del Desierto, quiero hacer un pedido. ':'Hi La Flor del Desierto, I\'d like to order. ')+(es?'Nombre: ':'Name: ')+f.name.value+'. '+(es?'Fecha: ':'Date: ')+f.date.value+'. '+f.how.value+'. '+(es?'Ocasión: ':'Occasion: ')+f.occ.value+'. '+f.msg.value;
+    location.href='sms:+17606981014?&body='+encodeURIComponent(body);});
+})();
+</script>
+</body>
+</html>
